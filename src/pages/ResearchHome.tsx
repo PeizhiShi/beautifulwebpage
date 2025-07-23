@@ -112,20 +112,29 @@ const ResearchHome = () => {
           </section>
           
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4 border-b pb-2">Current Teaching</h2>
-            <ul className="space-y-3">
-              <li>
-                <h3 className="font-medium">CS4001: Advanced Computer Vision</h3>
-                <p className="text-gray-700 text-sm">Fall 2023</p>
+            <h2 className="text-2xl font-bold mb-4 border-b pb-2">Recent News</h2>
+            <ul className="space-y-4">
+              <li className="border-l-4 border-blue-500 pl-4">
+                <p className="text-gray-700">
+                  <strong>June 2025:</strong> Kun Feng, Director of SR Mailing, and I were invited to co-present at the Analytics, Technology and Operations Department event. Our talk explored the use of large language models to support sustainable innovation in the packaging industry.
+                </p>
               </li>
-              <li>
-                <h3 className="font-medium">CS2005: Introduction to Machine Learning</h3>
-                <p className="text-gray-700 text-sm">Spring 2024</p>
+              <li className="border-l-4 border-green-500 pl-4">
+                <p className="text-gray-700">
+                  <strong>Funding:</strong> Our KTP project has been jointly funded by SR Mailing and Innovate UK (£338,916). I will serve as the principal investigator for this project.
+                </p>
+              </li>
+              <li className="border-l-4 border-purple-500 pl-4">
+                <p className="text-gray-700">
+                  <strong>September 2023:</strong> I am joining University of Leeds as a Lecturer in Applied Artificial Intelligence!
+                </p>
+              </li>
+              <li className="border-l-4 border-orange-500 pl-4">
+                <p className="text-gray-700">
+                  <strong>Publication:</strong> Our work "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning" has been accepted for publication in IEEE Transactions on Industrial Informatics (Impact Factor: 12.3)!
+                </p>
               </li>
             </ul>
-            <div className="mt-4">
-              <Link to="/teaching" className="text-blue-600 hover:text-blue-800">View all courses →</Link>
-            </div>
           </section>
         </main>
         
