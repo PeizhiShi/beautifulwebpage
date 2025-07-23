@@ -27,7 +27,7 @@ const CV = () => {
             <div className="flex flex-col md:flex-row justify-between">
               <div>
                 <h2 className="text-2xl font-bold">Dr. Peizhi Shi</h2>
-                <h3 className="text-xl text-gray-600">Associate Professor of Computer Science</h3>
+                <h3 className="text-xl text-gray-600">Lecturer in Applied Artificial Intelligence</h3>
               </div>
               
               <div className="mt-4 md:mt-0 space-y-1 text-gray-700">

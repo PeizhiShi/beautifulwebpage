@@ -26,7 +26,7 @@ const ResearchHome = () => {
           
           <div className="flex-1">
             <h1 className="text-3xl font-bold mb-2">Dr. Peizhi Shi</h1>
-            <h2 className="text-xl text-gray-600 mb-4">Associate Professor of Computer Science</h2>
+            <h2 className="text-xl text-gray-600 mb-4">Lecturer in Applied Artificial Intelligence</h2>
             
             <div className="flex flex-wrap gap-1 mb-4">
               <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">Machine Learning</span>
