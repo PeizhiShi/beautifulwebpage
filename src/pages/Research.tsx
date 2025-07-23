@@ -91,17 +91,10 @@ const Research = () => {
         />
         
         <section className="mb-10">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2" id="funding">Research Funding</h2>
-          <ul className="space-y-6">
+          <h2 className="text-2xl font-bold mb-4 border-b pb-2" id="grant">Grant</h2>
+          <ul className="space-y-4">
             <li>
-              <h3 className="font-medium">National Science Foundation (NSF)</h3>
-              <p className="text-gray-700">Robust Computer Vision for Autonomous Systems in Adverse Conditions</p>
-              <p className="text-gray-600 text-sm">2022-2025, $750,000</p>
-            </li>
-            <li>
-              <h3 className="font-medium">Industry Research Partnership</h3>
-              <p className="text-gray-700">Efficient Neural Networks for Mobile Vision Applications</p>
-              <p className="text-gray-600 text-sm">2021-2023, $250,000</p>
+              <p className="text-gray-700"><strong>2025 - 2027</strong>, Principal Investigator, £338,916, "LLM-enhanced decision support system for the sustainable packaging sector", Knowledge Transfer Partnerships with SR Mailing, Innovate UK</p>
             </li>
           </ul>
         </section>
