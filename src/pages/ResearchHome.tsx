@@ -16,7 +16,7 @@ const ResearchHome = () => {
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
         <header className="flex flex-col md:flex-row gap-8 items-start border-b pb-8 mb-8">
-          <div className="w-40 h-48 min-w-40 bg-gray-200 overflow-hidden rounded">
+          <div className="w-40 h-40 min-w-40 bg-gray-200 overflow-hidden rounded-full">
             <img 
               src="/lovable-uploads/1ffac403-948a-44ba-84cd-4d6903233aee.png" 
               alt="Profile" 
