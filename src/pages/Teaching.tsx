@@ -17,12 +17,7 @@ const Teaching = () => {
         
         <h1 className="text-3xl font-bold mb-6">Teaching</h1>
         
-        <p className="text-gray-700 mb-8 text-lg">
-          I teach undergraduate and graduate modules in computer vision, machine learning, 
-          and related areas. My teaching philosophy emphasizes hands-on learning, 
-          real-world applications, and the development of both theoretical understanding 
-          and practical implementation skills.
-        </p>
+      
         
         <Tabs defaultValue="current" className="mb-10">
           <TabsList className="w-full mb-6">
