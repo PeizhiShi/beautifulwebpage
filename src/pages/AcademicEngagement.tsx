@@ -21,7 +21,7 @@ const AcademicEngagement = () => {
         </p>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2" id="invited-talks">Invited talk</h2>
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500" id="invited-talks">Invited talk</h2>
           <ul className="space-y-4">
             <li>
               <p className="text-gray-700"><strong>2025</strong>, "LLM-Enhanced Decision Support System for the Sustainable Packaging Sector", co-presented with Kun Feng (Director of SR Mailing) at the ATOD event, University of Leeds</p>
@@ -42,7 +42,7 @@ const AcademicEngagement = () => {
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2" id="journal-reviewer">Journal reviewer</h2>
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500" id="journal-reviewer">Journal reviewer</h2>
           <ul className="space-y-2">
             <li><p className="text-gray-700">IEEE Transactions on Industrial Informatics</p></li>
             <li><p className="text-gray-700">Robotics and Computer-integrated Manufacturing</p></li>
@@ -56,7 +56,7 @@ const AcademicEngagement = () => {
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2" id="guest-editor">Guest editor</h2>
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500" id="guest-editor">Guest editor</h2>
           <ul className="space-y-2">
             <li><p className="text-gray-700">Special Issue "Application of Artificial Intelligence Techniques in Additive Manufacturing" of Processes.</p></li>
           </ul>
