@@ -18,7 +18,7 @@ const ResearchHome = () => {
         <header className="flex flex-col md:flex-row gap-8 items-start border-b pb-8 mb-8">
           <div className="w-40 h-48 min-w-40 bg-gray-200 overflow-hidden rounded">
             <img 
-              src="https://picsum.photos/id/1005/160/192" 
+              src="/lovable-uploads/1ffac403-948a-44ba-84cd-4d6903233aee.png" 
               alt="Profile" 
               className="w-full h-full object-cover"
             />
