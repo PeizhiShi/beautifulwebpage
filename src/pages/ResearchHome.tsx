@@ -35,7 +35,8 @@ const ResearchHome = () => {
             <div className="flex flex-wrap gap-1 mb-4">
               <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">Machine Learning</span>
               <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">Computer Vision</span>
-              <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Robotics</span>
+              <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Large Language Model</span>
+              <span className="bg-orange-50 text-orange-700 px-2 py-1 rounded text-sm">Production Research</span>
             </div>
             
             
@@ -93,9 +94,9 @@ const ResearchHome = () => {
               </Card>
               <Card className="bg-green-50 border-green-100">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">Neural Architecture Search</h3>
-                  <p className="text-gray-700 mb-3">Automated discovery of efficient neural network architectures.</p>
-                  <Link to="/research#neural-architecture" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                  <h3 className="text-lg font-semibold mb-2">Learning-based Build Orientation in Additive Manufacturing</h3>
+                  <p className="text-gray-700 mb-3">This project aims to develop intelligent algorithms that optimize the build orientation of 3D-printed parts using machine learning techniques. By leveraging data-driven insights from simulations, the approach seeks to outperform traditional optimization-based methods in terms of efficiency and effectiveness, offering scalable and automated solutions for a wide range of additive manufacturing applications.</p>
+                  <Link to="/research#build-orientation" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                 </CardContent>
               </Card>
             </div>
