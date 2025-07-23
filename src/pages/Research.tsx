@@ -18,10 +18,7 @@ const Research = () => {
         <h1 className="text-3xl font-bold mb-6">Research</h1>
         
         <p className="text-gray-700 mb-8 text-lg">
-          My research focuses on developing efficient and robust computer vision algorithms 
-          for challenging real-world scenarios. I work at the intersection of deep learning, 
-          computer vision, and autonomous systems with the goal of creating reliable 
-          perception systems that can operate in diverse environments.
+          My research is dedicated to advancing the real-world application of artificial intelligence, with a focus on developing scalable, robust, and high-impact intelligent systems. By integrating machine learning, and data-driven modeling, I aim to address complex, uncertain challenges and drive the adoption of AI across different sectors.
         </p>
         
         <ResearchArea
