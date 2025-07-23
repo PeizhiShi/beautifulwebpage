@@ -105,25 +105,33 @@ const CV = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-blue-50 rounded-full p-6 text-center border-2 border-blue-200">
-              <h3 className="font-bold mb-2 text-blue-800">Programming Languages</h3>
-              <p className="text-blue-700 text-sm">Python, C++, C, Java, MATLAB, CUDA</p>
-            </div>
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="font-bold mb-2">Programming Languages</h3>
+                <p className="text-gray-700">Python, C++, C, Java, MATLAB, CUDA</p>
+              </CardContent>
+            </Card>
             
-            <div className="bg-green-50 rounded-full p-6 text-center border-2 border-green-200">
-              <h3 className="font-bold mb-2 text-green-800">Frameworks & Libraries</h3>
-              <p className="text-green-700 text-sm">PyTorch, TensorFlow, OpenCV, scikit-learn, NumPy</p>
-            </div>
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="font-bold mb-2">Frameworks & Libraries</h3>
+                <p className="text-gray-700">PyTorch, TensorFlow, OpenCV, scikit-learn, NumPy</p>
+              </CardContent>
+            </Card>
             
-            <div className="bg-purple-50 rounded-full p-6 text-center border-2 border-purple-200">
-              <h3 className="font-bold mb-2 text-purple-800">Research Skills</h3>
-              <p className="text-purple-700 text-sm">Deep Learning, Computer Vision, Optimization, Algorithm Design</p>
-            </div>
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="font-bold mb-2">Research Skills</h3>
+                <p className="text-gray-700">Deep Learning, Computer Vision, Optimization, Algorithm Design</p>
+              </CardContent>
+            </Card>
             
-            <div className="bg-orange-50 rounded-full p-6 text-center border-2 border-orange-200">
-              <h3 className="font-bold mb-2 text-orange-800">Languages</h3>
-              <p className="text-orange-700 text-sm">Chinese (Native), English (Proficient)</p>
-            </div>
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="font-bold mb-2">Languages</h3>
+                <p className="text-gray-700">Chinese (Native), English (Proficient)</p>
+              </CardContent>
+            </Card>
           </div>
         </section>
         
