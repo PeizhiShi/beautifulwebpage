@@ -86,9 +86,9 @@ const ResearchHome = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="bg-blue-50 border-blue-100">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">Real-time Object Detection</h3>
-                  <p className="text-gray-700 mb-3">Novel approaches to object detection in resource-constrained environments.</p>
-                  <Link to="/research#object-detection" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                  <h3 className="text-lg font-semibold mb-2">LLM-Enhanced Decision Support System</h3>
+                  <p className="text-gray-700 mb-3">Integration of AI and LLM techniques for sustainable packaging industry decision support.</p>
+                  <Link to="/research#llm-decision-support" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                 </CardContent>
               </Card>
               <Card className="bg-green-50 border-green-100">
