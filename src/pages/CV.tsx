@@ -26,7 +26,7 @@ const CV = () => {
           <CardContent className="p-6">
             <div className="flex flex-col md:flex-row justify-between">
               <div>
-                <h2 className="text-2xl font-bold">Dr. Jane Researcher</h2>
+                <h2 className="text-2xl font-bold">Dr. Peizhi Shi</h2>
                 <h3 className="text-xl text-gray-600">Associate Professor of Computer Science</h3>
               </div>
               

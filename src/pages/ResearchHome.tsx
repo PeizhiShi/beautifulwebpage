@@ -25,7 +25,7 @@ const ResearchHome = () => {
           </div>
           
           <div className="flex-1">
-            <h1 className="text-3xl font-bold mb-2">Dr. Jane Researcher</h1>
+            <h1 className="text-3xl font-bold mb-2">Dr. Peizhi Shi</h1>
             <h2 className="text-xl text-gray-600 mb-4">Associate Professor of Computer Science</h2>
             
             <div className="flex flex-wrap gap-1 mb-4">
