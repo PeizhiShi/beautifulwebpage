@@ -15,7 +15,7 @@ const ResearchHome = () => {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
-        <header className="flex flex-col md:flex-row gap-8 items-start border-b pb-8 mb-8">
+        <header className="flex flex-col md:flex-row gap-8 items-start relative pb-8 mb-8 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-gradient-to-r after:from-transparent after:via-gray-300 after:to-transparent">
           <div className="w-40 h-40 min-w-40 bg-gray-200 overflow-hidden rounded-full">
             <img 
               src="/lovable-uploads/1ffac403-948a-44ba-84cd-4d6903233aee.png" 
@@ -49,7 +49,7 @@ const ResearchHome = () => {
         </header>
         
         <nav className="mb-10">
-          <ul className="flex flex-wrap gap-4 border-b pb-2">
+          <ul className="flex flex-wrap gap-4 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-gradient-to-r after:from-blue-200 after:via-blue-400 after:to-blue-200">
             <li><Link to="/research" className="text-blue-600 hover:text-blue-800 font-medium">Research</Link></li>
             <li><Link to="/publications" className="text-blue-600 hover:text-blue-800 font-medium">Publications</Link></li>
             <li><Link to="/teaching" className="text-blue-600 hover:text-blue-800 font-medium">Teaching</Link></li>
@@ -59,14 +59,14 @@ const ResearchHome = () => {
         
         <main>
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4 border-b pb-2">About Me</h2>
+            <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">About Me</h2>
             <p className="text-gray-700">
               I am a Lecturer in Applied Artificial Intelligence at University of Leeds. My research interests include machine learning (ML), artificial intelligence (AI), and their real-world applications, particularly in sustainable manufacturing, design for additive manufacturing, and production research.
             </p>
           </section>
           
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4 border-b pb-2">Research Highlights</h2>
+            <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Research Highlights</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="bg-blue-50 border-blue-100">
                 <CardContent className="p-6">
@@ -87,7 +87,7 @@ const ResearchHome = () => {
           
           
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4 border-b pb-2">Recent News</h2>
+            <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Recent News</h2>
             <ul className="space-y-4">
               <li className="border-l-4 border-blue-500 pl-4">
                 <p className="text-gray-700">
@@ -113,7 +113,7 @@ const ResearchHome = () => {
           </section>
         </main>
         
-        <footer className="text-center text-gray-600 border-t pt-6 mt-10">
+        <footer className="text-center text-gray-600 relative pt-6 mt-10 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-gray-300 before:to-transparent">
           <p>© 2023 Dr. Jane Researcher. Last updated: November 2023</p>
         </footer>
       </div>
