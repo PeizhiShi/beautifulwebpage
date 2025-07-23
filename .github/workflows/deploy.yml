@@ -33,7 +33,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.peizhishi.github.io }}
+      url: ${{ steps.deployment.outputs.page_rul }}
     runs-on: ubuntu-latest
     needs: build
     steps:
