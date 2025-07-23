@@ -179,12 +179,12 @@ interface ModuleCardProps {
   code: string;
   title: string;
   term: string;
-  level: "Undergraduate" | "Graduate";
+  level: "Undergraduate" | "Graduate" | "Postgraduate";
   university: string;
   role: string;
   description: string;
   topics: string[];
-  materials: {
+  materials?: {
     label: string;
     link: string;
   }[];
@@ -229,21 +229,23 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
           </ul>
         </div>
         
-        <div>
-          <h4 className="font-medium mb-2">Module Materials</h4>
-          <div className="flex gap-3">
-            {materials.map((material, index) => (
-              <a 
-                key={index} 
-                href={material.link}
-                className="text-blue-600 hover:text-blue-800 text-sm flex items-center"
-              >
-                <ExternalLink size={14} className="mr-1" />
-                {material.label}
-              </a>
-            ))}
+        {materials && materials.length > 0 && (
+          <div>
+            <h4 className="font-medium mb-2">Module Materials</h4>
+            <div className="flex gap-3">
+              {materials.map((material, index) => (
+                <a 
+                  key={index} 
+                  href={material.link}
+                  className="text-blue-600 hover:text-blue-800 text-sm flex items-center"
+                >
+                  <ExternalLink size={14} className="mr-1" />
+                  {material.label}
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </CardContent>
     </Card>
   );
