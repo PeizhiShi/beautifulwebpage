@@ -55,43 +55,23 @@ const CV = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500 flex items-center">
             <Briefcase size={20} className="mr-2" />
-            Employment
+            Work Experience
           </h2>
           <ul className="space-y-6">
             <li>
               <div className="flex flex-col md:flex-row md:justify-between mb-1">
-                <h3 className="font-bold">Associate Professor</h3>
-                <span className="text-gray-600">2019 - Present</span>
+                <h3 className="font-bold">Lecturer in Applied AI</h3>
+                <span className="text-gray-600">2023 - Present</span>
               </div>
-              <div className="text-gray-700 mb-1">Department of Computer Science, University of Technology</div>
-              <p className="text-gray-700 text-sm">
-                Leading research in computer vision and deep learning. Teaching graduate and undergraduate courses in 
-                computer vision, machine learning and programming. Supervising PhD and Masters students.
-              </p>
+              <div className="text-gray-700 mb-1">University of Leeds</div>
             </li>
             
             <li>
               <div className="flex flex-col md:flex-row md:justify-between mb-1">
-                <h3 className="font-bold">Assistant Professor</h3>
-                <span className="text-gray-600">2014 - 2019</span>
+                <h3 className="font-bold">Research Fellow in Machine Learning</h3>
+                <span className="text-gray-600">2019 - 2023</span>
               </div>
-              <div className="text-gray-700 mb-1">Department of Computer Science, University of Technology</div>
-              <p className="text-gray-700 text-sm">
-                Established a research program in computer vision. Developed and taught courses on computer vision, 
-                image processing, and artificial intelligence.
-              </p>
-            </li>
-            
-            <li>
-              <div className="flex flex-col md:flex-row md:justify-between mb-1">
-                <h3 className="font-bold">Postdoctoral Researcher</h3>
-                <span className="text-gray-600">2012 - 2014</span>
-              </div>
-              <div className="text-gray-700 mb-1">Vision Lab, Stanford University</div>
-              <p className="text-gray-700 text-sm">
-                Conducted research on object detection and recognition algorithms for autonomous vehicles.
-                Collaborated on multiple funded research projects and published 5 journal papers.
-              </p>
+              <div className="text-gray-700 mb-1">EPSRC Future Advanced Metrology Hub</div>
             </li>
           </ul>
         </section>
@@ -104,37 +84,26 @@ const CV = () => {
           <ul className="space-y-6">
             <li>
               <div className="flex flex-col md:flex-row md:justify-between mb-1">
-                <h3 className="font-bold">Ph.D. in Computer Science</h3>
-                <span className="text-gray-600">2008 - 2012</span>
+                <h3 className="font-bold">Ph.D. in Computer Science (Machine Learning)</h3>
+                <span className="text-gray-600">2013 - 2019</span>
               </div>
-              <div className="text-gray-700 mb-1">Massachusetts Institute of Technology (MIT)</div>
-              <p className="text-gray-700 text-sm">
-                Thesis: "Computer Vision Algorithms for Autonomous Systems"
-                <br />
-                Advisor: Prof. Michael Smith
-              </p>
+              <div className="text-gray-700 mb-1">University of Manchester</div>
             </li>
             
             <li>
               <div className="flex flex-col md:flex-row md:justify-between mb-1">
-                <h3 className="font-bold">M.S. in Computer Science</h3>
-                <span className="text-gray-600">2006 - 2008</span>
+                <h3 className="font-bold">Master in Software Engineering</h3>
+                <span className="text-gray-600">2010 - 2013</span>
               </div>
-              <div className="text-gray-700 mb-1">University of California, Berkeley</div>
-              <p className="text-gray-700 text-sm">
-                Focus: Artificial Intelligence and Machine Learning
-              </p>
+              <div className="text-gray-700 mb-1">University of Science and Technology of China</div>
             </li>
             
             <li>
               <div className="flex flex-col md:flex-row md:justify-between mb-1">
-                <h3 className="font-bold">B.S. in Computer Engineering</h3>
-                <span className="text-gray-600">2002 - 2006</span>
+                <h3 className="font-bold">Bachelor in Computer Science</h3>
+                <span className="text-gray-600">2006 - 2010</span>
               </div>
-              <div className="text-gray-700 mb-1">University of Washington</div>
-              <p className="text-gray-700 text-sm">
-                Graduated with Honors, GPA: 3.95/4.0
-              </p>
+              <div className="text-gray-700 mb-1">Guilin University of Electronic Technology</div>
             </li>
           </ul>
         </section>

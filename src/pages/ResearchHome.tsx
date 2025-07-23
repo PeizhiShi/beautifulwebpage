@@ -12,6 +12,7 @@ import {
   GraduationCap
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import OrcidIcon from "../components/OrcidIcon";
 
 const ResearchHome = () => {
   return (
@@ -47,7 +48,7 @@ const ResearchHome = () => {
                 <span>GitHub</span>
               </a>
               <a href="https://orcid.org/0000-0001-6724-282X" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
-                <User size={16} />
+                <OrcidIcon size={16} />
                 <span>ORCID</span>
               </a>
               <a href="https://scholar.google.com/citations?user=qQuCvmQAAAAJ" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
