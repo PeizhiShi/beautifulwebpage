@@ -213,7 +213,24 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
               {code ? `${code}: ${title}` : title}
             </h3>
             <p className="text-gray-600">
-              {term}{level ? ` • ${level}` : ""} • {university}
+              {term}{level ? ` • ` : ""}
+              {level && (
+                <span className={`font-medium ${
+                  level === "Postgraduate" ? "text-blue-600" :
+                  level === "Graduate" ? "text-purple-600" :
+                  "text-green-600"
+                }`}>
+                  {level}
+                </span>
+              )}
+              {" • "}
+              <span className={`font-medium ${
+                university === "University of Leeds" ? "text-emerald-600" :
+                university === "University of Manchester" ? "text-amber-600" :
+                "text-rose-600"
+              }`}>
+                {university}
+              </span>
             </p>
           </div>
           <span className={`px-2 py-1 rounded text-xs font-medium ${
