@@ -73,7 +73,7 @@ const PublicationItem: React.FC<PublicationItemProps> = ({ publication }) => {
       <p className="text-gray-600 text-sm italic">
         {publication.venue}, {publication.year}
         {publication.impactFactor && publication.impactFactor > 7 && (
-          <span className="ml-2 bg-green-100 text-green-800 px-2 py-0.5 rounded-full text-xs font-medium">
+          <span className="ml-2 bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full text-xs font-medium">
             IF: {publication.impactFactor}
           </span>
         )}
@@ -90,17 +90,6 @@ const PublicationItem: React.FC<PublicationItemProps> = ({ publication }) => {
       )}
       
       <div className="mt-2 flex flex-wrap gap-3">
-        {publication.pdf && (
-          <a 
-            href={publication.pdf} 
-            className="text-blue-600 hover:text-blue-800 text-sm flex items-center gap-1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FileText size={14} />
-            <span>PDF</span>
-          </a>
-        )}
         {publication.doi && (
           <a 
             href={`https://doi.org/${publication.doi}`} 
