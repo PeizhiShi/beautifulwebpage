@@ -25,24 +25,11 @@ const Research = () => {
         </p>
         
         <ResearchArea
-          id="object-detection"
-          title="Real-time Object Detection"
-          image="https://picsum.photos/id/237/800/400"
-          description="Our research explores approaches for faster and more accurate object detection in resource-constrained environments such as mobile devices and embedded systems. We develop novel network architectures and optimization techniques to achieve real-time performance without sacrificing accuracy."
-          keyPublications={[
-            {
-              title: "Deep Learning for Real-time Object Detection in Autonomous Vehicles",
-              authors: "Jane Researcher, Alan Smith, Benjamin Lee",
-              venue: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023",
-              link: "/publications"
-            },
-            {
-              title: "Multi-scale Feature Pyramid Networks for Accurate Object Localization",
-              authors: "Jane Researcher, Christopher Wilson",
-              venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023",
-              link: "/publications"
-            }
-          ]}
+          id="llm-decision-support"
+          title="LLM-Enhanced Decision Support System"
+          image="/lovable-uploads/bfcbb359-43be-4c56-9f37-02d342ef1d21.png"
+          description="SR Mailing Ltd is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd."
+          keyPublications={[]}
         />
         
         <ResearchArea
