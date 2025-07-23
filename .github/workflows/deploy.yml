@@ -18,7 +18,7 @@ jobs:
           node-version: '18'
       - run: npm install && npm run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./build  # or your build output folder
 
