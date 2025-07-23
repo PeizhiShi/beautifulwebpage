@@ -10,6 +10,7 @@ import Publications from "./pages/Publications";
 import Research from "./pages/Research";
 import Teaching from "./pages/Teaching";
 import CV from "./pages/CV";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <HashRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Navigate to="/research-home" replace />} />
           <Route path="/research-home" element={<ResearchHome />} />
