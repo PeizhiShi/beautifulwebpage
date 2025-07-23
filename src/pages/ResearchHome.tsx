@@ -65,6 +65,25 @@ const ResearchHome = () => {
             </p>
           </section>
           
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Research Highlights</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card className="bg-blue-50 border-blue-100">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">Real-time Object Detection</h3>
+                  <p className="text-gray-700 mb-3">Novel approaches to object detection in resource-constrained environments.</p>
+                  <Link to="/research#object-detection" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                </CardContent>
+              </Card>
+              <Card className="bg-green-50 border-green-100">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">Neural Architecture Search</h3>
+                  <p className="text-gray-700 mb-3">Automated discovery of efficient neural network architectures.</p>
+                  <Link to="/research#neural-architecture" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
           
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Recent News</h2>
