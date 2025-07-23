@@ -106,48 +106,6 @@ const Research = () => {
           </ul>
         </section>
         
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2" id="students">Research Group</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="font-medium">PhD Students</h3>
-                <ul className="mt-2 space-y-2">
-                  <li>Alex Johnson (2021-present): Real-time Object Detection</li>
-                  <li>Maria Rodriguez (2020-present): Adversarial Robustness</li>
-                  <li>David Kim (2019-present): Neural Architecture Search</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="font-medium">Masters Students</h3>
-                <ul className="mt-2 space-y-2">
-                  <li>Sarah Williams (2022-present): Edge Computing for Vision</li>
-                  <li>James Wilson (2022-present): Low-light Computer Vision</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-        
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2" id="collaborations">Collaborations</h2>
-          <ul className="space-y-4">
-            <li>
-              <h3 className="font-medium">Computer Vision Lab, Stanford University</h3>
-              <p className="text-gray-700">Joint research on multi-modal sensing for autonomous vehicles</p>
-            </li>
-            <li>
-              <h3 className="font-medium">Autonomous Systems Research Group, ETH Zurich</h3>
-              <p className="text-gray-700">International collaboration on visual SLAM technologies</p>
-            </li>
-            <li>
-              <h3 className="font-medium">TechCorp Research</h3>
-              <p className="text-gray-700">Industry partnership on deploying vision models to edge devices</p>
-            </li>
-          </ul>
-        </section>
       </div>
     </div>
   );
