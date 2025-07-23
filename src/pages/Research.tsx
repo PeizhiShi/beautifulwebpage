@@ -27,6 +27,7 @@ const Research = () => {
           image="/lovable-uploads/bfcbb359-43be-4c56-9f37-02d342ef1d21.png"
           description="SR Mailing Ltd is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd."
           keyPublications={[]}
+          fundingInfo="2025 - 2027, Principal Investigator, £338,916, 'LLM-enhanced decision support system for the sustainable packaging sector', Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
         />
         
         <ResearchArea
@@ -147,6 +148,7 @@ interface ResearchAreaProps {
     venue: string;
     link: string;
   }[];
+  fundingInfo?: string;
 }
 
 const ResearchArea: React.FC<ResearchAreaProps> = ({
@@ -154,7 +156,8 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
   title,
   image,
   description,
-  keyPublications
+  keyPublications,
+  fundingInfo
 }) => {
   const [expanded, setExpanded] = useState(false);
   
@@ -178,31 +181,40 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
           {expanded ? (
             <>
               <ChevronUp size={16} className="mr-1" />
-              Hide Key Publications
+              {fundingInfo ? "Hide Funding Information" : "Hide Key Publications"}
             </>
           ) : (
             <>
               <ChevronDown size={16} className="mr-1" />
-              Show Key Publications
+              {fundingInfo ? "Show Funding Information" : "Show Key Publications"}
             </>
           )}
         </button>
         
         {expanded && (
           <div className="pl-4 border-l-2 border-blue-200 mb-4">
-            <h3 className="font-medium mb-2">Key Publications</h3>
-            <ul className="space-y-3">
-              {keyPublications.map((pub, index) => (
-                <li key={index}>
-                  <p className="font-medium">{pub.title}</p>
-                  <p className="text-gray-700 text-sm">{pub.authors}</p>
-                  <p className="text-gray-600 text-sm italic">{pub.venue}</p>
-                  <Link to={pub.link} className="text-blue-600 hover:text-blue-800 text-sm">
-                    View Publication
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {fundingInfo ? (
+              <>
+                <h3 className="font-medium mb-2">Funding Information</h3>
+                <p className="text-gray-700">{fundingInfo}</p>
+              </>
+            ) : (
+              <>
+                <h3 className="font-medium mb-2">Key Publications</h3>
+                <ul className="space-y-3">
+                  {keyPublications.map((pub, index) => (
+                    <li key={index}>
+                      <p className="font-medium">{pub.title}</p>
+                      <p className="text-gray-700 text-sm">{pub.authors}</p>
+                      <p className="text-gray-600 text-sm italic">{pub.venue}</p>
+                      <Link to={pub.link} className="text-blue-600 hover:text-blue-800 text-sm">
+                        View Publication
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         )}
       </div>
