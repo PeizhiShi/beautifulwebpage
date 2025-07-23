@@ -47,12 +47,11 @@ const Teaching = () => {
                 role="Module Leader"
                 description="This course aims to give students a sound grounding in quantitative analysis at the level necessary to: 1) facilitate their study of academic literature on their MSc programme, 2) facilitate their undertaking of a quantitative research project for their dissertation, and 3) allow them to use and interpret results from such methods in a business environment."
                 topics={[
-                  "Descriptive Statistics - measures of location & dispersion, data presentation",
-                  "Probability - probability laws, conditional probabilities, probability distributions",
-                  "Hypothesis Testing - estimating from samples, confidence intervals",
-                  "Multivariate Regression Analysis - correlation, linear regression & forecasting",
-                  "Group Comparisons - Analysis of differences between groups (ANOVA)",
-                  "Exploratory Factor Analysis"
+                  "Probability and probability distributions",
+                  "Hypothesis testing and confidence intervals",
+                  "The multivariate analysis of linear relationships",
+                  "Group comparisons (using ANOVA)",
+                  "Exploratory factor analysis"
                 ]}
                 materials={[
                   { label: "Module Catalogue", link: "https://catalogue.leeds.ac.uk/Module/TP/LUBS/5586M/202526" },
