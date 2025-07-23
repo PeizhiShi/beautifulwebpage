@@ -13,108 +13,78 @@ export interface Publication {
   code?: string;
 }
 
-// This is a sample dataset - you would replace this with your actual publications
-// For GitHub Pages, you can edit this file directly in the repository
+// Publications for Dr. Peizhi Shi
 export const publications: Publication[] = [
   {
-    title: "Deep Learning for Real-time Object Detection in Autonomous Vehicles",
-    authors: "Jane Researcher, Alan Smith, Benjamin Lee",
-    venue: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
-    year: 2023,
-    type: "conference",
-    tags: ["object detection", "autonomous vehicles", "deep learning"],
-    pdf: "#pdf-link",
-    slides: "#slides-link",
-    code: "https://github.com/janeresearcher/deep-object-detection"
-  },
-  {
-    title: "Multi-scale Feature Pyramid Networks for Accurate Object Localization",
-    authors: "Jane Researcher, Christopher Wilson",
-    venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    title: "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning",
+    authors: "P. Shi, Q. Qi, Y. Qin, F. Meng, S. Lou, P. J. Scott, and X. Jiang",
+    venue: "IEEE Transactions on Industrial Informatics",
     year: 2023,
     type: "journal",
-    tags: ["feature pyramids", "object detection", "CNN"],
-    pdf: "#pdf-link",
-    doi: "10.1109/TPAMI.2023.12345"
+    tags: ["reinforcement learning", "additive manufacturing", "part orientation", "support volume reduction"],
+    pdf: "#"
   },
   {
-    title: "Neural Architecture Search for Efficient Deep Learning Models",
-    authors: "Jane Researcher, David Johnson, Maria Garcia",
-    venue: "International Conference on Machine Learning (ICML)",
+    title: "Highly interacting machining feature recognition via small sample learning",
+    authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+    venue: "Robotics and Computer-Integrated Manufacturing",
     year: 2022,
-    type: "conference",
-    tags: ["neural architecture search", "model efficiency", "AutoML"],
-    pdf: "#pdf-link",
-    slides: "#slides-link",
-    link: "#project-page-link"
+    type: "journal",
+    tags: ["machine learning", "feature recognition", "small sample learning", "manufacturing"],
+    pdf: "#"
   },
   {
-    title: "Adversarial Training Methods for Robust Visual Perception",
-    authors: "Jane Researcher, Robert Brown",
-    venue: "Neural Information Processing Systems (NeurIPS)",
-    year: 2022,
-    type: "conference",
-    tags: ["adversarial training", "robustness", "visual perception"],
-    pdf: "#pdf-link",
-    code: "https://github.com/janeresearcher/adversarial-training"
-  },
-  {
-    title: "A Survey of Deep Learning Approaches for Autonomous Driving Systems",
-    authors: "Jane Researcher, Susan Miller, Thomas Wang",
-    venue: "ACM Computing Surveys",
+    title: "Intersecting machining feature localisation and recognition via single shot multibox detector",
+    authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+    venue: "IEEE Transactions on Industrial Informatics",
     year: 2021,
     type: "journal",
-    tags: ["survey", "autonomous driving", "deep learning"],
-    pdf: "#pdf-link",
-    doi: "10.1145/3439738"
+    tags: ["computer vision", "feature detection", "manufacturing", "object detection"],
+    pdf: "#"
   },
   {
-    title: "Attention Mechanisms for Visual Understanding in Low-light Conditions",
-    authors: "Jane Researcher, Michael Clark",
-    venue: "European Conference on Computer Vision (ECCV)",
+    title: "Automatic determination of part build orientation for laser powder bed fusion",
+    authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+    venue: "Virtual and Physical Prototyping",
     year: 2021,
-    type: "conference",
-    tags: ["attention mechanisms", "low-light", "visual understanding"],
-    pdf: "#pdf-link",
-    slides: "#slides-link"
-  },
-  {
-    title: "Edge Computing for Real-time Vision Applications",
-    authors: "Jane Researcher, Lisa Chen, Omar Patel",
-    venue: "ACM/IEEE Symposium on Edge Computing",
-    year: 2020,
-    type: "conference",
-    tags: ["edge computing", "real-time vision", "embedded systems"],
-    pdf: "#pdf-link",
-    slides: "#slides-link"
-  },
-  {
-    title: "Efficient Deployment of Vision Models on Resource-Constrained Devices",
-    authors: "Jane Researcher, Kevin Zhang",
-    venue: "Workshop on Machine Learning for Mobile and Embedded Systems",
-    year: 2020,
-    type: "workshop",
-    tags: ["model compression", "embedded vision", "efficient inference"],
-    pdf: "#pdf-link"
-  },
-  {
-    title: "Robust Feature Extraction for Visual SLAM in Dynamic Environments",
-    authors: "Jane Researcher, Rachel Adams",
-    venue: "International Journal of Computer Vision",
-    year: 2019,
     type: "journal",
-    tags: ["SLAM", "dynamic environments", "feature extraction"],
-    pdf: "#pdf-link",
-    doi: "10.1007/s11263-019-01234-x"
+    tags: ["additive manufacturing", "build orientation", "laser powder bed fusion", "automation"],
+    pdf: "#"
   },
   {
-    title: "Computer Vision Algorithms for Autonomous Systems",
-    authors: "Jane Researcher",
-    venue: "PhD Thesis, University of Technology",
-    year: 2018,
-    type: "thesis",
-    tags: ["computer vision", "autonomous systems", "PhD thesis"],
-    pdf: "#pdf-link",
-    link: "#university-repository-link"
+    title: "A novel learning-based feature recognition method using multiple sectional view representation",
+    authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+    venue: "Journal of Intelligent Manufacturing",
+    year: 2020,
+    type: "journal",
+    tags: ["machine learning", "feature recognition", "manufacturing", "representation learning"],
+    pdf: "#"
+  },
+  {
+    title: "Automatic generation of alternative build orientations for laser powder bed fusion based on facet clustering",
+    authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+    venue: "Virtual and Physical Prototyping",
+    year: 2020,
+    type: "journal",
+    tags: ["additive manufacturing", "build orientation", "clustering", "laser powder bed fusion"],
+    pdf: "#"
+  },
+  {
+    title: "Learning constructive primitives for real-time dynamic difficulty adjustment in Super Mario Bros",
+    authors: "P. Shi, and K. Chen",
+    venue: "IEEE Transactions on Games",
+    year: 2017,
+    type: "journal",
+    tags: ["machine learning", "game AI", "dynamic difficulty adjustment", "reinforcement learning"],
+    pdf: "#"
+  },
+  {
+    title: "Online level generation in Super Mario Bros via learning constructive primitives",
+    authors: "P. Shi, and K. Chen",
+    venue: "IEEE Conference on Computational Intelligence and Games",
+    year: 2016,
+    type: "conference",
+    tags: ["machine learning", "procedural generation", "game AI", "computational intelligence"],
+    pdf: "#"
   }
 ];
