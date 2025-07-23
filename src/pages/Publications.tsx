@@ -67,7 +67,7 @@ interface PublicationItemProps {
 
 const PublicationItem: React.FC<PublicationItemProps> = ({ publication }) => {
   return (
-    <li className="border-b pb-4">
+    <li className="pb-4">
       <h3 className="font-medium">{publication.title}</h3>
       <p className="text-gray-700 text-sm">{publication.authors}</p>
       <p className="text-gray-600 text-sm italic">
