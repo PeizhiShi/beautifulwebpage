@@ -33,7 +33,7 @@ const CV = () => {
               
                 <div className="flex items-center">
                   <MapPin size={16} className="mr-2" />
-                  <span>Centre for Decision Research, University of Leeds</span>
+                  <span>University of Leeds</span>
                 </div>
                 <div className="flex items-center">
                   <Globe size={16} className="mr-2" />
