@@ -95,7 +95,7 @@ const ResearchHome = () => {
               <Card className="bg-green-50 border-green-100">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">Learning-based Build Orientation in Additive Manufacturing</h3>
-                  <p className="text-gray-700 mb-3">This project aims to develop intelligent algorithms that optimize the build orientation of 3D-printed parts using machine learning techniques. By leveraging data-driven insights from simulations, the approach seeks to outperform traditional optimization-based methods in terms of efficiency and effectiveness, offering scalable and automated solutions for a wide range of additive manufacturing applications.</p>
+                  <p className="text-gray-700 mb-3">Development of intelligent algorithms that optimize 3D-printed part orientations using machine learning techniques.</p>
                   <Link to="/research#build-orientation" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                 </CardContent>
               </Card>
