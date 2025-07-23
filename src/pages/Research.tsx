@@ -24,7 +24,7 @@ const Research = () => {
         <ResearchArea
           id="llm-decision-support"
           title="LLM-Enhanced Decision Support System"
-          image="/lovable-uploads/87d3f486-6868-41b4-aed0-0b3121520066.png"
+          image="/lovable-uploads/5355cf92-18c4-44f4-86d8-614e15f461a8.png"
           description="SR Mailing Ltd is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd."
           keyPublications={[]}
           fundingInfo="2025 - 2027, Principal Investigator, £338,916, 'LLM-enhanced decision support system for the sustainable packaging sector', Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
