@@ -58,15 +58,27 @@ const Research = () => {
         />
         
         <ResearchArea
-          id="adversarial-robustness"
-          title="Adversarial Robustness"
-          image="https://picsum.photos/id/1024/800/400"
-          description="This research direction focuses on improving the robustness of computer vision models against adversarial attacks and natural corruptions. We develop training methodologies and architectural innovations to create models that maintain high performance even in the presence of input perturbations."
+          id="feature-recognition"
+          title="Learning-based Feature Recognition in Subtractive Manufacturing"
+          image="/lovable-uploads/bc2a7cc1-9db7-490a-b8b1-9e97567f92ea.png"
+          description="This project aims to design algorithms that automatically recognize 2.5D manufacturing features from 3D components. A novel object detection network architecture is proposed as part of this work. At the time of its release, the approach achieves state-of-the-art performance in intersecting feature recognition and localization on benchmark datasets."
           keyPublications={[
             {
-              title: "Adversarial Training Methods for Robust Visual Perception",
-              authors: "Jane Researcher, Robert Brown",
-              venue: "Neural Information Processing Systems (NeurIPS), 2022",
+              title: "Highly interacting machining feature recognition via small sample learning",
+              authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+              venue: "Robotics and Computer-Integrated Manufacturing, 2022, IF: 10.4",
+              link: "/publications"
+            },
+            {
+              title: "Intersecting machining feature localisation and recognition via single shot multibox detector",
+              authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+              venue: "IEEE Transactions on Industrial Informatics, 2021, IF: 12.1",
+              link: "/publications"
+            },
+            {
+              title: "A novel learning-based feature recognition method using multiple sectional view representation",
+              authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+              venue: "Journal of Intelligent Manufacturing, 2020, IF: 8.3",
               link: "/publications"
             }
           ]}
