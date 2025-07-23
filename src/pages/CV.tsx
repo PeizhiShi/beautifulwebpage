@@ -85,6 +85,7 @@ const CV = () => {
                 <span className="text-gray-600">2013 - 2019</span>
               </div>
               <div className="text-gray-700 mb-1">University of Manchester</div>
+              <div className="text-gray-600 text-sm">Supervisor: Dr. Ke Chen</div>
             </li>
             
             <li>
