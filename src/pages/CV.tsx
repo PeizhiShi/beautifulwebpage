@@ -142,43 +142,5 @@ const CV = () => {
   );
 };
 
-// Sample data for selected publications
-const selectedPublications = [
-  {
-    authors: "Researcher, J., Smith, A., & Lee, B.",
-    year: 2023,
-    title: "Deep Learning for Real-time Object Detection in Autonomous Vehicles",
-    venue: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
-    details: "pp. 1234-1242"
-  },
-  {
-    authors: "Researcher, J. & Wilson, C.",
-    year: 2023,
-    title: "Multi-scale Feature Pyramid Networks for Accurate Object Localization",
-    venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-    details: "Vol. 45, No. 3, pp. 567-579"
-  },
-  {
-    authors: "Researcher, J., Johnson, D., & Garcia, M.",
-    year: 2022,
-    title: "Neural Architecture Search for Efficient Deep Learning Models",
-    venue: "International Conference on Machine Learning (ICML)",
-    details: "pp. 876-885"
-  },
-  {
-    authors: "Researcher, J. & Brown, R.",
-    year: 2022,
-    title: "Adversarial Training Methods for Robust Visual Perception",
-    venue: "Neural Information Processing Systems (NeurIPS)",
-    details: "pp. 2345-2354"
-  },
-  {
-    authors: "Researcher, J., Miller, S., & Wang, T.",
-    year: 2021,
-    title: "A Survey of Deep Learning Approaches for Autonomous Driving Systems",
-    venue: "ACM Computing Surveys",
-    details: "Vol. 53, No. 4, Article 77"
-  }
-];
 
 export default CV;
