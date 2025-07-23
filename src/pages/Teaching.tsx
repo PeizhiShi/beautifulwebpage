@@ -44,6 +44,7 @@ const Teaching = () => {
                 term="Fall 2023"
                 level="Graduate"
                 university="Stanford University"
+                role="Module Leader"
                 description="This module covers advanced topics in computer vision including object detection, 
                 instance segmentation, 3D vision, and visual SLAM. Students will implement state-of-the-art 
                 computer vision algorithms and complete a research project."
@@ -66,6 +67,7 @@ const Teaching = () => {
                 term="Spring 2024"
                 level="Undergraduate"
                 university="Stanford University"
+                role="Teaching Staff"
                 description="An introductory module on machine learning covering fundamental concepts, 
                 algorithms, and applications. Topics include supervised learning, unsupervised learning, 
                 and basic deep learning. The module emphasizes practical skills with programming assignments in Python."
@@ -92,6 +94,7 @@ const Teaching = () => {
                 term="Spring 2023"
                 level="Undergraduate"
                 university="MIT"
+                role="Module Leader"
                 description="An introduction to computer vision covering image formation, feature detection, 
                 image segmentation, object recognition, and deep learning approaches to vision problems."
                 topics={[
@@ -113,6 +116,7 @@ const Teaching = () => {
                 term="Fall 2022"
                 level="Graduate"
                 university="MIT"
+                role="Teaching Staff"
                 description="A specialized module focusing on deep learning techniques for computer vision tasks. 
                 The module covers CNN architectures, training methodologies, and applications to various vision problems."
                 topics={[
@@ -134,6 +138,7 @@ const Teaching = () => {
                 term="Fall 2021"
                 level="Undergraduate"
                 university="University of California, Berkeley"
+                role="Teaching Assistant"
                 description="A first module in programming using Python, covering basic programming concepts, 
                 data structures, algorithms, and problem-solving techniques."
                 topics={[
@@ -163,6 +168,7 @@ interface ModuleCardProps {
   term: string;
   level: "Undergraduate" | "Graduate";
   university: string;
+  role: string;
   description: string;
   topics: string[];
   materials: {
@@ -177,6 +183,7 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
   term,
   level,
   university,
+  role,
   description,
   topics,
   materials
@@ -188,6 +195,7 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
           <div>
             <h3 className="font-bold text-lg">{code}: {title}</h3>
             <p className="text-gray-600">{term} • {university}</p>
+            <p className="text-gray-500 text-sm mt-1">Role: {role}</p>
           </div>
           <span className={`px-2 py-1 rounded text-xs font-medium ${
             level === "Graduate" ? "bg-purple-100 text-purple-800" : "bg-blue-100 text-blue-800"
