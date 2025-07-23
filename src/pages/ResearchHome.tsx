@@ -96,12 +96,12 @@ const ResearchHome = () => {
                         <span>PDF</span>
                       </a>
                     )}
-                    {pub.slides && (
-                      <a href={pub.slides} className="text-blue-600 hover:text-blue-800 text-sm flex items-center gap-1">
-                        <Presentation size={14} />
-                        <span>Slides</span>
-                      </a>
-                    )}
+                     {(pub as any).slides && (
+                       <a href={(pub as any).slides} className="text-blue-600 hover:text-blue-800 text-sm flex items-center gap-1">
+                         <Presentation size={14} />
+                         <span>Slides</span>
+                       </a>
+                     )}
                   </div>
                 </li>
               ))}
@@ -137,31 +137,42 @@ const ResearchHome = () => {
   );
 };
 
-// Sample data for latest publications
 const latestPublications = [
   {
-    title: "Efficient Neural Architecture Search for Real-time Object Detection",
-    authors: "J. Researcher, A. Colleague, B. Collaborator",
-    venue: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+    title: "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning",
+    authors: "P. Shi, Q. Qi, Y. Qin, F. Meng, S. Lou, P. J. Scott, and X. Jiang",
+    venue: "IEEE Transactions on Industrial Informatics",
     year: 2023,
-    pdf: "#",
-    slides: "#"
+    pdf: "#"
   },
   {
-    title: "Towards Robust Visual Perception in Adverse Weather Conditions",
-    authors: "J. Researcher, C. Student",
-    venue: "International Conference on Machine Learning (ICML)",
-    year: 2022,
-    pdf: "#",
-    slides: "#"
-  },
-  {
-    title: "Multi-modal Fusion for Enhanced Scene Understanding",
-    authors: "D. Partner, J. Researcher",
-    venue: "Neural Information Processing Systems (NeurIPS)",
+    title: "Highly interacting machining feature recognition via small sample learning",
+    authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+    venue: "Robotics and Computer-Integrated Manufacturing",
     year: 2022,
     pdf: "#"
+  },
+  {
+    title: "Intersecting machining feature localisation and recognition via single shot multibox detector",
+    authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+    venue: "IEEE Transactions on Industrial Informatics",
+    year: 2021,
+    pdf: "#"
+  },
+  {
+    title: "Automatic determination of part build orientation for laser powder bed fusion",
+    authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+    venue: "Virtual and Physical Prototyping",
+    year: 2021,
+    pdf: "#"
+  },
+  {
+    title: "A novel learning-based feature recognition method using multiple sectional view representation",
+    authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+    venue: "Journal of Intelligent Manufacturing",
+    year: 2020,
+    pdf: "#"
   }
-];
+] as const;
 
 export default ResearchHome;
