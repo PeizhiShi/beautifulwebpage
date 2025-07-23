@@ -53,7 +53,7 @@ const CV = () => {
         </Card>
         
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2 flex items-center">
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500 flex items-center">
             <Briefcase size={20} className="mr-2" />
             Employment
           </h2>
@@ -97,7 +97,7 @@ const CV = () => {
         </section>
         
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2 flex items-center">
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500 flex items-center">
             <GraduationCap size={20} className="mr-2" />
             Education
           </h2>
@@ -140,7 +140,7 @@ const CV = () => {
         </section>
         
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2 flex items-center">
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500 flex items-center">
             <Award size={20} className="mr-2" />
             Awards and Honors
           </h2>
@@ -188,7 +188,7 @@ const CV = () => {
         </section>
         
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2 flex items-center">
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500 flex items-center">
             <FileText size={20} className="mr-2" />
             Selected Publications
           </h2>
@@ -207,7 +207,7 @@ const CV = () => {
         </section>
         
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2">Professional Service</h2>
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Professional Service</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h3 className="font-bold mb-2">Conference Organization</h3>
@@ -229,7 +229,7 @@ const CV = () => {
         </section>
         
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2">Skills</h2>
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h3 className="font-bold mb-2">Programming Languages</h3>
@@ -254,7 +254,7 @@ const CV = () => {
         </section>
         
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2">References</h2>
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">References</h2>
           <p className="text-gray-700">Available upon request.</p>
         </section>
       </div>
