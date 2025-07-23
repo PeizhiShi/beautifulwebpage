@@ -39,25 +39,24 @@ const Teaching = () => {
           <TabsContent value="current">
             <div className="space-y-8">
               <ModuleCard
-                code="CS4001"
-                title="Advanced Computer Vision"
-                term="Fall 2023"
+                code="LUBS5586M"
+                title="Quantitative Analysis"
+                term="Semester 1 (Sep to Jan) 2025/26"
                 level="Graduate"
-                university="Stanford University"
+                university="University of Leeds"
                 role="Module Leader"
-                description="This module covers advanced topics in computer vision including object detection, 
-                instance segmentation, 3D vision, and visual SLAM. Students will implement state-of-the-art 
-                computer vision algorithms and complete a research project."
+                description="This course aims to give students a sound grounding in quantitative analysis at the level necessary to: 1) facilitate their study of academic literature on their MSc programme, 2) facilitate their undertaking of a quantitative research project for their dissertation, and 3) allow them to use and interpret results from such methods in a business environment."
                 topics={[
-                  "Deep learning for visual recognition",
-                  "Multi-view geometry and 3D reconstruction",
-                  "Visual tracking and motion estimation",
-                  "Visual SLAM systems",
-                  "Generative models for vision"
+                  "Descriptive Statistics - measures of location & dispersion, data presentation",
+                  "Probability - probability laws, conditional probabilities, probability distributions",
+                  "Hypothesis Testing - estimating from samples, confidence intervals",
+                  "Multivariate Regression Analysis - correlation, linear regression & forecasting",
+                  "Group Comparisons - Analysis of differences between groups (ANOVA)",
+                  "Exploratory Factor Analysis"
                 ]}
                 materials={[
-                  { label: "Syllabus", link: "#" },
-                  { label: "Module Website", link: "#" }
+                  { label: "Module Catalogue", link: "https://catalogue.leeds.ac.uk/Module/TP/LUBS/5586M/202526" },
+                  { label: "Timetable", link: "http://timetable.leeds.ac.uk/teaching/202526/reporting/Individual?objectclass=module&idtype=name&identifier=LUBS5586M01&template=SWSCUST+module+Individual&days=1-7&weeks=1-52&periods=1-21" }
                 ]}
               />
               
