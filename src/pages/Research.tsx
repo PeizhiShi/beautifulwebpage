@@ -60,7 +60,7 @@ const Research = () => {
         <ResearchArea
           id="feature-recognition"
           title="Learning-based Feature Recognition in Subtractive Manufacturing"
-          image="/lovable-uploads/bc2a7cc1-9db7-490a-b8b1-9e97567f92ea.png"
+          image="/lovable-uploads/3756218e-e8d1-43b2-9c03-a7a594614e47.png"
           description="This project aims to design algorithms that automatically recognize 2.5D manufacturing features from 3D components. A novel object detection network architecture is proposed as part of this work. At the time of its release, the approach achieves state-of-the-art performance in intersecting feature recognition and localization on benchmark datasets."
           keyPublications={[
             {
