@@ -163,7 +163,6 @@ const Teaching = () => {
               <ModuleCard
                 title="3rd Asian-Pacfic summer school on formal methods"
                 term="Summer 2011"
-                level="All"
                 university="University of Science and Technology of China"
                 role="Teaching Assistant"
                 
