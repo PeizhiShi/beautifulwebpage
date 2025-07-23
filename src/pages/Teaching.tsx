@@ -61,24 +61,23 @@ const Teaching = () => {
               />
               
               <ModuleCard
-                code="CS2005"
-                title="Introduction to Machine Learning"
-                term="Spring 2024"
-                level="Undergraduate"
-                university="Stanford University"
-                role="Teaching Staff"
-                description="An introductory module on machine learning covering fundamental concepts, 
-                algorithms, and applications. Topics include supervised learning, unsupervised learning, 
-                and basic deep learning. The module emphasizes practical skills with programming assignments in Python."
+                code="LUBS5565M"
+                title="Applied AI in Business"
+                term="Semester 2 (Feb to Jun) 2025/26"
+                level="Graduate"
+                university="University of Leeds"
+                role="Module Leader"
+                description="This module introduces students to the practical applications of artificial intelligence in business contexts. Students will learn how AI technologies can be leveraged to solve real-world business problems, improve decision-making, and create competitive advantages across various industries."
                 topics={[
-                  "Linear and logistic regression",
-                  "Decision trees and random forests",
-                  "Neural networks and backpropagation",
-                  "Clustering and dimensionality reduction",
-                  "Model evaluation and validation"
+                  "Introduction to AI and machine learning in business contexts",
+                  "Natural language processing for business applications",
+                  "Computer vision and image recognition in industry",
+                  "Predictive analytics and forecasting",
+                  "AI ethics and responsible AI implementation",
+                  "Case studies of AI implementation in various sectors"
                 ]}
                 materials={[
-                  { label: "Syllabus", link: "#" },
+                  { label: "Module Catalogue", link: "https://catalogue.leeds.ac.uk/Module/TP/LUBS/5565M/202526" },
                   { label: "Module Website", link: "#" }
                 ]}
               />
