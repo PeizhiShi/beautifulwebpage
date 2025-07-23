@@ -18,10 +18,10 @@ const Teaching = () => {
         <h1 className="text-3xl font-bold mb-6">Teaching</h1>
         
         <p className="text-gray-700 mb-8 text-lg">
-          I teach various courses in quantitative analysis, applied AI, machine learning, 
-          and data science. My teaching philosophy emphasizes practical application, 
-          real-world problem solving, and bridging the gap between theoretical concepts 
-          and business applications.
+          I teach undergraduate and graduate courses in computer vision, machine learning, 
+          and related areas. My teaching philosophy emphasizes hands-on learning, 
+          real-world applications, and the development of both theoretical understanding 
+          and practical implementation skills.
         </p>
         
         <Tabs defaultValue="current" className="mb-10">
@@ -37,84 +37,112 @@ const Teaching = () => {
           </TabsList>
           
           <TabsContent value="current">
-            <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Module Leader @ University of Leeds</h2>
+            <div className="space-y-8">
+              <CourseCard
+                code="CS4001"
+                title="Advanced Computer Vision"
+                term="Fall 2023"
+                level="Graduate"
+                description="This course covers advanced topics in computer vision including object detection, 
+                instance segmentation, 3D vision, and visual SLAM. Students will implement state-of-the-art 
+                computer vision algorithms and complete a research project."
+                topics={[
+                  "Deep learning for visual recognition",
+                  "Multi-view geometry and 3D reconstruction",
+                  "Visual tracking and motion estimation",
+                  "Visual SLAM systems",
+                  "Generative models for vision"
+                ]}
+                materials={[
+                  { label: "Syllabus", link: "#" },
+                  { label: "Course Website", link: "#" }
+                ]}
+              />
               
-              <Card>
-                <CardContent className="p-6">
-                  <div className="space-y-4">
-                    <div>
-                      <h3 className="font-bold text-lg">Quantitative Analysis</h3>
-                      <p className="text-gray-600">2024, 2025</p>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg">Applied AI in Business</h3>
-                      <p className="text-gray-600">2025</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <h2 className="text-2xl font-bold text-gray-800 mb-4 pt-6">Teaching Staff @ University of Leeds</h2>
-              
-              <Card>
-                <CardContent className="p-6">
-                  <div className="space-y-4">
-                    <div>
-                      <h3 className="font-bold text-lg">Understanding Data for Decision Making</h3>
-                      <p className="text-gray-600">2025</p>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg">Research Design and Analysis</h3>
-                      <p className="text-gray-600">2025</p>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg">Machine Learning in Practice</h3>
-                      <p className="text-gray-600">2024</p>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg">Business Analytics and Decision Science</h3>
-                      <p className="text-gray-600">2023 – 2024</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              <CourseCard
+                code="CS2005"
+                title="Introduction to Machine Learning"
+                term="Spring 2024"
+                level="Undergraduate"
+                description="An introductory course on machine learning covering fundamental concepts, 
+                algorithms, and applications. Topics include supervised learning, unsupervised learning, 
+                and basic deep learning. The course emphasizes practical skills with programming assignments in Python."
+                topics={[
+                  "Linear and logistic regression",
+                  "Decision trees and random forests",
+                  "Neural networks and backpropagation",
+                  "Clustering and dimensionality reduction",
+                  "Model evaluation and validation"
+                ]}
+                materials={[
+                  { label: "Syllabus", link: "#" },
+                  { label: "Course Website", link: "#" }
+                ]}
+              />
             </div>
           </TabsContent>
           
           <TabsContent value="past">
-            <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Teaching Assistant @ University of Manchester</h2>
+            <div className="space-y-8">
+              <CourseCard
+                code="CS3002"
+                title="Computer Vision"
+                term="Spring 2023"
+                level="Undergraduate"
+                description="An introduction to computer vision covering image formation, feature detection, 
+                image segmentation, object recognition, and deep learning approaches to vision problems."
+                topics={[
+                  "Image processing and filtering",
+                  "Feature detection and matching",
+                  "Camera models and calibration",
+                  "Convolutional neural networks for vision",
+                  "Object detection and segmentation"
+                ]}
+                materials={[
+                  { label: "Syllabus", link: "#" },
+                  { label: "Course Materials", link: "#" }
+                ]}
+              />
               
-              <Card>
-                <CardContent className="p-6">
-                  <div className="space-y-4">
-                    <div>
-                      <h3 className="font-bold text-lg">Modelling and Visualization of High Dimensional Data</h3>
-                      <p className="text-gray-600">2015</p>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg">Introduction to Machine Learning</h3>
-                      <p className="text-gray-600">2015</p>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg">Algorithms and Imperative Programming</h3>
-                      <p className="text-gray-600">2013 – 2017</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <h2 className="text-2xl font-bold text-gray-800 mb-4 pt-6">Teaching Assistant @ USTC</h2>
+              <CourseCard
+                code="CS5001"
+                title="Deep Learning for Computer Vision"
+                term="Fall 2022"
+                level="Graduate"
+                description="A specialized course focusing on deep learning techniques for computer vision tasks. 
+                The course covers CNN architectures, training methodologies, and applications to various vision problems."
+                topics={[
+                  "CNN architectures (ResNet, EfficientNet, Vision Transformer)",
+                  "Object detection (YOLO, Faster R-CNN)",
+                  "Semantic segmentation (FCN, U-Net)",
+                  "Generative models (GANs, VAEs)",
+                  "Transfer learning and fine-tuning"
+                ]}
+                materials={[
+                  { label: "Syllabus", link: "#" },
+                  { label: "Course Materials", link: "#" }
+                ]}
+              />
               
-              <Card>
-                <CardContent className="p-6">
-                  <div>
-                    <h3 className="font-bold text-lg">3rd Asian-Pacific Summer School on Formal Methods</h3>
-                    <p className="text-gray-600">2011</p>
-                  </div>
-                </CardContent>
-              </Card>
+              <CourseCard
+                code="CS1001"
+                title="Introduction to Programming"
+                term="Fall 2021"
+                level="Undergraduate"
+                description="A first course in programming using Python, covering basic programming concepts, 
+                data structures, algorithms, and problem-solving techniques."
+                topics={[
+                  "Variables, expressions, and statements",
+                  "Control flow (conditionals, loops)",
+                  "Functions and modular programming",
+                  "Data structures (lists, dictionaries, sets)",
+                  "File I/O and error handling"
+                ]}
+                materials={[
+                  { label: "Syllabus", link: "#" },
+                  { label: "Course Materials", link: "#" }
+                ]}
+              />
             </div>
           </TabsContent>
         </Tabs>
