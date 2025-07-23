@@ -48,7 +48,7 @@ const Publications = () => {
           {publicationsByYear.map(({ year, publications }) => (
             <div key={year}>
               <h2 className="text-xl font-bold mb-4 bg-gray-100 p-2">{year}</h2>
-              <ul className="space-y-6">
+              <ul className="space-y-3">
                 {publications.map((pub, index) => (
                   <PublicationItem key={index} publication={pub} />
                 ))}
