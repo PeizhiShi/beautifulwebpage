@@ -214,16 +214,26 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
               <>
                 <h3 className="font-medium mb-2">Key Publications</h3>
                 <ul className="space-y-3">
-                  {keyPublications.map((pub, index) => (
-                    <li key={index}>
-                      <p className="font-medium">{pub.title}</p>
-                      <p className="text-gray-700 text-sm">{pub.authors}</p>
-                      <p className="text-gray-600 text-sm italic">{pub.venue}</p>
-                      <Link to={pub.link} className="text-blue-600 hover:text-blue-800 text-sm">
-                        View Publication
-                      </Link>
-                    </li>
-                  ))}
+                  {keyPublications.map((pub, index) => {
+                    const venueMatch = pub.venue.match(/(.*?)(,\s*IF:\s*[\d.]+)?$/);
+                    const venueText = venueMatch ? venueMatch[1] : pub.venue;
+                    const impactFactor = pub.venue.match(/IF:\s*([\d.]+)/)?.[1];
+                    
+                    return (
+                      <li key={index}>
+                        <p className="font-medium">{pub.title}</p>
+                        <p className="text-gray-700 text-sm">{pub.authors}</p>
+                        <div className="flex items-center gap-2">
+                          <p className="text-gray-600 text-sm italic">{venueText}</p>
+                          {impactFactor && (
+                            <span className="inline-flex items-center justify-center w-12 h-6 bg-purple-600 text-white text-xs font-medium rounded-full">
+                              IF: {impactFactor}
+                            </span>
+                          )}
+                        </div>
+                      </li>
+                    );
+                  })}
                 </ul>
               </>
             )}
