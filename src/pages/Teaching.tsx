@@ -179,10 +179,10 @@ const Teaching = () => {
 };
 
 interface ModuleCardProps {
-  code: string;
+  code?: string;
   title: string;
   term: string;
-  level: "Undergraduate" | "Graduate" | "Postgraduate";
+  level?: "Undergraduate" | "Graduate" | "Postgraduate";
   university: string;
   role: string;
   description?: string;
@@ -209,8 +209,12 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
       <CardContent className="p-6">
         <div className="flex justify-between items-start mb-3">
           <div>
-            <h3 className="font-bold text-lg">{code}: {title}</h3>
-            <p className="text-gray-600">{term} • {level} • {university}</p>
+            <h3 className="font-bold text-lg">
+              {code ? `${code}: ${title}` : title}
+            </h3>
+            <p className="text-gray-600">
+              {term}{level ? ` • ${level}` : ""} • {university}
+            </p>
           </div>
           <span className={`px-2 py-1 rounded text-xs font-medium ${
             role === "Module Leader" ? "bg-green-100 text-green-800" : 
