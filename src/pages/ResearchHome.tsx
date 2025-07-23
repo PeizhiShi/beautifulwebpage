@@ -39,11 +39,11 @@ const ResearchHome = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="mailto:jane.researcher@example.com" className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
+              <a href="mailto:p.shi@leeds.ac.uk" className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
                 <Mail size={16} />
-                <span>jane.researcher@example.com</span>
+                <span>p.shi@leeds.ac.uk</span>
               </a>
-              <a href="https://github.com/janeresearcher" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
+              <a href="https://github.com/PeizhiShi/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
                 <Github size={16} />
                 <span>GitHub</span>
               </a>
