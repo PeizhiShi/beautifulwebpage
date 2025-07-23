@@ -81,35 +81,6 @@ const ResearchHome = () => {
             </div>
           </section>
           
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-4 border-b pb-2">Latest Publications</h2>
-            <ul className="space-y-4">
-              {latestPublications.map((pub, index) => (
-                <li key={index} className="border-b pb-4">
-                  <h3 className="font-medium">{pub.title}</h3>
-                  <p className="text-gray-700 text-sm">{pub.authors}</p>
-                  <p className="text-gray-600 text-sm italic">{pub.venue}, {pub.year}</p>
-                  <div className="mt-2 flex gap-2">
-                    {pub.pdf && (
-                      <a href={pub.pdf} className="text-blue-600 hover:text-blue-800 text-sm flex items-center gap-1">
-                        <FileText size={14} />
-                        <span>PDF</span>
-                      </a>
-                    )}
-                     {(pub as any).slides && (
-                       <a href={(pub as any).slides} className="text-blue-600 hover:text-blue-800 text-sm flex items-center gap-1">
-                         <Presentation size={14} />
-                         <span>Slides</span>
-                       </a>
-                     )}
-                  </div>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-4">
-              <Link to="/publications" className="text-blue-600 hover:text-blue-800">View all publications →</Link>
-            </div>
-          </section>
           
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-4 border-b pb-2">Recent News</h2>
