@@ -27,12 +27,7 @@ const Research = () => {
           image="/lovable-uploads/16c97d0e-ae76-4f4d-a7bb-402f6ac84038.png"
           description="SR Mailing Ltd is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd."
           keyPublications={[]}
-          fundingInfo="**Duration:** 2025 - 2027  
-**Role:** Principal Investigator  
-**Award:** £338,916  
-**Project:** LLM-enhanced decision support system for the sustainable packaging sector  
-**Scheme:** Knowledge Transfer Partnerships with SR Mailing  
-**Funder:** Innovate UK"
+          fundingInfo="2025 - 2027, Principal Investigator, £338,916, 'LLM-enhanced decision support system for the sustainable packaging sector', Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
         />
         
         <ResearchArea
@@ -176,17 +171,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
             {fundingInfo ? (
               <>
                 <h3 className="font-medium mb-2">Funding Information</h3>
-                <div className="text-gray-700 space-y-1">
-                  {fundingInfo.split('\n').map((line, index) => {
-                    const [label, value] = line.split(':');
-                    return (
-                      <div key={index} className="flex">
-                        <span className="font-medium min-w-20">{label.replace('**', '').replace('**', '')}:</span>
-                        <span className="ml-2">{value?.trim()}</span>
-                      </div>
-                    );
-                  })}
-                </div>
+                <p className="text-gray-700">{fundingInfo}</p>
               </>
             ) : (
               <>
