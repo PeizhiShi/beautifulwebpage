@@ -34,9 +34,6 @@ const ResearchHome = () => {
               <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Robotics</span>
             </div>
             
-            <p className="text-gray-700 mb-4">
-              I am a Lecturer in Applied Artificial Intelligence at University of Leeds. My research interests include machine learning (ML), artificial intelligence (AI), and their real-world applications, particularly in sustainable manufacturing, design for additive manufacturing, and production research.
-            </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="mailto:p.shi@leeds.ac.uk" className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
@@ -61,6 +58,13 @@ const ResearchHome = () => {
         </nav>
         
         <main>
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold mb-4 border-b pb-2">About Me</h2>
+            <p className="text-gray-700">
+              I am a Lecturer in Applied Artificial Intelligence at University of Leeds. My research interests include machine learning (ML), artificial intelligence (AI), and their real-world applications, particularly in sustainable manufacturing, design for additive manufacturing, and production research.
+            </p>
+          </section>
+          
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-4 border-b pb-2">Research Highlights</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
