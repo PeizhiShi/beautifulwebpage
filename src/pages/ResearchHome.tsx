@@ -9,7 +9,8 @@ import {
   FileText, 
   Presentation,
   ExternalLink,
-  GraduationCap
+  GraduationCap,
+  Building2
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import OrcidIcon from "../components/OrcidIcon";
@@ -39,6 +40,10 @@ const ResearchHome = () => {
             
             
             <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex items-center gap-2 text-gray-700">
+                <Building2 size={16} />
+                <span>University of Leeds</span>
+              </div>
               <a href="mailto:p.shi@leeds.ac.uk" className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
                 <Mail size={16} />
                 <span>p.shi@leeds.ac.uk</span>
