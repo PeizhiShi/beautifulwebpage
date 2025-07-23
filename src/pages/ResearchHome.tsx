@@ -35,9 +35,7 @@ const ResearchHome = () => {
             </div>
             
             <p className="text-gray-700 mb-4">
-              I am a researcher in the field of computer vision and machine learning.
-              My research focuses on developing algorithms for visual perception in challenging environments,
-              with applications in autonomous vehicles, robotics, and surveillance.
+              I am a Lecturer in Applied Artificial Intelligence at University of Leeds. My research interests include machine learning (ML), artificial intelligence (AI), and their real-world applications, particularly in sustainable manufacturing, design for additive manufacturing, and production research.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
