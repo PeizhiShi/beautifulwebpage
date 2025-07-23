@@ -129,6 +129,9 @@ const ResearchHome = () => {
           </section>
         </main>
         
+        <footer className="text-center text-gray-600 relative pt-6 mt-10 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-gray-300 before:to-transparent">
+          <p>© 2025 Dr. Peizhi Shi</p>
+        </footer>
       </div>
     </div>
   );
