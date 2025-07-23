@@ -86,5 +86,122 @@ export const publications: Publication[] = [
     type: "conference",
     tags: ["machine learning", "procedural generation", "game AI", "computational intelligence"],
     pdf: "#"
+  },
+  {
+    title: "Data-driven optimisation of process parameters for reducing developed surface area ratio in laser powder bed fusion",
+    authors: "Y. Qin, P. Shi, S. Lou, TL See, M Jamal, W. Zeng, L Blunt, P. J. Scott, and X. Jiang",
+    venue: "The International Journal of Advanced Manufacturing Technology",
+    year: 2025,
+    type: "journal",
+    tags: ["additive manufacturing", "process optimization", "data-driven", "laser powder bed fusion"],
+    pdf: "#"
+  },
+  {
+    title: "Optimisation of process parameters for improving surface quality in laser powder bed fusion",
+    authors: "Y. Qin, S. Lou, P. Shi, W. Zeng, P. J. Scott, and X. Jiang",
+    venue: "The International Journal of Advanced Manufacturing Technology",
+    year: 2024,
+    type: "journal",
+    tags: ["additive manufacturing", "process optimization", "surface quality", "laser powder bed fusion"],
+    pdf: "#"
+  },
+  {
+    title: "A novel weighted averaging operator of linguistic interval-valued intuitionistic fuzzy numbers for cognitively inspired decision-making",
+    authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+    venue: "Cognitive Computation",
+    year: 2023,
+    type: "journal",
+    tags: ["fuzzy logic", "decision making", "cognitive computing", "mathematical operators"],
+    pdf: "#"
+  },
+  {
+    title: "Selection of materials in metal additive manufacturing via three-way decision-making",
+    authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+    venue: "The International Journal of Advanced Manufacturing Technology",
+    year: 2023,
+    type: "journal",
+    tags: ["additive manufacturing", "material selection", "decision making", "three-way decision"],
+    pdf: "#"
+  },
+  {
+    title: "Multi-attribute decision-making methods in additive manufacturing: The state of the art",
+    authors: "Y. Qin, Q. Qi, P. Shi, S. Lou, P. J. Scott, and X. Jiang",
+    venue: "Processes",
+    year: 2023,
+    type: "journal",
+    tags: ["additive manufacturing", "decision making", "multi-attribute", "state of the art"],
+    pdf: "#"
+  },
+  {
+    title: "A multi-criterion three-way decision-making method under linguistic interval-valued intuitionistic fuzzy environment",
+    authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+    venue: "Journal of Ambient Intelligence and Humanized Computing",
+    year: 2022,
+    type: "journal",
+    tags: ["fuzzy logic", "decision making", "multi-criterion", "ambient intelligence"],
+    pdf: "#"
+  },
+  {
+    title: "Status, issues, and future of computer-aided part orientation for additive manufacturing",
+    authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+    venue: "The International Journal of Advanced Manufacturing Technology",
+    year: 2021,
+    type: "journal",
+    tags: ["additive manufacturing", "part orientation", "computer-aided design", "review"],
+    pdf: "#"
+  },
+  {
+    title: "Multiple-attribute decision-making based on picture fuzzy archimedean power Maclaurin symmetric mean operators",
+    authors: "Y. Qin, X. Cui, M. Huang, Y. Zhong, Z. Tang, and P. Shi",
+    venue: "Granular Computing",
+    year: 2021,
+    type: "journal",
+    tags: ["fuzzy logic", "decision making", "mathematical operators", "granular computing"],
+    pdf: "#"
+  },
+  {
+    title: "Linguistic interval-valued intuitionistic fuzzy archimedean power muirhead mean operators for multiattribute group decision-making",
+    authors: "Y. Qin, X. Cui, M. Huang, Y. Zhong, Z. Tang, and P. Shi",
+    venue: "Complexity",
+    year: 2020,
+    type: "journal",
+    tags: ["fuzzy logic", "decision making", "mathematical operators", "group decision"],
+    pdf: "#"
+  },
+  {
+    title: "Linguistic interval-valued intuitionistic fuzzy archimedean prioritised aggregation operators for multi-criteria decision making",
+    authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+    venue: "Journal of Intelligent & Fuzzy Systems",
+    year: 2020,
+    type: "journal",
+    tags: ["fuzzy logic", "decision making", "mathematical operators", "aggregation"],
+    pdf: "#"
+  },
+  {
+    title: "Novel operational laws and power muirhead mean operators of picture fuzzy values in the framework of Dempster-Shafer theory for multiple criteria decision making",
+    authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+    venue: "Computers & Industrial Engineering",
+    year: 2020,
+    type: "journal",
+    tags: ["fuzzy logic", "decision making", "Dempster-Shafer theory", "industrial engineering"],
+    pdf: "#"
+  },
+  {
+    title: "Archimedean Muirhead aggregation operators of q-rung orthopair fuzzy numbers for multicriteria group decision making",
+    authors: "Y. Qin, X. Cui, M. Huang, Y. Zhong, Z. Tang, and P. Shi",
+    venue: "Complexity",
+    year: 2019,
+    type: "journal",
+    tags: ["fuzzy logic", "decision making", "mathematical operators", "group decision"],
+    pdf: "#"
+  },
+  {
+    title: "Modular verification of concurrent thread management",
+    authors: "Y. Guo, X. Feng, Z. Shao, and P. Shi",
+    venue: "Asian Symposium on Programming Languages and Systems",
+    year: 2012,
+    type: "conference",
+    tags: ["programming languages", "verification", "concurrent systems", "thread management"],
+    pdf: "#"
   }
 ];
