@@ -164,11 +164,11 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
   return (
     <section className="mb-12" id={id}>
       <h2 className="text-2xl font-bold mb-4 border-b pb-2">{title}</h2>
-      <div className="mb-4 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+      <div className="mb-4 overflow-hidden rounded-lg">
         <img 
           src={image} 
           alt={title}
-          className="w-full max-h-64 object-contain hover:scale-105 transition-transform duration-300"
+          className="w-full h-auto"
         />
       </div>
       <p className="text-gray-700 mb-4">{description}</p>
