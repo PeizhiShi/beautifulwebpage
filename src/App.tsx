@@ -8,6 +8,7 @@ import ResearchHome from "./pages/ResearchHome";
 import NotFound from "./pages/NotFound";
 import Publications from "./pages/Publications";
 import Research from "./pages/Research";
+import AcademicEngagement from "./pages/AcademicEngagement";
 import Teaching from "./pages/Teaching";
 import CV from "./pages/CV";
 import ScrollToTop from "./components/ScrollToTop";
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/research-home" element={<ResearchHome />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/research" element={<Research />} />
+          <Route path="/academic-engagement" element={<AcademicEngagement />} />
           <Route path="/teaching" element={<Teaching />} />
           <Route path="/cv" element={<CV />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
