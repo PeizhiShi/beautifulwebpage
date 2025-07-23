@@ -31,15 +31,27 @@ const Research = () => {
         />
         
         <ResearchArea
-          id="neural-architecture"
-          title="Neural Architecture Search"
+          id="build-orientation"
+          title="Learning-based Build Orientation in Additive Manufacturing"
           image="/lovable-uploads/dd5e9ded-1792-45fc-ab75-91681764dd61.png"
-          description="We investigate automated methods to discover efficient neural network architectures tailored for specific computer vision tasks. Our research addresses the challenge of designing architectures that balance computational requirements, memory footprint, and task performance."
+          description="This project aims to develop intelligent algorithms that optimize the build orientation of 3D-printed parts using machine learning techniques. By leveraging data-driven insights from simulations, the approach seeks to outperform traditional optimization-based methods in terms of efficiency and effectiveness, offering scalable and automated solutions for a wide range of additive manufacturing applications."
           keyPublications={[
             {
-              title: "Neural Architecture Search for Efficient Deep Learning Models",
-              authors: "Jane Researcher, David Johnson, Maria Garcia",
-              venue: "International Conference on Machine Learning (ICML), 2022",
+              title: "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning",
+              authors: "P. Shi, Q. Qi, Y. Qin, F. Meng, S. Lou, P. J. Scott, and X. Jiang",
+              venue: "IEEE Transactions on Industrial Informatics, 2023, IF: 12.1",
+              link: "/publications"
+            },
+            {
+              title: "Automatic determination of part build orientation for laser powder bed fusion",
+              authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+              venue: "Virtual and Physical Prototyping, 2021, IF: 10.6",
+              link: "/publications"
+            },
+            {
+              title: "Automatic generation of alternative build orientations for laser powder bed fusion based on facet clustering",
+              authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+              venue: "Virtual and Physical Prototyping, 2020, IF: 10.6",
               link: "/publications"
             }
           ]}
