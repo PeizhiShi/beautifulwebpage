@@ -107,7 +107,7 @@ const ResearchHome = () => {
             <ul className="space-y-4">
               <li className="border-l-4 border-blue-500 pl-4">
                 <p className="text-gray-700">
-                  <strong>June 2025:</strong> Kun Feng, Director of SR Mailing, and I were invited to co-present at the Analytics, Technology and Operations Department event. Our talk explored the use of large language models to support sustainable innovation in the packaging industry.
+                  <strong>Invited talk:</strong> Kun Feng, Director of SR Mailing, and I were invited to co-present at the Analytics, Technology and Operations Department event. Our talk explored the use of large language models to support sustainable innovation in the packaging industry.
                 </p>
               </li>
               <li className="border-l-4 border-green-500 pl-4">
@@ -117,7 +117,7 @@ const ResearchHome = () => {
               </li>
               <li className="border-l-4 border-purple-500 pl-4">
                 <p className="text-gray-700">
-                  <strong>September 2023:</strong> I am joining University of Leeds as a Lecturer in Applied Artificial Intelligence!
+                  <strong>New position:</strong> I am joining University of Leeds as a Lecturer in Applied Artificial Intelligence!
                 </p>
               </li>
               <li className="border-l-4 border-orange-500 pl-4">
