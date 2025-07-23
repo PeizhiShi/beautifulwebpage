@@ -168,7 +168,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
         <img 
           src={image} 
           alt={title}
-          className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+          className="w-full max-h-64 object-contain hover:scale-105 transition-transform duration-300"
         />
       </div>
       <p className="text-gray-700 mb-4">{description}</p>
