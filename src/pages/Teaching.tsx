@@ -187,8 +187,7 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
         <div className="flex justify-between items-start mb-3">
           <div>
             <h3 className="font-bold text-lg">{code}: {title}</h3>
-            <p className="text-gray-600">{term} • {level}</p>
-            <p className="text-gray-500 text-sm mt-1">{university}</p>
+            <p className="text-gray-600">{term} • {university}</p>
           </div>
           <span className={`px-2 py-1 rounded text-xs font-medium ${
             level === "Graduate" ? "bg-purple-100 text-purple-800" : "bg-blue-100 text-blue-800"
