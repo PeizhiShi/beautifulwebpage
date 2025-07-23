@@ -69,16 +69,15 @@ const Teaching = () => {
                 role="Module Leader"
                 description="This module introduces students to the practical applications of artificial intelligence in business contexts. Students will learn how AI technologies can be leveraged to solve real-world business problems, improve decision-making, and create competitive advantages across various industries."
                 topics={[
-                  "Introduction to AI and machine learning in business contexts",
-                  "Natural language processing for business applications",
-                  "Computer vision and image recognition in industry",
-                  "Predictive analytics and forecasting",
-                  "AI ethics and responsible AI implementation",
-                  "Case studies of AI implementation in various sectors"
+                  "Provide a comprehensive introduction to AI, machine learning, and NLP in business applications",
+                  "Develop practical skills in programming, data processing, and AI-driven text analysis",
+                  "Explore various approaches to building, fine-tuning, and applying AI models for business use cases",
+                  "Introduce best practices for designing effective AI-driven solutions, including prompt engineering and model evaluation",
+                  "Encourage critical thinking about AI's impact, including ethical considerations and future trends"
                 ]}
                 materials={[
                   { label: "Module Catalogue", link: "https://catalogue.leeds.ac.uk/Module/TP/LUBS/5565M/202526" },
-                  { label: "Module Website", link: "#" }
+                  { label: "Timetable", link: "https://timetable.leeds.ac.uk/teaching/202526/reporting/Individual?objectclass=module&idtype=name&identifier=LUBS5565M01&template=SWSCUST+module+Individual&days=1-7&weeks=1-52&periods=1-21" }
                 ]}
               />
             </div>
