@@ -223,14 +223,14 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
                       <li key={index}>
                         <p className="font-medium">{pub.title}</p>
                         <p className="text-gray-700 text-sm">{pub.authors}</p>
-                        <div className="flex items-center gap-2">
-                          <p className="text-gray-600 text-sm italic">{venueText}</p>
-                          {impactFactor && (
-                            <span className="inline-flex items-center justify-center w-12 h-6 bg-purple-600 text-white text-xs font-medium rounded-full">
+                        <p className="text-gray-600 text-sm italic">
+                          {venueText}
+                          {impactFactor && parseFloat(impactFactor) > 7 && (
+                            <span className="ml-2 bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full text-xs font-medium">
                               IF: {impactFactor}
                             </span>
                           )}
-                        </div>
+                        </p>
                       </li>
                     );
                   })}
