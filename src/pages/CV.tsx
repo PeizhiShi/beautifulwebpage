@@ -33,19 +33,16 @@ const CV = () => {
               <div className="mt-4 md:mt-0 space-y-1 text-gray-700">
                 <div className="flex items-center">
                   <Mail size={16} className="mr-2" />
-                  <span>jane.researcher@example.com</span>
+                  <span>p.shi@leeds.ac.uk</span>
                 </div>
-                <div className="flex items-center">
-                  <Phone size={16} className="mr-2" />
-                  <span>+1 (555) 123-4567</span>
-                </div>
+              
                 <div className="flex items-center">
                   <MapPin size={16} className="mr-2" />
-                  <span>Department of Computer Science, University of Technology</span>
+                  <span>Centre for Decision Research, University of Leeds</span>
                 </div>
                 <div className="flex items-center">
                   <Globe size={16} className="mr-2" />
-                  <span>https://janeresearcher.github.io</span>
+                  <span>https://peizhishi.github.io</span>
                 </div>
               </div>
             </div>
@@ -202,7 +199,7 @@ const CV = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h3 className="font-bold mb-2">Programming Languages</h3>
-              <p className="text-gray-700">Python, C++, MATLAB, JavaScript, CUDA</p>
+              <p className="text-gray-700">Python, C++, C, Java, MATLAB, CUDA</p>
             </div>
             
             <div>
@@ -217,15 +214,13 @@ const CV = () => {
             
             <div>
               <h3 className="font-bold mb-2">Languages</h3>
-              <p className="text-gray-700">English (Native), Spanish (Proficient), French (Basic)</p>
+              <p className="text-gray-700">Chinese (Native), English (Proficient)</p>
             </div>
           </div>
         </section>
         
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">References</h2>
-          <p className="text-gray-700">Available upon request.</p>
-        </section>
+      
+        
       </div>
     </div>
   );
