@@ -130,49 +130,12 @@ const ResearchHome = () => {
         </main>
         
         <footer className="text-center text-gray-600 relative pt-6 mt-10 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-gray-300 before:to-transparent">
-          <p>© 2023 Dr. Jane Researcher. Last updated: November 2023</p>
+          <p>© 2025 Dr. Peizhi Shi. Last updated: July 2025</p>
         </footer>
       </div>
     </div>
   );
 };
 
-const latestPublications = [
-  {
-    title: "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning",
-    authors: "P. Shi, Q. Qi, Y. Qin, F. Meng, S. Lou, P. J. Scott, and X. Jiang",
-    venue: "IEEE Transactions on Industrial Informatics",
-    year: 2023,
-    pdf: "#"
-  },
-  {
-    title: "Highly interacting machining feature recognition via small sample learning",
-    authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
-    venue: "Robotics and Computer-Integrated Manufacturing",
-    year: 2022,
-    pdf: "#"
-  },
-  {
-    title: "Intersecting machining feature localisation and recognition via single shot multibox detector",
-    authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
-    venue: "IEEE Transactions on Industrial Informatics",
-    year: 2021,
-    pdf: "#"
-  },
-  {
-    title: "Automatic determination of part build orientation for laser powder bed fusion",
-    authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
-    venue: "Virtual and Physical Prototyping",
-    year: 2021,
-    pdf: "#"
-  },
-  {
-    title: "A novel learning-based feature recognition method using multiple sectional view representation",
-    authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
-    venue: "Journal of Intelligent Manufacturing",
-    year: 2020,
-    pdf: "#"
-  }
-] as const;
 
 export default ResearchHome;
