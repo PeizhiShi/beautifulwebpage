@@ -95,70 +95,81 @@ const Teaching = () => {
               />
               
               <ModuleCard
-                code="CS3002"
-                title="Computer Vision"
-                term="Spring 2023"
-                level="Undergraduate"
-                university="MIT"
-                role="Module Leader"
-                description="An introduction to computer vision covering image formation, feature detection, 
-                image segmentation, object recognition, and deep learning approaches to vision problems."
-                topics={[
-                  "Image processing and filtering",
-                  "Feature detection and matching",
-                  "Camera models and calibration",
-                  "Convolutional neural networks for vision",
-                  "Object detection and segmentation"
-                ]}
-                materials={[
-                  { label: "Syllabus", link: "#" },
-                  { label: "Module Materials", link: "#" }
-                ]}
-              />
-              
-              <ModuleCard
-                code="CS5001"
-                title="Deep Learning for Computer Vision"
-                term="Fall 2022"
-                level="Graduate"
-                university="MIT"
+                code="LUBS5996M"
+                title="Understanding Data for Decision Making"
+                term="Semester 2 (Feb to Jun) 2024/25"
+                level="Postgraduate"
+                university="University of Leeds"
                 role="Teaching Staff"
-                description="A specialized module focusing on deep learning techniques for computer vision tasks. 
-                The module covers CNN architectures, training methodologies, and applications to various vision problems."
-                topics={[
-                  "CNN architectures (ResNet, EfficientNet, Vision Transformer)",
-                  "Object detection (YOLO, Faster R-CNN)",
-                  "Semantic segmentation (FCN, U-Net)",
-                  "Generative models (GANs, VAEs)",
-                  "Transfer learning and fine-tuning"
-                ]}
-                materials={[
-                  { label: "Syllabus", link: "#" },
-                  { label: "Module Materials", link: "#" }
-                ]}
+                
               />
-              
+
               <ModuleCard
-                code="CS1001"
-                title="Introduction to Programming"
-                term="Fall 2021"
-                level="Undergraduate"
-                university="University of California, Berkeley"
-                role="Teaching Assistant"
-                description="A first module in programming using Python, covering basic programming concepts, 
-                data structures, algorithms, and problem-solving techniques."
-                topics={[
-                  "Variables, expressions, and statements",
-                  "Control flow (conditionals, loops)",
-                  "Functions and modular programming",
-                  "Data structures (lists, dictionaries, sets)",
-                  "File I/O and error handling"
-                ]}
-                materials={[
-                  { label: "Syllabus", link: "#" },
-                  { label: "Module Materials", link: "#" }
-                ]}
+                code="LUBS5990M"
+                title="Machine Learning in Practice"
+                term="Semester 2 (Feb to Jun) 2023/24"
+                level="Postgraduate"
+                university="University of Leeds"
+                role="Teaching Staff"
               />
+
+              <ModuleCard
+                code="LUBS5308M"
+                title="Business Analytics and Decision Science"
+                term="Semester 1 (Sep to Jan) 2023/24, 2024/25"
+                level="Postgraduate"
+                university="University of Leeds"
+                role="Teaching Staff"
+                
+              />
+
+              <ModuleCard
+                code="LUBS5988M"
+                title="Research Design and Analysis"
+                term="Semester 2 (Feb to Jun) 2023/24"
+                level="Postgraduate"
+                university="University of Leeds"
+                role="Teaching Staff"
+                
+              />
+
+              <ModuleCard
+                title="Modelling and Visualization of High Dimensional Data"
+                term="2015"
+                level="Postgraduate"
+                university="University of Manchester"
+                role="Teaching Assistant"
+                
+              />
+
+              <ModuleCard
+                title="Introduction to Machine Learning"
+                term="2015"
+                level="Undergraduate"
+                university="University of Manchester"
+                role="Teaching Assistant"
+                
+              />
+
+              <ModuleCard
+                title="Algorithms and Imperative Programming"
+                term="2013 -- 2015, 2017"
+                level="Undergraduate"
+                university="University of Manchester"
+                role="Teaching Assistant"
+                
+              />
+
+              <ModuleCard
+                title="3rd Asian-Pacfic summer school on formal methods"
+                term="Summer 2011"
+                level="All"
+                university="University of Science and Technology of China"
+                role="Teaching Assistant"
+                
+              />
+
+              
             </div>
           </TabsContent>
         </Tabs>
