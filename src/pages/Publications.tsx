@@ -72,6 +72,11 @@ const PublicationItem: React.FC<PublicationItemProps> = ({ publication }) => {
       <p className="text-gray-700 text-sm">{publication.authors}</p>
       <p className="text-gray-600 text-sm italic">
         {publication.venue}, {publication.year}
+        {publication.impactFactor && publication.impactFactor > 7 && (
+          <span className="ml-2 bg-green-100 text-green-800 px-2 py-0.5 rounded-full text-xs font-medium">
+            IF: {publication.impactFactor}
+          </span>
+        )}
       </p>
       
       {publication.tags.length > 0 && (
