@@ -175,8 +175,8 @@ interface ModuleCardProps {
   level: "Undergraduate" | "Graduate" | "Postgraduate";
   university: string;
   role: string;
-  description: string;
-  topics: string[];
+  description?: string;
+  topics?: string[];
   materials?: {
     label: string;
     link: string;
@@ -211,16 +211,18 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
           </span>
         </div>
         
-        <p className="text-gray-700 mb-4">{description}</p>
+        {description && <p className="text-gray-700 mb-4">{description}</p>}
         
-        <div className="mb-4">
-          <h4 className="font-medium mb-2">Key Topics</h4>
-          <ul className="space-y-1 text-gray-700 text-sm">
-            {topics.map((topic, index) => (
-              <li key={index}>• {topic}</li>
-            ))}
-          </ul>
-        </div>
+        {topics && topics.length > 0 && (
+          <div className="mb-4">
+            <h4 className="font-medium mb-2">Key Topics</h4>
+            <ul className="space-y-1 text-gray-700 text-sm">
+              {topics.map((topic, index) => (
+                <li key={index}>• {topic}</li>
+              ))}
+            </ul>
+          </div>
+        )}
         
         {materials && materials.length > 0 && (
           <div>
