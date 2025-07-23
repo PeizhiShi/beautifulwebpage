@@ -33,7 +33,7 @@ const Research = () => {
         <ResearchArea
           id="neural-architecture"
           title="Neural Architecture Search"
-          image="https://picsum.photos/id/1/800/400"
+          image="/lovable-uploads/dd5e9ded-1792-45fc-ab75-91681764dd61.png"
           description="We investigate automated methods to discover efficient neural network architectures tailored for specific computer vision tasks. Our research addresses the challenge of designing architectures that balance computational requirements, memory footprint, and task performance."
           keyPublications={[
             {
