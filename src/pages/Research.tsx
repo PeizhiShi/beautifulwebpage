@@ -105,14 +105,6 @@ const Research = () => {
           ]}
         />
         
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2" id="grant">Grant</h2>
-          <ul className="space-y-4">
-            <li>
-              <p className="text-gray-700"><strong>2025 - 2027</strong>, Principal Investigator, £338,916, "LLM-enhanced decision support system for the sustainable packaging sector", Knowledge Transfer Partnerships with SR Mailing, Innovate UK</p>
-            </li>
-          </ul>
-        </section>
 
         
       </div>
