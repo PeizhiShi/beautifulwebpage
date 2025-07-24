@@ -76,93 +76,103 @@ const Teaching = () => {
           </TabsContent>
           
           <TabsContent value="past">
-            <div className="space-y-8">
-              <ModuleCard
-                code="LUBS5586M"
-                title="Quantitative Analysis"
-                term="Semester 1 (Sep to Jan) 2024/25"
-                level="Postgraduate"
-                university="University of Leeds"
-                role="Module Leader"
-                
-              />
-              
-              <ModuleCard
-                code="LUBS5996M"
-                title="Understanding Data for Decision Making"
-                term="Semester 2 (Feb to Jun) 2024/25"
-                level="Postgraduate"
-                university="University of Leeds"
-                role="Teaching Staff"
-                
-              />
-
-              <ModuleCard
-                code="LUBS5990M"
-                title="Machine Learning in Practice"
-                term="Semester 2 (Feb to Jun) 2023/24"
-                level="Postgraduate"
-                university="University of Leeds"
-                role="Teaching Staff"
-              />
-
-              <ModuleCard
-                code="LUBS5308M"
-                title="Business Analytics and Decision Science"
-                term="Semester 1 (Sep to Jan) 2023/24, 2024/25"
-                level="Postgraduate"
-                university="University of Leeds"
-                role="Teaching Staff"
-                
-              />
-
-              <ModuleCard
-                code="LUBS5988M"
-                title="Research Design and Analysis"
-                term="Semester 2 (Feb to Jun) 2023/24"
-                level="Postgraduate"
-                university="University of Leeds"
-                role="Teaching Staff"
-                
-              />
-
-              <ModuleCard
-                title="Modelling and Visualization of High Dimensional Data"
-                term="2015"
-                level="Postgraduate"
-                university="University of Manchester"
-                role="Teaching Assistant"
-                
-              />
-
-              <ModuleCard
-                title="Introduction to Machine Learning"
-                term="2015"
-                level="Undergraduate"
-                university="University of Manchester"
-                role="Teaching Assistant"
-                
-              />
-
-              <ModuleCard
-                title="Algorithms and Imperative Programming"
-                term="2013 -- 2015, 2017"
-                level="Undergraduate"
-                university="University of Manchester"
-                role="Teaching Assistant"
-                
-              />
-
-              <ModuleCard
-                title="3rd Asian-Pacfic summer school on formal methods"
-                term="Summer 2011"
-                university="University of Science and Technology of China"
-                role="Teaching Assistant"
-                
-              />
-
-              
-            </div>
+            <Card>
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <BookOpen size={24} className="text-blue-600 mt-1 flex-shrink-0" />
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-blue-500 pl-4">
+                      <h3 className="font-semibold text-lg text-gray-800">LUBS5586M: Quantitative Analysis</h3>
+                      <p className="text-gray-600 flex items-center gap-2 flex-wrap">
+                        <span>Semester 1 (Sep to Jan) 2024/25</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">Postgraduate</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-indigo-100 text-indigo-800">University of Leeds</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-800">Module Leader</span>
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <h3 className="font-semibold text-lg text-gray-800">LUBS5996M: Understanding Data for Decision Making</h3>
+                      <p className="text-gray-600 flex items-center gap-2 flex-wrap">
+                        <span>Semester 2 (Feb to Jun) 2024/25</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">Postgraduate</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-indigo-100 text-indigo-800">University of Leeds</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">Teaching Staff</span>
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-purple-500 pl-4">
+                      <h3 className="font-semibold text-lg text-gray-800">LUBS5990M: Machine Learning in Practice</h3>
+                      <p className="text-gray-600 flex items-center gap-2 flex-wrap">
+                        <span>Semester 2 (Feb to Jun) 2023/24</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">Postgraduate</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-indigo-100 text-indigo-800">University of Leeds</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">Teaching Staff</span>
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-red-500 pl-4">
+                      <h3 className="font-semibold text-lg text-gray-800">LUBS5308M: Business Analytics and Decision Science</h3>
+                      <p className="text-gray-600 flex items-center gap-2 flex-wrap">
+                        <span>Semester 1 (Sep to Jan) 2023/24, 2024/25</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">Postgraduate</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-indigo-100 text-indigo-800">University of Leeds</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">Teaching Staff</span>
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-orange-500 pl-4">
+                      <h3 className="font-semibold text-lg text-gray-800">LUBS5988M: Research Design and Analysis</h3>
+                      <p className="text-gray-600 flex items-center gap-2 flex-wrap">
+                        <span>Semester 2 (Feb to Jun) 2023/24</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">Postgraduate</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-indigo-100 text-indigo-800">University of Leeds</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">Teaching Staff</span>
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-yellow-500 pl-4">
+                      <h3 className="font-semibold text-lg text-gray-800">Modelling and Visualization of High Dimensional Data</h3>
+                      <p className="text-gray-600 flex items-center gap-2 flex-wrap">
+                        <span>2015</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800">Postgraduate</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-amber-100 text-amber-800">University of Manchester</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-orange-100 text-orange-800">Teaching Assistant</span>
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-teal-500 pl-4">
+                      <h3 className="font-semibold text-lg text-gray-800">Introduction to Machine Learning</h3>
+                      <p className="text-gray-600 flex items-center gap-2 flex-wrap">
+                        <span>2015</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-800">Undergraduate</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-amber-100 text-amber-800">University of Manchester</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-orange-100 text-orange-800">Teaching Assistant</span>
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-pink-500 pl-4">
+                      <h3 className="font-semibold text-lg text-gray-800">Algorithms and Imperative Programming</h3>
+                      <p className="text-gray-600 flex items-center gap-2 flex-wrap">
+                        <span>2013 -- 2015, 2017</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-800">Undergraduate</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-amber-100 text-amber-800">University of Manchester</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-orange-100 text-orange-800">Teaching Assistant</span>
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-indigo-500 pl-4">
+                      <h3 className="font-semibold text-lg text-gray-800">3rd Asian-Pacfic summer school on formal methods</h3>
+                      <p className="text-gray-600 flex items-center gap-2 flex-wrap">
+                        <span>Summer 2011</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-rose-100 text-rose-800">University of Science and Technology of China</span>
+                        <span className="px-2 py-1 rounded text-xs font-medium bg-orange-100 text-orange-800">Teaching Assistant</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </TabsContent>
         </Tabs>
         
