@@ -119,6 +119,7 @@ const Research = () => {
               link: "/publications"
             }
           ]}
+          supervisor="Dr. Ke Chen"
           fundingType="scholarship"
         />
         
@@ -150,6 +151,7 @@ interface ResearchAreaProps {
     scheme: string;
   }[];
   fundingInfo?: string;
+  supervisor?: string;
   fundingType?: 'principal' | 'ongoing' | 'scholarship';
 }
 
@@ -161,6 +163,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
   keyPublications,
   keyFunding,
   fundingInfo,
+  supervisor,
   fundingType
 }) => {
   const [expanded, setExpanded] = useState(false);
@@ -261,6 +264,14 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
               </>
             ) : (
               <>
+                {supervisor && (
+                  <>
+                    <h3 className="font-medium mb-2">Supervision</h3>
+                    <p className="text-gray-700 mb-4">
+                      <span className="font-medium">Supervised by:</span> {supervisor}
+                    </p>
+                  </>
+                )}
                 <h3 className="font-medium mb-2">Key Publications</h3>
                 <ul className="space-y-3">
                   {keyPublications.map((pub, index) => {
