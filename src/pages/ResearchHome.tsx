@@ -112,7 +112,7 @@ const ResearchHome = () => {
               <p className="text-gray-700">
 I am accepting PhD students whose research interests align with mine, specifically in machine learning and its applications. Applicants are expected to have a strong academic background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related disciplines. If you are passionate about applying advanced machine learning techniques to real-world challenges, this may be a good fit. Should this align with your academic goals and you are considering doctoral research, you are very welcome to get in touch. Please feel free to send your academic CV and a research proposal for further discussion.                </p>
 <p className="text-gray-700 mt-4">
-Scholarship opportunities may be available for strong candidates through a number of schemes, including the LUBS Departmental Scholarship, the University of Leeds – China Scholarship Council (CSC) Scholarship (open to Chinese citizens only), and the White Rose Doctoral Training Partnership (WRDTP).              
+Scholarship opportunities: University Scholarship, China Scholarship Council Scholarship (open to Chinese citizens only), and White Rose Scholarship.              
               </p>
            
             
