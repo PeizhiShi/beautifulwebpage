@@ -106,6 +106,11 @@ const ResearchHome = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Recent News</h2>
             <ul className="space-y-4">
+              <li className="border-l-4 border-red-500 pl-4">
+                <p className="text-gray-700">
+                  <strong>Citation milestone:</strong> Our paper "A novel learning-based feature recognition method using multiple sectional view representation" has reached 100 citations!
+                </p>
+              </li>
               <li className="border-l-4 border-blue-500 pl-4">
                 <p className="text-gray-700">
                   <strong>Invited talk:</strong> Kun Feng, Director of SR Mailing, and I were invited to co-present at the Analytics, Technology and Operations Department event. Our talk explored the use of large language models to support sustainable innovation in the packaging industry.
