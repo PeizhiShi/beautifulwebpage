@@ -77,125 +77,98 @@ const Teaching = () => {
           
           <TabsContent value="past">
             <div className="space-y-4">
-              {/* University of Leeds Modules */}
-              <div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-3 border-b border-gray-200 pb-2">
+              {/* University of Leeds */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">
                   University of Leeds
                 </h3>
-                <div className="space-y-3">
-                  <div className="border border-gray-200 rounded-lg p-4">
-                    <div className="flex justify-between items-start mb-2">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <div>
                       <h4 className="font-medium text-gray-900">LUBS5586M: Quantitative Analysis</h4>
-                      <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Module Leader</span>
+                      <div className="text-sm text-gray-600">2024/25 • Postgraduate</div>
                     </div>
-                    <div className="text-sm text-gray-600 space-y-1">
-                      <div>Academic Year: 2024/25</div>
-                      <div>Level: Postgraduate</div>
-                    </div>
+                    <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Module Leader</span>
                   </div>
                   
-                  <div className="border border-gray-200 rounded-lg p-4">
-                    <div className="flex justify-between items-start mb-2">
+                  <div className="flex justify-between items-start">
+                    <div>
                       <h4 className="font-medium text-gray-900">LUBS5996M: Understanding Data for Decision Making</h4>
-                      <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
+                      <div className="text-sm text-gray-600">2024/25 • Postgraduate</div>
                     </div>
-                    <div className="text-sm text-gray-600 space-y-1">
-                      <div>Academic Year: 2024/25</div>
-                      <div>Level: Postgraduate</div>
-                    </div>
+                    <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
                   </div>
                   
-                  <div className="border border-gray-200 rounded-lg p-4">
-                    <div className="flex justify-between items-start mb-2">
+                  <div className="flex justify-between items-start">
+                    <div>
                       <h4 className="font-medium text-gray-900">LUBS5990M: Machine Learning in Practice</h4>
-                      <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
+                      <div className="text-sm text-gray-600">2023/24 • Postgraduate</div>
                     </div>
-                    <div className="text-sm text-gray-600 space-y-1">
-                      <div>Academic Year: 2023/24</div>
-                      <div>Level: Postgraduate</div>
-                    </div>
+                    <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
                   </div>
                   
-                  <div className="border border-gray-200 rounded-lg p-4">
-                    <div className="flex justify-between items-start mb-2">
+                  <div className="flex justify-between items-start">
+                    <div>
                       <h4 className="font-medium text-gray-900">LUBS5308M: Business Analytics and Decision Science</h4>
-                      <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
+                      <div className="text-sm text-gray-600">2023/24, 2024/25 • Postgraduate</div>
                     </div>
-                    <div className="text-sm text-gray-600 space-y-1">
-                      <div>Academic Year: 2023/24, 2024/25</div>
-                      <div>Level: Postgraduate</div>
-                    </div>
+                    <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
                   </div>
                   
-                  <div className="border border-gray-200 rounded-lg p-4">
-                    <div className="flex justify-between items-start mb-2">
+                  <div className="flex justify-between items-start">
+                    <div>
                       <h4 className="font-medium text-gray-900">LUBS5988M: Research Design and Analysis</h4>
-                      <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
+                      <div className="text-sm text-gray-600">2023/24 • Postgraduate</div>
                     </div>
-                    <div className="text-sm text-gray-600 space-y-1">
-                      <div>Academic Year: 2023/24</div>
-                      <div>Level: Postgraduate</div>
-                    </div>
+                    <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
                   </div>
                 </div>
               </div>
 
-              {/* University of Manchester Modules */}
-              <div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-3 border-b border-gray-200 pb-2">
+              {/* University of Manchester */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">
                   University of Manchester
                 </h3>
-                <div className="space-y-3">
-                  <div className="border border-gray-200 rounded-lg p-4">
-                    <div className="flex justify-between items-start mb-2">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <div>
                       <h4 className="font-medium text-gray-900">Modelling and Visualization of High Dimensional Data</h4>
-                      <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Assistant</span>
+                      <div className="text-sm text-gray-600">2015 • Postgraduate</div>
                     </div>
-                    <div className="text-sm text-gray-600 space-y-1">
-                      <div>Year: 2015</div>
-                      <div>Level: Postgraduate</div>
-                    </div>
+                    <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Assistant</span>
                   </div>
                   
-                  <div className="border border-gray-200 rounded-lg p-4">
-                    <div className="flex justify-between items-start mb-2">
+                  <div className="flex justify-between items-start">
+                    <div>
                       <h4 className="font-medium text-gray-900">Introduction to Machine Learning</h4>
-                      <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Assistant</span>
+                      <div className="text-sm text-gray-600">2015 • Undergraduate</div>
                     </div>
-                    <div className="text-sm text-gray-600 space-y-1">
-                      <div>Year: 2015</div>
-                      <div>Level: Undergraduate</div>
-                    </div>
+                    <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Assistant</span>
                   </div>
                   
-                  <div className="border border-gray-200 rounded-lg p-4">
-                    <div className="flex justify-between items-start mb-2">
+                  <div className="flex justify-between items-start">
+                    <div>
                       <h4 className="font-medium text-gray-900">Algorithms and Imperative Programming</h4>
-                      <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Assistant</span>
+                      <div className="text-sm text-gray-600">2013-2015, 2017 • Undergraduate</div>
                     </div>
-                    <div className="text-sm text-gray-600 space-y-1">
-                      <div>Year: 2013-2015, 2017</div>
-                      <div>Level: Undergraduate</div>
-                    </div>
+                    <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Assistant</span>
                   </div>
                 </div>
               </div>
 
               {/* Other Institutions */}
-              <div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-3 border-b border-gray-200 pb-2">
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">
                   Other Institutions
                 </h3>
-                <div className="space-y-3">
-                  <div className="border border-gray-200 rounded-lg p-4">
-                    <div className="flex justify-between items-start mb-2">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <div>
                       <h4 className="font-medium text-gray-900">3rd Asian-Pacific Summer School on Formal Methods</h4>
-                      <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Assistant</span>
+                      <div className="text-sm text-gray-600">2011 • University of Science and Technology of China</div>
                     </div>
-                    <div className="text-sm text-gray-600 space-y-1">
-                      <div>Year: 2011</div>
-                      <div>Institution: University of Science and Technology of China</div>
-                    </div>
+                    <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Assistant</span>
                   </div>
                 </div>
               </div>
