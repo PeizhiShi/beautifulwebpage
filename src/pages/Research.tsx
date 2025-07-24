@@ -56,7 +56,7 @@ const Research = () => {
               link: "/publications"
             }
           ]}
-          fundingType="postdoc"
+          fundingType="ongoing"
         />
         
         <ResearchArea
@@ -84,7 +84,7 @@ const Research = () => {
               link: "/publications"
             }
           ]}
-          fundingType="postdoc"
+          fundingType="ongoing"
         />
         
         <ResearchArea
@@ -128,7 +128,7 @@ interface ResearchAreaProps {
     link: string;
   }[];
   fundingInfo?: string;
-  fundingType?: 'principal' | 'postdoc' | 'scholarship';
+  fundingType?: 'principal' | 'ongoing' | 'scholarship';
 }
 
 const ResearchArea: React.FC<ResearchAreaProps> = ({
@@ -152,10 +152,10 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
             Principal Investigator
           </span>
         );
-      case 'postdoc':
+      case 'ongoing':
         return (
-          <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
-            Postdoc Research
+          <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+            Ongoing Research
           </span>
         );
       case 'scholarship':
