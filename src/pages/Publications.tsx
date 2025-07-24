@@ -6,7 +6,10 @@ import {
   FileText, 
   Book, 
   Presentation, 
-  ExternalLink
+  ExternalLink,
+  Calendar,
+  Tags,
+  FolderOpen
 } from "lucide-react";
 import { publications } from "@/lib/publications";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -126,9 +129,18 @@ const Publications = () => {
         
         <Tabs defaultValue="type" className="w-full">
           <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="type">By Type</TabsTrigger>
-            <TabsTrigger value="topic">By Topic</TabsTrigger>
-            <TabsTrigger value="chronological">Chronological</TabsTrigger>
+            <TabsTrigger value="type" className="flex items-center gap-2">
+              <FolderOpen size={16} />
+              By Type
+            </TabsTrigger>
+            <TabsTrigger value="topic" className="flex items-center gap-2">
+              <Tags size={16} />
+              By Topic
+            </TabsTrigger>
+            <TabsTrigger value="chronological" className="flex items-center gap-2">
+              <Calendar size={16} />
+              Chronological
+            </TabsTrigger>
           </TabsList>
           
           <TabsContent value="chronological" className="mt-6">
