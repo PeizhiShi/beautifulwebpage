@@ -68,50 +68,13 @@ const ResearchHome = () => {
         </header>
         
         <nav className="mb-10">
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-1 border border-blue-100 shadow-sm">
-            <ul className="flex flex-wrap gap-1">
-              <li className="flex-1 min-w-fit">
-                <Link 
-                  to="/research" 
-                  className="block text-center px-6 py-3 rounded-xl text-blue-700 hover:bg-white hover:shadow-md transition-all duration-200 font-medium text-sm"
-                >
-                  Research & Grant
-                </Link>
-              </li>
-              <li className="flex-1 min-w-fit">
-                <Link 
-                  to="/publications" 
-                  className="block text-center px-6 py-3 rounded-xl text-blue-700 hover:bg-white hover:shadow-md transition-all duration-200 font-medium text-sm"
-                >
-                  Publications
-                </Link>
-              </li>
-              <li className="flex-1 min-w-fit">
-                <Link 
-                  to="/academic-engagement" 
-                  className="block text-center px-6 py-3 rounded-xl text-blue-700 hover:bg-white hover:shadow-md transition-all duration-200 font-medium text-sm"
-                >
-                  Academic Engagement
-                </Link>
-              </li>
-              <li className="flex-1 min-w-fit">
-                <Link 
-                  to="/teaching" 
-                  className="block text-center px-6 py-3 rounded-xl text-blue-700 hover:bg-white hover:shadow-md transition-all duration-200 font-medium text-sm"
-                >
-                  Teaching
-                </Link>
-              </li>
-              <li className="flex-1 min-w-fit">
-                <Link 
-                  to="/cv" 
-                  className="block text-center px-6 py-3 rounded-xl text-blue-700 hover:bg-white hover:shadow-md transition-all duration-200 font-medium text-sm"
-                >
-                  Curriculum Vitae
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <ul className="flex flex-wrap gap-4 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-gradient-to-r after:from-blue-200 after:via-blue-400 after:to-blue-200">
+            <li><Link to="/research" className="text-blue-600 hover:text-blue-800 font-medium">Research & Grant</Link></li>
+            <li><Link to="/publications" className="text-blue-600 hover:text-blue-800 font-medium">Publications</Link></li>
+            <li><Link to="/academic-engagement" className="text-blue-600 hover:text-blue-800 font-medium">Academic Engagement</Link></li>
+            <li><Link to="/teaching" className="text-blue-600 hover:text-blue-800 font-medium">Teaching</Link></li>
+            <li><Link to="/cv" className="text-blue-600 hover:text-blue-800 font-medium">Curriculum Vitae</Link></li>
+          </ul>
         </nav>
         
         <main>

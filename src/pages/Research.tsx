@@ -21,109 +21,107 @@ const Research = () => {
           My research is dedicated to advancing the real-world application of artificial intelligence, with a focus on developing scalable, robust, and high-impact intelligent systems. By integrating machine learning, and data-driven modeling, I aim to address complex, uncertain challenges and drive the adoption of AI across different sectors.
         </p>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <ResearchArea
-            id="llm-decision-support"
-            title="LLM-Enhanced Decision Support System"
-            image="/lovable-uploads/16c97d0e-ae76-4f4d-a7bb-402f6ac84038.png"
-            description={
-              <>
-                <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a> is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd.
-              </>
+        <ResearchArea
+          id="llm-decision-support"
+          title="LLM-Enhanced Decision Support System"
+          image="/lovable-uploads/16c97d0e-ae76-4f4d-a7bb-402f6ac84038.png"
+          description={
+            <>
+              <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a> is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd.
+            </>
+          }
+          keyPublications={[]}
+          keyFunding={[
+            {
+              duration: "2025 - 2027",
+              pi: "Dr. Peizhi Shi (Academic Supervisor)",
+              coIs: "Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)",
+              partner: "SR Mailing Ltd",
+              amount: "£338,916",
+              scheme: "Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
             }
-            keyPublications={[]}
-            keyFunding={[
-              {
-                duration: "2025 - 2027",
-                pi: "Dr. Peizhi Shi (Academic Supervisor)",
-                coIs: "Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)",
-                partner: "SR Mailing Ltd",
-                amount: "£338,916",
-                scheme: "Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
-              }
-            ]}
-            fundingType="principal"
-          />
-          
-          <ResearchArea
-            id="build-orientation"
-            title="Learning-based Build Orientation"
-            image="/lovable-uploads/ea1d636f-219d-408c-95c6-dd5199f2aee2.png"
-            description="This project aims to develop intelligent algorithms that optimize the build orientation of 3D-printed parts using machine learning techniques. By leveraging data-driven insights from simulations, the approach seeks to outperform traditional optimization-based methods in terms of efficiency and effectiveness, offering scalable and automated solutions for a wide range of additive manufacturing applications."
-            keyPublications={[
-              {
-                title: "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning",
-                authors: "P. Shi, Q. Qi, Y. Qin, F. Meng, S. Lou, P. J. Scott, and X. Jiang",
-                venue: "IEEE Transactions on Industrial Informatics, 2023, IF: 12.1",
-                link: "/publications"
-              },
-              {
-                title: "Automatic determination of part build orientation for laser powder bed fusion",
-                authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
-                venue: "Virtual and Physical Prototyping, 2021, IF: 10.6",
-                link: "/publications"
-              },
-              {
-                title: "Automatic generation of alternative build orientations for laser powder bed fusion based on facet clustering",
-                authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
-                venue: "Virtual and Physical Prototyping, 2020, IF: 10.6",
-                link: "/publications"
-              }
-            ]}
-            fundingType="ongoing"
-          />
-          
-          <ResearchArea
-            id="feature-recognition"
-            title="Learning-based Feature Recognition"
-            image="/lovable-uploads/2c78a9ea-5f63-46c9-bd3e-942ad352f67a.png"
-            description="This project aims to design algorithms that automatically recognize 2.5D manufacturing features from 3D components. A novel object detection network architecture is proposed as part of this work. At the time of its release, the approach achieves state-of-the-art performance in intersecting feature recognition and localization on benchmark datasets."
-            keyPublications={[
-              {
-                title: "Highly interacting machining feature recognition via small sample learning",
-                authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
-                venue: "Robotics and Computer-Integrated Manufacturing, 2022, IF: 10.4",
-                link: "/publications"
-              },
-              {
-                title: "Intersecting machining feature localisation and recognition via single shot multibox detector",
-                authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
-                venue: "IEEE Transactions on Industrial Informatics, 2021, IF: 12.1",
-                link: "/publications"
-              },
-              {
-                title: "A novel learning-based feature recognition method using multiple sectional view representation",
-                authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
-                venue: "Journal of Intelligent Manufacturing, 2020, IF: 8.3",
-                link: "/publications"
-              }
-            ]}
-            fundingType="ongoing"
-          />
-          
-          <ResearchArea
-            id="game-generation"
-            title="Learning-based Game Generation"
-            image="/lovable-uploads/cc41bb2a-69b7-4478-8f95-c07b84b58196.png"
-            description="This research project aims to develop a novel procedural content generation method to create high-quality levels in Super Mario Bros. To achieve this, we propose a hybrid approach that leverages the synergy between rule-based and learning-based methods to produce constructive primitives—high-quality yet controllable game segments in Super Mario Bros. These primitives can be adopted as the basic building blocks of a game level and enable online level generation and real-time content adaptation based on various design criteria. Examples of levels generated by our approach are shown above."
-            keyPublications={[
-              {
-                title: "Learning constructive primitives for real-time dynamic difficulty adjustment in Super Mario Bros",
-                authors: "P. Shi, and K. Chen",
-                venue: "IEEE Transactions on Games, 2017",
-                link: "/publications"
-              },
-              {
-                title: "Online level generation in Super Mario Bros via learning constructive primitives",
-                authors: "P. Shi, and K. Chen",
-                venue: "IEEE Conference on Computational Intelligence and Games, 2016",
-                link: "/publications"
-              }
-            ]}
-            supervisor="Dr. Ke Chen"
-            fundingType="scholarship"
-          />
-        </div>
+          ]}
+          fundingType="principal"
+        />
+        
+        <ResearchArea
+          id="build-orientation"
+          title="Learning-based Build Orientation"
+          image="/lovable-uploads/ea1d636f-219d-408c-95c6-dd5199f2aee2.png"
+          description="This project aims to develop intelligent algorithms that optimize the build orientation of 3D-printed parts using machine learning techniques. By leveraging data-driven insights from simulations, the approach seeks to outperform traditional optimization-based methods in terms of efficiency and effectiveness, offering scalable and automated solutions for a wide range of additive manufacturing applications."
+          keyPublications={[
+            {
+              title: "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning",
+              authors: "P. Shi, Q. Qi, Y. Qin, F. Meng, S. Lou, P. J. Scott, and X. Jiang",
+              venue: "IEEE Transactions on Industrial Informatics, 2023, IF: 12.1",
+              link: "/publications"
+            },
+            {
+              title: "Automatic determination of part build orientation for laser powder bed fusion",
+              authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+              venue: "Virtual and Physical Prototyping, 2021, IF: 10.6",
+              link: "/publications"
+            },
+            {
+              title: "Automatic generation of alternative build orientations for laser powder bed fusion based on facet clustering",
+              authors: "Y. Qin, Q. Qi, P. Shi, P. J. Scott, and X. Jiang",
+              venue: "Virtual and Physical Prototyping, 2020, IF: 10.6",
+              link: "/publications"
+            }
+          ]}
+          fundingType="ongoing"
+        />
+        
+        <ResearchArea
+          id="feature-recognition"
+          title="Learning-based Feature Recognition"
+          image="/lovable-uploads/2c78a9ea-5f63-46c9-bd3e-942ad352f67a.png"
+          description="This project aims to design algorithms that automatically recognize 2.5D manufacturing features from 3D components. A novel object detection network architecture is proposed as part of this work. At the time of its release, the approach achieves state-of-the-art performance in intersecting feature recognition and localization on benchmark datasets."
+          keyPublications={[
+            {
+              title: "Highly interacting machining feature recognition via small sample learning",
+              authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+              venue: "Robotics and Computer-Integrated Manufacturing, 2022, IF: 10.4",
+              link: "/publications"
+            },
+            {
+              title: "Intersecting machining feature localisation and recognition via single shot multibox detector",
+              authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+              venue: "IEEE Transactions on Industrial Informatics, 2021, IF: 12.1",
+              link: "/publications"
+            },
+            {
+              title: "A novel learning-based feature recognition method using multiple sectional view representation",
+              authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
+              venue: "Journal of Intelligent Manufacturing, 2020, IF: 8.3",
+              link: "/publications"
+            }
+          ]}
+          fundingType="ongoing"
+        />
+        
+        <ResearchArea
+          id="game-generation"
+          title="Learning-based Game Generation"
+          image="/lovable-uploads/cc41bb2a-69b7-4478-8f95-c07b84b58196.png"
+          description="This research project aims to develop a novel procedural content generation method to create high-quality levels in Super Mario Bros. To achieve this, we propose a hybrid approach that leverages the synergy between rule-based and learning-based methods to produce constructive primitives—high-quality yet controllable game segments in Super Mario Bros. These primitives can be adopted as the basic building blocks of a game level and enable online level generation and real-time content adaptation based on various design criteria. Examples of levels generated by our approach are shown above."
+          keyPublications={[
+            {
+              title: "Learning constructive primitives for real-time dynamic difficulty adjustment in Super Mario Bros",
+              authors: "P. Shi, and K. Chen",
+              venue: "IEEE Transactions on Games, 2017",
+              link: "/publications"
+            },
+            {
+              title: "Online level generation in Super Mario Bros via learning constructive primitives",
+              authors: "P. Shi, and K. Chen",
+              venue: "IEEE Conference on Computational Intelligence and Games, 2016",
+              link: "/publications"
+            }
+          ]}
+          supervisor="Dr. Ke Chen"
+          fundingType="scholarship"
+        />
         
 
         
