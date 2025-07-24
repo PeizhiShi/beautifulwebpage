@@ -124,11 +124,11 @@ const Publications = () => {
         
         <h1 className="text-3xl font-bold mb-6">Publications</h1>
         
-        <Tabs defaultValue="chronological" className="w-full">
+        <Tabs defaultValue="type" className="w-full">
           <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="chronological">Chronological</TabsTrigger>
             <TabsTrigger value="type">By Type</TabsTrigger>
             <TabsTrigger value="topic">By Topic</TabsTrigger>
+            <TabsTrigger value="chronological">Chronological</TabsTrigger>
           </TabsList>
           
           <TabsContent value="chronological" className="mt-6">
