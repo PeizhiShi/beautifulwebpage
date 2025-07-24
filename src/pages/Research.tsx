@@ -137,10 +137,17 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
   const [expanded, setExpanded] = useState(false);
   
   return (
-    <section className="mb-12" id={id}>
-      <h2 className="text-2xl font-bold mb-4 border-b pb-2 flex items-center">
-        {getProjectIcon(title)}
-        {title}
+    <section className={`mb-12 ${fundingInfo ? 'bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200' : ''}`} id={id}>
+      <h2 className="text-2xl font-bold mb-4 border-b pb-2 flex items-center justify-between">
+        <div className="flex items-center">
+          {getProjectIcon(title)}
+          {title}
+        </div>
+        {fundingInfo && (
+          <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+            Funded Project
+          </span>
+        )}
       </h2>
       <div className="mb-4 overflow-hidden rounded-lg">
         <img 
