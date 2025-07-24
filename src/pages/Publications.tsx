@@ -186,10 +186,22 @@ interface PublicationItemProps {
 }
 
 const PublicationItem: React.FC<PublicationItemProps> = ({ publication }) => {
+  // Function to highlight P. Shi in author names
+  const highlightAuthor = (authors: string) => {
+    const parts = authors.split(/(P\. Shi)/g);
+    return parts.map((part, index) => 
+      part === 'P. Shi' ? (
+        <span key={index} className="font-bold text-blue-600">{part}</span>
+      ) : (
+        <span key={index}>{part}</span>
+      )
+    );
+  };
+
   return (
     <li className="pb-4">
       <h3 className="font-medium">{publication.title}</h3>
-      <p className="text-gray-700 text-sm">{publication.authors}</p>
+      <p className="text-gray-700 text-sm">{highlightAuthor(publication.authors)}</p>
       <p className="text-gray-600 text-sm italic">
         {publication.venue}, {publication.year}
         {publication.impactFactor && publication.impactFactor > 7 && (
