@@ -210,7 +210,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
             {fundingInfo ? (
               <>
                 <h3 className="font-medium mb-2">Funding Information</h3>
-                <p className="text-gray-700">{fundingInfo}</p>
+                <div className="text-gray-700 whitespace-pre-line">{fundingInfo}</div>
               </>
             ) : (
               <>
