@@ -27,7 +27,7 @@ const Research = () => {
           image="/lovable-uploads/16c97d0e-ae76-4f4d-a7bb-402f6ac84038.png"
           description="SR Mailing Ltd is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd."
           keyPublications={[]}
-          fundingInfo="2025 - 2027, Principal Investigator, £338,916, 'LLM-enhanced decision support system for the sustainable packaging sector', Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
+          fundingInfo="• **Project Duration:** 2025 - 2027\n• **Principal Investigator:** Dr. Peizhi Shi (Academic Supervisor)\n• **Co-Investigators:** Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)\n• **Industry Partner:** SR Mailing Ltd\n• **Funding Amount:** £338,916\n• **Funding Scheme:** Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
           fundingType="principal"
         />
         
