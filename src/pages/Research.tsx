@@ -210,7 +210,13 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
             {fundingInfo ? (
               <>
                 <h3 className="font-medium mb-2">Funding Information</h3>
-                <div className="text-gray-700 whitespace-pre-line">{fundingInfo}</div>
+                <ul className="space-y-2">
+                  {fundingInfo.split('\n').filter(line => line.trim()).map((line, index) => (
+                    <li key={index} className="text-gray-700">
+                      {line.replace('• **', '').replace(':**', ':')}
+                    </li>
+                  ))}
+                </ul>
               </>
             ) : (
               <>
