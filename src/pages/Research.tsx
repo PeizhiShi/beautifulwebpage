@@ -33,7 +33,7 @@ const Research = () => {
         
         <ResearchArea
           id="build-orientation"
-          title="Learning-based Build Orientation in Additive Manufacturing"
+          title="Learning-based Build Orientation"
           image="/lovable-uploads/ea1d636f-219d-408c-95c6-dd5199f2aee2.png"
           description="This project aims to develop intelligent algorithms that optimize the build orientation of 3D-printed parts using machine learning techniques. By leveraging data-driven insights from simulations, the approach seeks to outperform traditional optimization-based methods in terms of efficiency and effectiveness, offering scalable and automated solutions for a wide range of additive manufacturing applications."
           keyPublications={[
@@ -56,12 +56,12 @@ const Research = () => {
               link: "/publications"
             }
           ]}
-          fundingType="collaborator"
+          fundingType="postdoc"
         />
         
         <ResearchArea
           id="feature-recognition"
-          title="Learning-based Feature Recognition in Subtractive Manufacturing"
+          title="Learning-based Feature Recognition"
           image="/lovable-uploads/2c78a9ea-5f63-46c9-bd3e-942ad352f67a.png"
           description="This project aims to design algorithms that automatically recognize 2.5D manufacturing features from 3D components. A novel object detection network architecture is proposed as part of this work. At the time of its release, the approach achieves state-of-the-art performance in intersecting feature recognition and localization on benchmark datasets."
           keyPublications={[
@@ -84,7 +84,7 @@ const Research = () => {
               link: "/publications"
             }
           ]}
-          fundingType="collaborator"
+          fundingType="postdoc"
         />
         
         <ResearchArea
@@ -128,7 +128,7 @@ interface ResearchAreaProps {
     link: string;
   }[];
   fundingInfo?: string;
-  fundingType?: 'principal' | 'collaborator' | 'scholarship';
+  fundingType?: 'principal' | 'postdoc' | 'scholarship';
 }
 
 const ResearchArea: React.FC<ResearchAreaProps> = ({
@@ -152,10 +152,10 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
             Principal Investigator
           </span>
         );
-      case 'collaborator':
+      case 'postdoc':
         return (
-          <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-            Collaborator
+          <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
+            Postdoc Research
           </span>
         );
       case 'scholarship':
