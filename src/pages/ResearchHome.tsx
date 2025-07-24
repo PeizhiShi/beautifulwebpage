@@ -85,7 +85,7 @@ const ResearchHome = () => {
             </p>
             
             
-              <h3 className="text-lg font-semibold mt-8 mb-2">Message to Potential PhD Students</h3>
+              <h3 className="text-lg font-semibold mt-6 mb-2">Message to Potential PhD Students</h3>
               <p className="text-gray-700">
 I am accepting PhD students whose research interests align with mine, specifically in machine learning and its applications. Applicants are expected to have a strong academic background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related disciplines. If you are passionate about applying advanced machine learning techniques to real-world challenges, this may be a good fit. Should this align with your academic goals and you are considering doctoral research, you are very welcome to get in touch. Please feel free to send your academic CV and a research proposal for further discussion.                </p>
 <p className="text-gray-700 mt-4">
