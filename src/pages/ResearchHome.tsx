@@ -83,6 +83,13 @@ const ResearchHome = () => {
             <p className="text-gray-700">
               I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. I completed my Ph.D. in Computer Science in March 2019 under the supervision of <a href="https://www.cs.man.ac.uk/~kechen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Dr. Ke Chen</a>, as part of the Machine Learning and Optimization Group at the School of Computer Science, University of Manchester. My research interests lie in machine learning, artificial intelligence, and their real-world applications, with a particular focus on sustainable manufacturing, design for additive manufacturing, and production research.
             </p>
+            
+            <div className="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-r">
+              <h3 className="text-lg font-semibold mb-2 text-blue-800">Message to Potential PhD Students</h3>
+              <p className="text-gray-700">
+                I am actively seeking motivated PhD students to join my research group. If you are passionate about machine learning, artificial intelligence, and their applications in manufacturing and production research, I would love to hear from you. I welcome students with backgrounds in computer science, engineering, mathematics, or related fields who are eager to tackle real-world challenges with cutting-edge AI techniques. Please feel free to reach out via email with your CV and research interests.
+              </p>
+            </div>
           </section>
           
           <section className="mb-10">
