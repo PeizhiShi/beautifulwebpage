@@ -28,6 +28,7 @@ const Research = () => {
           description="SR Mailing Ltd is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd."
           keyPublications={[]}
           fundingInfo="2025 - 2027, Principal Investigator, £338,916, 'LLM-enhanced decision support system for the sustainable packaging sector', Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
+          fundingType="principal"
         />
         
         <ResearchArea
@@ -55,6 +56,7 @@ const Research = () => {
               link: "/publications"
             }
           ]}
+          fundingType="collaborator"
         />
         
         <ResearchArea
@@ -82,6 +84,7 @@ const Research = () => {
               link: "/publications"
             }
           ]}
+          fundingType="collaborator"
         />
         
         <ResearchArea
@@ -103,6 +106,7 @@ const Research = () => {
               link: "/publications"
             }
           ]}
+          fundingType="scholarship"
         />
         
 
@@ -124,6 +128,7 @@ interface ResearchAreaProps {
     link: string;
   }[];
   fundingInfo?: string;
+  fundingType?: 'principal' | 'collaborator' | 'scholarship';
 }
 
 const ResearchArea: React.FC<ResearchAreaProps> = ({
@@ -132,22 +137,46 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
   image,
   description,
   keyPublications,
-  fundingInfo
+  fundingInfo,
+  fundingType
 }) => {
   const [expanded, setExpanded] = useState(false);
   
+  const getFundingBadge = () => {
+    if (!fundingType) return null;
+    
+    switch (fundingType) {
+      case 'principal':
+        return (
+          <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+            Principal Investigator
+          </span>
+        );
+      case 'collaborator':
+        return (
+          <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+            Collaborator
+          </span>
+        );
+      case 'scholarship':
+        return (
+          <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
+            PhD Scholarship
+          </span>
+        );
+      default:
+        return null;
+    }
+  };
+  
   return (
-    <section className={`mb-12 ${fundingInfo ? 'bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200' : ''}`} id={id}>
+    <section className={`mb-12 ${fundingType ? 'bg-gradient-to-r from-gray-50 to-slate-50 p-6 rounded-xl border border-gray-200' : ''}`} id={id}>
       <h2 className="text-2xl font-bold mb-4 border-b pb-2 flex items-center justify-between">
         <div className="flex items-center">
           {getProjectIcon(title)}
           {title}
         </div>
-        {fundingInfo && (
-          <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-            Funded Project
-          </span>
-        )}
+        {getFundingBadge()}
       </h2>
       <div className="mb-4 overflow-hidden rounded-lg">
         <img 
