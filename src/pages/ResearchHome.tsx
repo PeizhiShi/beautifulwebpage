@@ -96,7 +96,7 @@ const ResearchHome = () => {
               <Card className="bg-green-50 border-green-100">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">Learning-based Build Orientation</h3>
-                  <p className="text-gray-700 mb-3">Development of intelligent algorithms that optimize 3D-printed part orientations using machine learning techniques.</p>
+                  <p className="text-gray-700 mb-3">Development of intelligent algorithms that optimize 3D-printed part orientations.</p>
                   <Link to="/research#build-orientation" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                 </CardContent>
               </Card>
