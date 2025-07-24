@@ -79,7 +79,7 @@ const ResearchHome = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">About Me</h2>
             <p className="text-gray-700">
-              I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. My research interests include machine learning, artificial intelligence, and their real-world applications, particularly in sustainable manufacturing, design for additive manufacturing, and production research.
+              I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. I completed my Ph.D. in Computer Science in March 2019 under the supervision of <a href="https://www.cs.man.ac.uk/~kechen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Dr. Ke Chen</a>, as part of the Machine Learning and Optimization Group at the School of Computer Science, University of Manchester. My research interests lie in machine learning, artificial intelligence, and their real-world applications, with a particular focus on sustainable manufacturing, design for additive manufacturing, and production research.
             </p>
           </section>
           
