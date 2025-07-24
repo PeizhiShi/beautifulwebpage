@@ -191,7 +191,7 @@ const PublicationItem: React.FC<PublicationItemProps> = ({ publication }) => {
     const parts = authors.split(/(P\. Shi)/g);
     return parts.map((part, index) => 
       part === 'P. Shi' ? (
-        <span key={index} className="font-bold text-blue-600">{part}</span>
+        <span key={index} className="font-semibold bg-yellow-100 px-1 py-0.5 rounded">{part}</span>
       ) : (
         <span key={index}>{part}</span>
       )
