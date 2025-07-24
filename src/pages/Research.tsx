@@ -194,6 +194,16 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
         return null;
     }
   };
+
+  const getSupervisorBadge = () => {
+    if (!supervisor) return null;
+    
+    return (
+      <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
+        Supervised by {supervisor}
+      </span>
+    );
+  };
   
   return (
     <section className={`mb-12 ${fundingType ? 'bg-gradient-to-r from-gray-50 to-slate-50 p-6 rounded-xl border border-gray-200' : ''}`} id={id}>
@@ -202,7 +212,10 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
           {getProjectIcon(title)}
           {title}
         </div>
-        {getFundingBadge()}
+        <div className="flex gap-2 flex-wrap">
+          {getFundingBadge()}
+          {getSupervisorBadge()}
+        </div>
       </h2>
       <div className="mb-4 overflow-hidden rounded-lg">
         <img 
@@ -264,14 +277,6 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
               </>
             ) : (
               <>
-                {supervisor && (
-                  <>
-                    <h3 className="font-medium mb-2">Supervision</h3>
-                    <p className="text-gray-700 mb-4">
-                      <span className="font-medium">Supervised by:</span> {supervisor}
-                    </p>
-                  </>
-                )}
                 <h3 className="font-medium mb-2">Key Publications</h3>
                 <ul className="space-y-3">
                   {keyPublications.map((pub, index) => {
