@@ -86,41 +86,41 @@ const Teaching = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-gray-900">LUBS5586M: Quantitative Analysis</h4>
-                      <div className="text-sm text-gray-600">2024/25 • Postgraduate</div>
+                      <div className="text-sm text-gray-600">2024/25 • Module Leader</div>
                     </div>
-                    <span className="text-sm text-gray-600">Module Leader</span>
+                    <span className="text-sm text-gray-600">Postgraduate</span>
                   </div>
                   
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-gray-900">LUBS5996M: Understanding Data for Decision Making</h4>
-                      <div className="text-sm text-gray-600">2024/25 • Postgraduate</div>
+                      <div className="text-sm text-gray-600">2024/25 • Teaching Staff</div>
                     </div>
-                    <span className="text-sm text-gray-600">Teaching Staff</span>
+                    <span className="text-sm text-gray-600">Postgraduate</span>
                   </div>
 
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-gray-900">LUBS5988M: Research Design and Analysis</h4>
-                      <div className="text-sm text-gray-600">2024/25 • Postgraduate</div>
+                      <div className="text-sm text-gray-600">2024/25 • Teaching Staff</div>
                     </div>
-                    <span className="text-sm text-gray-600">Teaching Staff</span>
+                    <span className="text-sm text-gray-600">Postgraduate</span>
                   </div>
                   
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-gray-900">LUBS5990M: Machine Learning in Practice</h4>
-                      <div className="text-sm text-gray-600">2023/24 • Postgraduate</div>
+                      <div className="text-sm text-gray-600">2023/24 • Teaching Staff</div>
                     </div>
-                    <span className="text-sm text-gray-600">Teaching Staff</span>
+                    <span className="text-sm text-gray-600">Postgraduate</span>
                   </div>
                   
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-gray-900">LUBS5308M: Business Analytics and Decision Science</h4>
-                      <div className="text-sm text-gray-600">2023/24, 2024/25 • Postgraduate</div>
+                      <div className="text-sm text-gray-600">2023/24, 2024/25 • Teaching Staff</div>
                     </div>
-                    <span className="text-sm text-gray-600">Teaching Staff</span>
+                    <span className="text-sm text-gray-600">Postgraduate</span>
                   </div>
                   
                   
@@ -136,25 +136,25 @@ const Teaching = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-gray-900">Modelling and Visualization of High Dimensional Data</h4>
-                      <div className="text-sm text-gray-600">2015 • Postgraduate</div>
+                      <div className="text-sm text-gray-600">2015 • Teaching Assistant</div>
                     </div>
-                    <span className="text-sm text-gray-600">Teaching Assistant</span>
+                    <span className="text-sm text-gray-600">Postgraduate</span>
                   </div>
                   
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-gray-900">Introduction to Machine Learning</h4>
-                      <div className="text-sm text-gray-600">2015 • Undergraduate</div>
+                      <div className="text-sm text-gray-600">2015 • Teaching Assistant</div>
                     </div>
-                    <span className="text-sm text-gray-600">Teaching Assistant</span>
+                    <span className="text-sm text-gray-600">Undergraduate</span>
                   </div>
                   
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-gray-900">Algorithms and Imperative Programming</h4>
-                      <div className="text-sm text-gray-600">2013-2015, 2017 • Undergraduate</div>
+                      <div className="text-sm text-gray-600">2013-2015, 2017 • Teaching Assistant</div>
                     </div>
-                    <span className="text-sm text-gray-600">Teaching Assistant</span>
+                    <span className="text-sm text-gray-600">Undergraduate</span>
                   </div>
                 </div>
               </div>
@@ -168,9 +168,9 @@ const Teaching = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-gray-900">3rd Asian-Pacific Summer School on Formal Methods</h4>
-                      <div className="text-sm text-gray-600">Summer 2011 • Summer School</div>
+                      <div className="text-sm text-gray-600">Summer 2011 • Teaching Assistant</div>
                     </div>
-                    <span className="text-sm text-gray-600">Teaching Assistant</span>
+                    <span className="text-sm text-gray-600">Summer School</span>
                   </div>
                 </div>
               </div>
