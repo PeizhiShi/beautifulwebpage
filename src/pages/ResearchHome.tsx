@@ -83,15 +83,16 @@ const ResearchHome = () => {
             <p className="text-gray-700">
               I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. I completed my Ph.D. in Computer Science in March 2019 under the supervision of <a href="https://www.cs.man.ac.uk/~kechen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Dr. Ke Chen</a>, as part of the Machine Learning and Optimization Group at the School of Computer Science, University of Manchester. My research interests lie in machine learning, artificial intelligence, and their real-world applications, with a particular focus on sustainable manufacturing, design for additive manufacturing, and production research.
             </p>
-            <p> </p>
-              <h3 className="text-lg font-semibold mb-2">Message to Potential PhD Students</h3>
+            
+            <div className="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-r">
+              <h3 className="text-lg font-semibold mb-2 text-blue-800">Message to Potential PhD Students</h3>
               <p className="text-gray-700">
 I welcome the opportunity to supervise honest and reliable PhD students whose research interests align with mine, specifically in machine learning and its applications. A strong background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related fields is expected. If you are passionate about applying advanced AI techniques to real-world challenges, this may be a good fit. If this aligns with your academic goals and you are considering doctoral research, you are welcome to get in touch with your academic CV and a brief research proposal for further discussion.
                 </p>
-            <p> </p>
 <p className="text-gray-700">
 Funding opportunities may be available for strong candidates through a number of schemes, including the LUBS Departmental Scholarship, the University of Leeds – China Scholarship Council (CSC) Scholarship (open to Chinese citizens only), and the White Rose Doctoral Training Partnership (WRDTP).              
               </p>
+            </div>
           </section>
           
           <section className="mb-10">
