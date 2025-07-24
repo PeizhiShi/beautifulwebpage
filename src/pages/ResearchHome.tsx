@@ -106,27 +106,27 @@ const ResearchHome = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Recent News</h2>
             <ul className="space-y-4">
-              <li className="border-l-4 border-blue-500 pl-4">
+              <li className="border-l-4 border-gray-300 pl-4">
                 <p className="text-gray-700">
                   <strong>Invited talk:</strong> Kun Feng, Director of SR Mailing, and I were invited to co-present at the Analytics, Technology and Operations Department event. Our talk explored the use of large language models to support sustainable innovation in the packaging industry.
                 </p>
               </li>
-              <li className="border-l-4 border-red-500 pl-4">
+              <li className="border-l-4 border-gray-300 pl-4">
                 <p className="text-gray-700">
                   <strong>Citation milestone:</strong> Our paper "A novel learning-based feature recognition method using multiple sectional view representation" has reached 100 citations!
                 </p>
               </li>
-              <li className="border-l-4 border-green-500 pl-4">
+              <li className="border-l-4 border-gray-300 pl-4">
                 <p className="text-gray-700">
                   <strong>Funding:</strong> Our KTP project has been jointly funded by SR Mailing and Innovate UK (£338,916). I will serve as the principal investigator for this project.
                 </p>
               </li>
-              <li className="border-l-4 border-purple-500 pl-4">
+              <li className="border-l-4 border-gray-300 pl-4">
                 <p className="text-gray-700">
                   <strong>New position:</strong> I am joining University of Leeds as a Lecturer in Applied Artificial Intelligence!
                 </p>
               </li>
-              <li className="border-l-4 border-orange-500 pl-4">
+              <li className="border-l-4 border-gray-300 pl-4">
                 <p className="text-gray-700">
                   <strong>Publication:</strong> Our work "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning" has been accepted for publication in IEEE Transactions on Industrial Informatics (Impact Factor: 12.3)!
                 </p>
