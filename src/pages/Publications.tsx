@@ -1,5 +1,5 @@
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { 
   ArrowLeft, 
@@ -9,6 +9,7 @@ import {
   ExternalLink
 } from "lucide-react";
 import { publications } from "@/lib/publications";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Publications = () => {
   // Group publications by year for the chronological view
@@ -31,6 +32,27 @@ const Publications = () => {
         publications: pubs
       }));
   }, []);
+
+  // Group publications by type
+  const publicationsByType = useMemo(() => {
+    const grouped: Record<string, typeof publications> = {};
+    
+    publications.forEach(pub => {
+      if (!grouped[pub.type]) {
+        grouped[pub.type] = [];
+      }
+      grouped[pub.type].push(pub);
+    });
+    
+    // Sort by publication count and then alphabetically
+    const typeOrder = ['journal', 'conference', 'book', 'thesis', 'workshop', 'preprint'];
+    return typeOrder
+      .filter(type => grouped[type] && grouped[type].length > 0)
+      .map(type => ({
+        type: type.charAt(0).toUpperCase() + type.slice(1) + 's',
+        publications: grouped[type].sort((a, b) => b.year - a.year)
+      }));
+  }, []);
   
   return (
     <div className="bg-white text-gray-800 min-h-screen">
@@ -44,18 +66,42 @@ const Publications = () => {
         
         <h1 className="text-3xl font-bold mb-6">Publications</h1>
         
-        <div className="space-y-10">
-          {publicationsByYear.map(({ year, publications }) => (
-            <div key={year}>
-              <h2 className="text-xl font-bold mb-4 bg-gray-100 p-2">{year}</h2>
-              <ul className="space-y-3">
-                {publications.map((pub, index) => (
-                  <PublicationItem key={index} publication={pub} />
-                ))}
-              </ul>
+        <Tabs defaultValue="chronological" className="w-full">
+          <TabsList className="grid w-full grid-cols-2">
+            <TabsTrigger value="chronological">Chronological</TabsTrigger>
+            <TabsTrigger value="type">By Type</TabsTrigger>
+          </TabsList>
+          
+          <TabsContent value="chronological" className="mt-6">
+            <div className="space-y-10">
+              {publicationsByYear.map(({ year, publications }) => (
+                <div key={year}>
+                  <h2 className="text-xl font-bold mb-4 bg-gray-100 p-2">{year}</h2>
+                  <ul className="space-y-3">
+                    {publications.map((pub, index) => (
+                      <PublicationItem key={index} publication={pub} />
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </TabsContent>
+          
+          <TabsContent value="type" className="mt-6">
+            <div className="space-y-10">
+              {publicationsByType.map(({ type, publications }) => (
+                <div key={type}>
+                  <h2 className="text-xl font-bold mb-4 bg-gray-100 p-2">{type}</h2>
+                  <ul className="space-y-3">
+                    {publications.map((pub, index) => (
+                      <PublicationItem key={index} publication={pub} />
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   );
