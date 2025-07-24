@@ -115,7 +115,7 @@ const ResearchHome = () => {
               
               </p>
 <p className="text-gray-700 mt-4">
-Scholarship opportunities: University Scholarship, China Scholarship Council Scholarship (open to Chinese citizens only), and White Rose Scholarship.              
+Scholarship opportunities: University Scholarship, CSC Scholarship (open to Chinese citizens only), and White Rose Scholarship.              
               </p>
            
             
