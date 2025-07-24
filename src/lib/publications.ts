@@ -62,7 +62,7 @@ export const publications: Publication[] = [
     venue: "Journal of Intelligent Manufacturing",
     year: 2020,
     type: "journal",
-    tags: ["machine learning", "feature recognition", "manufacturing", "representation learning"],
+    tags: ["machine learning", "feature recognition", "manufacturing", "object detection"],
     pdf: "/publications/shi2020_sectional_view.pdf",
     impactFactor: 8.3
   },
