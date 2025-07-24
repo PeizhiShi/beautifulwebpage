@@ -25,6 +25,8 @@ const ResearchHome = () => {
               src="/lovable-uploads/1ffac403-948a-44ba-84cd-4d6903233aee.png" 
               alt="Profile" 
               className="w-full h-full object-cover"
+              loading="eager"
+              decoding="async"
             />
           </div>
           

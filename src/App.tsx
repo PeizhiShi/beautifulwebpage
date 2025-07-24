@@ -23,7 +23,7 @@ const App = () => (
       <HashRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Navigate to="/research-home" replace />} />
+          <Route path="/" element={<ResearchHome />} />
           <Route path="/research-home" element={<ResearchHome />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/research" element={<Research />} />
