@@ -86,7 +86,7 @@ const ResearchHome = () => {
             
             <Card className="mt-8 mb-8">
             <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-2 text-blue-800">Message to Potential PhD Students</h3>
+              <h3 className="text-lg font-semibold mb-2">Message to Potential PhD Students</h3>
               <p className="text-gray-700">
 I welcome the opportunity to supervise <span className="text-blue-700 font-semibold">honest</span> and <span className="text-blue-700 font-semibold">reliable</span> PhD students whose research interests align with mine, specifically in machine learning and its applications. A strong background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related fields is expected. If you are passionate about applying advanced AI techniques to real-world challenges, this may be a good fit. If this aligns with your academic goals and you are considering doctoral research, you are welcome to get in touch with your academic CV and a brief research proposal for further discussion.
                 </p>
