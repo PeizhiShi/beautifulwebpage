@@ -29,7 +29,6 @@ const Research = () => {
           keyPublications={[]}
           keyFunding={[
             {
-              title: "LLM-enhanced decision support system for the sustainable packaging sector",
               duration: "2025 - 2027",
               pi: "Dr. Peizhi Shi (Academic Supervisor)",
               coIs: "Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)",
@@ -138,7 +137,7 @@ interface ResearchAreaProps {
     link: string;
   }[];
   keyFunding?: {
-    title: string;
+    title?: string;
     duration: string;
     pi: string;
     coIs: string;
@@ -233,7 +232,6 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
                 <ul className="space-y-3">
                   {keyFunding.map((funding, index) => (
                     <li key={index}>
-                      <p className="font-medium">{funding.title}</p>
                       <div className="text-gray-700 text-sm space-y-1">
                         <p><span className="font-medium">Duration:</span> {funding.duration}</p>
                         <p><span className="font-medium">Principal Investigator:</span> {funding.pi}</p>
