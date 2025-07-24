@@ -64,7 +64,7 @@ export const publications: Publication[] = [
     type: "journal",
     tags: ["machine learning", "feature recognition", "manufacturing", "object detection"],
     pdf: "/publications/shi2020_sectional_view.pdf",
-    impactFactor: 8.3
+    impactFactor: 7.7
   },
   {
     title: "Automatic generation of alternative build orientations for laser powder bed fusion based on facet clustering",
@@ -119,8 +119,7 @@ export const publications: Publication[] = [
     year: 2023,
     type: "journal",
     tags: ["fuzzy logic", "decision making", "cognitive computing", "mathematical operators"],
-    pdf: "/publications/qin2023_cognitive.pdf",
-    impactFactor: 7.3
+    pdf: "/publications/qin2023_cognitive.pdf"
   },
   {
     title: "Selection of materials in metal additive manufacturing via three-way decision-making",
@@ -147,8 +146,7 @@ export const publications: Publication[] = [
     year: 2022,
     type: "journal",
     tags: ["fuzzy logic", "decision making", "multi-criterion", "ambient intelligence"],
-    pdf: "/publications/qin2022_three_way.pdf",
-    impactFactor: 7.5
+    pdf: "/publications/qin2022_three_way.pdf"
   },
   {
     title: "Status, issues, and future of computer-aided part orientation for additive manufacturing",
@@ -194,7 +192,7 @@ export const publications: Publication[] = [
     type: "journal",
     tags: ["fuzzy logic", "decision making", "Dempster-Shafer theory", "industrial engineering"],
     pdf: "/publications/qin2020_dempster.pdf",
-    impactFactor: 7.9
+    impactFactor: 6.5
   },
   {
     title: "Archimedean Muirhead aggregation operators of q-rung orthopair fuzzy numbers for multicriteria group decision making",
