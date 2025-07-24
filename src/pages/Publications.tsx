@@ -53,6 +53,39 @@ const Publications = () => {
         publications: grouped[type].sort((a, b) => b.year - a.year)
       }));
   }, []);
+
+  // Group publications by topic
+  const publicationsByTopic = useMemo(() => {
+    const mlKeywords = ['machine learning', 'reinforcement learning', 'feature recognition', 'small sample learning', 'computer vision', 'object detection', 'representation learning', 'game AI', 'procedural generation', 'computational intelligence', 'neural', 'deep learning'];
+    
+    const machineLearning: typeof publications = [];
+    const otherAI: typeof publications = [];
+    
+    publications.forEach(pub => {
+      const hasMLKeyword = pub.tags.some(tag => 
+        mlKeywords.some(keyword => tag.toLowerCase().includes(keyword.toLowerCase()))
+      ) || pub.title.toLowerCase().includes('learning') || 
+          pub.title.toLowerCase().includes('neural') ||
+          pub.title.toLowerCase().includes('ai');
+      
+      if (hasMLKeyword) {
+        machineLearning.push(pub);
+      } else {
+        otherAI.push(pub);
+      }
+    });
+    
+    return [
+      {
+        topic: 'Machine Learning Research',
+        publications: machineLearning.sort((a, b) => b.year - a.year)
+      },
+      {
+        topic: 'Other AI Research',
+        publications: otherAI.sort((a, b) => b.year - a.year)
+      }
+    ].filter(group => group.publications.length > 0);
+  }, []);
   
   return (
     <div className="bg-white text-gray-800 min-h-screen">
@@ -67,9 +100,10 @@ const Publications = () => {
         <h1 className="text-3xl font-bold mb-6">Publications</h1>
         
         <Tabs defaultValue="chronological" className="w-full">
-          <TabsList className="grid w-full grid-cols-2">
+          <TabsList className="grid w-full grid-cols-3">
             <TabsTrigger value="chronological">Chronological</TabsTrigger>
             <TabsTrigger value="type">By Type</TabsTrigger>
+            <TabsTrigger value="topic">By Topic</TabsTrigger>
           </TabsList>
           
           <TabsContent value="chronological" className="mt-6">
@@ -92,6 +126,21 @@ const Publications = () => {
               {publicationsByType.map(({ type, publications }) => (
                 <div key={type}>
                   <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">{type}</h2>
+                  <ul className="space-y-3">
+                    {publications.map((pub, index) => (
+                      <PublicationItem key={index} publication={pub} />
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </TabsContent>
+          
+          <TabsContent value="topic" className="mt-6">
+            <div className="space-y-10">
+              {publicationsByTopic.map(({ topic, publications }) => (
+                <div key={topic}>
+                  <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">{topic}</h2>
                   <ul className="space-y-3">
                     {publications.map((pub, index) => (
                       <PublicationItem key={index} publication={pub} />
