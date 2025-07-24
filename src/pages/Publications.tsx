@@ -76,7 +76,7 @@ const Publications = () => {
             <div className="space-y-10">
               {publicationsByYear.map(({ year, publications }) => (
                 <div key={year}>
-                  <h2 className="text-xl font-bold mb-4 bg-gray-100 p-2">{year}</h2>
+                  <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">{year}</h2>
                   <ul className="space-y-3">
                     {publications.map((pub, index) => (
                       <PublicationItem key={index} publication={pub} />
@@ -91,7 +91,7 @@ const Publications = () => {
             <div className="space-y-10">
               {publicationsByType.map(({ type, publications }) => (
                 <div key={type}>
-                  <h2 className="text-xl font-bold mb-4 bg-gray-100 p-2">{type}</h2>
+                  <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">{type}</h2>
                   <ul className="space-y-3">
                     {publications.map((pub, index) => (
                       <PublicationItem key={index} publication={pub} />
