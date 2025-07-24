@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, Presentation, FileCheck, Edit } from "lucide-react";
+import { ArrowLeft, Mic, FileCheck, Edit } from "lucide-react";
 
 const AcademicEngagement = () => {
   return (
@@ -22,7 +22,7 @@ const AcademicEngagement = () => {
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500 flex items-center" id="invited-talks">
-            <Presentation size={20} className="mr-2" />
+            <Mic size={20} className="mr-2" />
             Invited talk
           </h2>
           <ul className="space-y-4">
