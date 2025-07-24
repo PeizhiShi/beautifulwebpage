@@ -81,19 +81,17 @@ const ResearchHome = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">About Me</h2>
             <p className="text-gray-700">
-              I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. I completed my Ph.D. in Computer Science in March 2019 under the supervision of <a href="https://www.cs.man.ac.uk/~kechen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Dr. Ke Chen</a>, as part of the Machine Learning and Optimization Group at the School of Computer Science, University of Manchester. My research interests lie in machine learning, artificial intelligence, and their real-world applications, with a particular focus on sustainable manufacturing, design for additive manufacturing, and production research.
+              I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. My research interests lie in machine learning, artificial intelligence, and their real-world applications, with a particular focus on sustainable manufacturing, design for additive manufacturing, and production research.
             </p>
             
-            <Card className="mt-8 mb-8">
-            <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-2">Message to Potential PhD Students</h3>
+            
+              <h3 className="text-lg font-semibold mt-8 mb-2">Message to Potential PhD Students</h3>
               <p className="text-gray-700">
 I am accepting PhD students whose research interests align with mine, specifically in machine learning and its applications. Applicants are expected to have a strong academic background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related disciplines. If you are passionate about applying advanced machine learning techniques to real-world challenges, this may be a good fit. Should this align with your academic goals and you are considering doctoral research, you are very welcome to get in touch. Please feel free to send your academic CV and a research proposal for further discussion.                </p>
 <p className="text-gray-700 mt-4">
 Scholarship opportunities may be available for strong candidates through a number of schemes, including the LUBS Departmental Scholarship, the University of Leeds – China Scholarship Council (CSC) Scholarship (open to Chinese citizens only), and the White Rose Doctoral Training Partnership (WRDTP).              
               </p>
-            </CardContent>
-        </Card>
+           
             
           </section>
           
