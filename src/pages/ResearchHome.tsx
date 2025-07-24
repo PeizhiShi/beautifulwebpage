@@ -84,7 +84,7 @@ const ResearchHome = () => {
               I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. I completed my Ph.D. in Computer Science in March 2019 under the supervision of <a href="https://www.cs.man.ac.uk/~kechen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Dr. Ke Chen</a>, as part of the Machine Learning and Optimization Group at the School of Computer Science, University of Manchester. My research interests lie in machine learning, artificial intelligence, and their real-world applications, with a particular focus on sustainable manufacturing, design for additive manufacturing, and production research.
             </p>
             
-            <Card className="mb-8">
+            <Card className="mt-8 mb-8">
             <CardContent className="p-6">
               <h3 className="text-lg font-semibold mb-2 text-blue-800">Message to Potential PhD Students</h3>
               <p className="text-gray-700">
