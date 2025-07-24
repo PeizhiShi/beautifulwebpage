@@ -58,10 +58,35 @@ const Publications = () => {
   const publicationsByTopic = useMemo(() => {
     const mlKeywords = ['machine learning', 'reinforcement learning', 'feature recognition', 'small sample learning', 'computer vision', 'object detection', 'representation learning', 'game AI', 'procedural generation', 'computational intelligence', 'neural', 'deep learning'];
     
+    // Specific papers that should be in machine learning research
+    const mlTitles = [
+      "Automatic generation of alternative build orientations for laser powder bed fusion based on facet clustering",
+      "Automatic determination of part build orientation for laser powder bed fusion"
+    ];
+    
+    // Specific papers that should be in other AI research
+    const otherAITitles = [
+      "Status, issues, and future of computer-aided part orientation for additive manufacturing",
+      "Archimedean Muirhead aggregation operators of q-rung orthopair fuzzy numbers for multicriteria group decision making"
+    ];
+    
     const machineLearning: typeof publications = [];
     const otherAI: typeof publications = [];
     
     publications.forEach(pub => {
+      // Check if it's specifically designated for ML research
+      if (mlTitles.includes(pub.title)) {
+        machineLearning.push(pub);
+        return;
+      }
+      
+      // Check if it's specifically designated for other AI research
+      if (otherAITitles.includes(pub.title)) {
+        otherAI.push(pub);
+        return;
+      }
+      
+      // Otherwise, categorize based on keywords
       const hasMLKeyword = pub.tags.some(tag => 
         mlKeywords.some(keyword => tag.toLowerCase().includes(keyword.toLowerCase()))
       ) || pub.title.toLowerCase().includes('learning') || 
@@ -77,11 +102,11 @@ const Publications = () => {
     
     return [
       {
-        topic: 'Machine Learning Research',
+        topic: 'Machine learning research',
         publications: machineLearning.sort((a, b) => b.year - a.year)
       },
       {
-        topic: 'Other AI Research',
+        topic: 'Other AI research',
         publications: otherAI.sort((a, b) => b.year - a.year)
       }
     ].filter(group => group.publications.length > 0);
