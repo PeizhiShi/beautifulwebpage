@@ -27,7 +27,17 @@ const Research = () => {
           image="/lovable-uploads/16c97d0e-ae76-4f4d-a7bb-402f6ac84038.png"
           description="SR Mailing Ltd is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd."
           keyPublications={[]}
-          fundingInfo="• **Project Duration:** 2025 - 2027\n• **Principal Investigator:** Dr. Peizhi Shi (Academic Supervisor)\n• **Co-Investigators:** Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)\n• **Industry Partner:** SR Mailing Ltd\n• **Funding Amount:** £338,916\n• **Funding Scheme:** Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
+          keyFunding={[
+            {
+              title: "LLM-enhanced decision support system for the sustainable packaging sector",
+              duration: "2025 - 2027",
+              pi: "Dr. Peizhi Shi (Academic Supervisor)",
+              coIs: "Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)",
+              partner: "SR Mailing Ltd",
+              amount: "£338,916",
+              scheme: "Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
+            }
+          ]}
           fundingType="principal"
         />
         
@@ -127,6 +137,15 @@ interface ResearchAreaProps {
     venue: string;
     link: string;
   }[];
+  keyFunding?: {
+    title: string;
+    duration: string;
+    pi: string;
+    coIs: string;
+    partner: string;
+    amount: string;
+    scheme: string;
+  }[];
   fundingInfo?: string;
   fundingType?: 'principal' | 'ongoing' | 'scholarship';
 }
@@ -137,6 +156,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
   image,
   description,
   keyPublications,
+  keyFunding,
   fundingInfo,
   fundingType
 }) => {
@@ -195,19 +215,38 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
           {expanded ? (
             <>
               <ChevronUp size={16} className="mr-1" />
-              {fundingInfo ? "Hide Funding Information" : "Hide Key Publications"}
+              {keyFunding ? "Hide Funding Information" : fundingInfo ? "Hide Funding Information" : "Hide Key Publications"}
             </>
           ) : (
             <>
               <ChevronDown size={16} className="mr-1" />
-              {fundingInfo ? "Show Funding Information" : "Show Key Publications"}
+              {keyFunding ? "Show Funding Information" : fundingInfo ? "Show Funding Information" : "Show Key Publications"}
             </>
           )}
         </button>
         
         {expanded && (
           <div className="pl-4 border-l-2 border-blue-200 mb-4">
-            {fundingInfo ? (
+            {keyFunding ? (
+              <>
+                <h3 className="font-medium mb-2">Funding Information</h3>
+                <ul className="space-y-3">
+                  {keyFunding.map((funding, index) => (
+                    <li key={index}>
+                      <p className="font-medium">{funding.title}</p>
+                      <div className="text-gray-700 text-sm space-y-1">
+                        <p><span className="font-medium">Duration:</span> {funding.duration}</p>
+                        <p><span className="font-medium">Principal Investigator:</span> {funding.pi}</p>
+                        <p><span className="font-medium">Co-Investigators:</span> {funding.coIs}</p>
+                        <p><span className="font-medium">Industry Partner:</span> {funding.partner}</p>
+                        <p><span className="font-medium">Funding Amount:</span> {funding.amount}</p>
+                        <p><span className="font-medium">Funding Scheme:</span> {funding.scheme}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : fundingInfo ? (
               <>
                 <h3 className="font-medium mb-2">Funding Information</h3>
                 <ul className="space-y-2">
