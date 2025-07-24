@@ -87,7 +87,10 @@ const ResearchHome = () => {
             <div className="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-r">
               <h3 className="text-lg font-semibold mb-2 text-blue-800">Message to Potential PhD Students</h3>
               <p className="text-gray-700">
-                I am actively seeking motivated PhD students to join my research group. If you are passionate about machine learning, artificial intelligence, and their applications in manufacturing and production research, I would love to hear from you. I welcome students with backgrounds in computer science, engineering, mathematics, or related fields who are eager to tackle real-world challenges with cutting-edge AI techniques. Please feel free to reach out via email with your CV and research interests.
+I welcome the opportunity to supervise honest and reliable PhD students whose research interests align with mine, specifically in machine learning and its applications. A strong background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related fields is expected. If you are passionate about applying advanced AI techniques to real-world challenges, this may be a good fit. If this aligns with your academic goals and you are considering doctoral research, you are welcome to get in touch with your academic CV and a brief research proposal for further discussion.
+                </p>
+<p className="text-gray-700">
+Funding opportunities may be available for strong candidates through a number of schemes, including the LUBS Departmental Scholarship, the University of Leeds – China Scholarship Council (CSC) Scholarship (open to Chinese citizens only), and the White Rose Doctoral Training Partnership (WRDTP).              
               </p>
             </div>
           </section>
