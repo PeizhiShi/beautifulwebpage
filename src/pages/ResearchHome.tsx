@@ -108,7 +108,7 @@ const ResearchHome = () => {
             <ul className="space-y-4">
               <li className="border-l-4 border-gray-300 pl-4">
                 <p className="text-gray-700">
-                  <strong>Invited talk:</strong> Kun Feng, Director of SR Mailing, and I were invited to co-present at the Analytics, Technology and Operations Department event. Our talk explored the use of large language models to support sustainable innovation in the packaging industry.
+                  <strong>Invited talk:</strong> Kun Feng, Director of <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">SR Mailing</a>, and I were invited to co-present at the Analytics, Technology and Operations Department event. Our talk explored the use of large language models to support sustainable innovation in the packaging industry.
                 </p>
               </li>
               <li className="border-l-4 border-gray-300 pl-4">
@@ -118,7 +118,7 @@ const ResearchHome = () => {
               </li>
               <li className="border-l-4 border-gray-300 pl-4">
                 <p className="text-gray-700">
-                  <strong>Funding:</strong> Our KTP project has been jointly funded by SR Mailing and Innovate UK (£338,916). I will serve as the principal investigator for this project.
+                  <strong>Funding:</strong> Our KTP project has been jointly funded by <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">SR Mailing</a> and Innovate UK (£338,916). I will serve as the principal investigator for this project.
                 </p>
               </li>
               <li className="border-l-4 border-gray-300 pl-4">

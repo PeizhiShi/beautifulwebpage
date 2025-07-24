@@ -25,7 +25,11 @@ const Research = () => {
           id="llm-decision-support"
           title="LLM-Enhanced Decision Support System"
           image="/lovable-uploads/16c97d0e-ae76-4f4d-a7bb-402f6ac84038.png"
-          description="SR Mailing Ltd is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd."
+          description={
+            <>
+              <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">SR Mailing Ltd</a> is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd.
+            </>
+          }
           keyPublications={[]}
           keyFunding={[
             {
@@ -129,7 +133,7 @@ interface ResearchAreaProps {
   id: string;
   title: string;
   image: string;
-  description: string;
+  description: string | React.ReactNode;
   keyPublications: {
     title: string;
     authors: string;
