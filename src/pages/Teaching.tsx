@@ -166,7 +166,7 @@ const Teaching = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-gray-900">3rd Asian-Pacific Summer School on Formal Methods</h4>
-                      <div className="text-sm text-gray-600">2011 • Academic Development</div>
+                      <div className="text-sm text-gray-600">2011 • Advanced Studies</div>
                     </div>
                     <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Assistant</span>
                   </div>
