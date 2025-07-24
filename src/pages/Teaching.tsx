@@ -205,22 +205,25 @@ const Teaching = () => {
                 <div className="flex items-start gap-4">
                   <Users size={24} className="text-gray-600 mt-1 flex-shrink-0" />
                   <div className="space-y-6">
+
+                    <div className="border-l-4 border-gray-300 pl-4">
+                      <h3 className="font-semibold text-lg text-gray-800">MSc Dissertation Projects</h3>
+                      <p className="text-gray-600">2024/25 • Leeds University Business School, University of Leeds</p>
+                      <p className="text-gray-700 mt-2">Supervised MSc students in their dissertation projects, providing guidance on research methodology, data analysis, and academic writing.</p>
+                    </div>
+                    
                     <div className="border-l-4 border-gray-300 pl-4">
                       <h3 className="font-semibold text-lg text-gray-800">Academic Personal Tutoring</h3>
-                      <p className="text-gray-600">2023/24 • University of Leeds</p>
+                      <p className="text-gray-600">2023/24 • Leeds University Business School, University of Leeds</p>
                       <p className="text-gray-700 mt-2">Providing academic guidance and personal support to students throughout their academic journey.</p>
                     </div>
                     
-                    <div className="border-l-4 border-gray-300 pl-4">
-                      <h3 className="font-semibold text-lg text-gray-800">MSc Dissertation Projects</h3>
-                      <p className="text-gray-600">2023/24 • Leeds University Business School, University of Leeds</p>
-                      <p className="text-gray-700 mt-2">Supervised three MSc students in their dissertation projects, providing guidance on research methodology, data analysis, and academic writing.</p>
-                    </div>
+                    
                     
                     <div className="border-l-4 border-gray-300 pl-4">
                       <h3 className="font-semibold text-lg text-gray-800">Undergraduate Final Year Project</h3>
-                      <p className="text-gray-600">2016 • BSc Computer Science, University of Manchester</p>
-                      <p className="text-gray-700 mt-2">Supervised undergraduate student's final year project, mentoring them through the complete research and development process.</p>
+                      <p className="text-gray-600">2016 • School of Computer Science, University of Manchester</p>
+                      <p className="text-gray-700 mt-2">Supervised an undergraduate student's final year project, mentoring him through the complete research and development process.</p>
                     </div>
                   </div>
                 </div>
