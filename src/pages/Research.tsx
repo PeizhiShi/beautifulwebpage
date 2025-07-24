@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { ArrowLeft, FileText, ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
+import { ArrowLeft, FileText, ExternalLink, ChevronDown, ChevronUp, Brain, Cog, Search, Gamepad2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
 
@@ -138,7 +138,10 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
   
   return (
     <section className="mb-12" id={id}>
-      <h2 className="text-2xl font-bold mb-4 border-b pb-2">{title}</h2>
+      <h2 className="text-2xl font-bold mb-4 border-b pb-2 flex items-center">
+        {getProjectIcon(title)}
+        {title}
+      </h2>
       <div className="mb-4 overflow-hidden rounded-lg">
         <img 
           src={image} 
@@ -205,6 +208,14 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
       </div>
     </section>
   );
+};
+
+const getProjectIcon = (title: string) => {
+  if (title.includes("LLM-Enhanced")) return <Brain size={20} className="mr-2" />;
+  if (title.includes("Build Orientation")) return <Cog size={20} className="mr-2" />;
+  if (title.includes("Feature Recognition")) return <Search size={20} className="mr-2" />;
+  if (title.includes("Game Generation")) return <Gamepad2 size={20} className="mr-2" />;
+  return null;
 };
 
 export default Research;
