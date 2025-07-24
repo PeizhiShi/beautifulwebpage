@@ -98,6 +98,14 @@ const Teaching = () => {
                     </div>
                     <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
                   </div>
+
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <h4 className="font-medium text-gray-900">LUBS5988M: Research Design and Analysis</h4>
+                      <div className="text-sm text-gray-600">2024/25 • Postgraduate</div>
+                    </div>
+                    <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
+                  </div>
                   
                   <div className="flex justify-between items-start">
                     <div>
@@ -115,13 +123,7 @@ const Teaching = () => {
                     <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
                   </div>
                   
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-medium text-gray-900">LUBS5988M: Research Design and Analysis</h4>
-                      <div className="text-sm text-gray-600">2023/24 • Postgraduate</div>
-                    </div>
-                    <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Staff</span>
-                  </div>
+                  
                 </div>
               </div>
 
