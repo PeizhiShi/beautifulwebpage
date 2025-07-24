@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { ArrowLeft, BookOpen, Calendar, Users, ExternalLink } from "lucide-react";
+import { ArrowLeft, BookOpen, Calendar, Users, ExternalLink, GraduationCap } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -177,6 +177,24 @@ const Teaching = () => {
             </div>
           </TabsContent>
         </Tabs>
+        
+        {/* Professional Recognition Section */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Professional Recognition</h2>
+          <Card>
+            <CardContent className="p-6">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center">
+                  <GraduationCap size={24} className="text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800">Fellow of the Higher Education Academy (FHEA)</h3>
+                  <p className="text-gray-600">Professional recognition for excellence in higher education teaching and learning</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
         
         {/* Student Supervision Section */}
         <section className="mb-10">
