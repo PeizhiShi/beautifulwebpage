@@ -157,16 +157,16 @@ const Teaching = () => {
                 </div>
               </div>
 
-              {/* Other Institutions */}
+              {/* University of Science and Technology of China */}
               <div className="border border-gray-200 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">
-                  Other Institutions
+                  University of Science and Technology of China
                 </h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-gray-900">3rd Asian-Pacific Summer School on Formal Methods</h4>
-                      <div className="text-sm text-gray-600">2011 • University of Science and Technology of China</div>
+                      <div className="text-sm text-gray-600">2011 • Professional Development</div>
                     </div>
                     <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">Teaching Assistant</span>
                   </div>
