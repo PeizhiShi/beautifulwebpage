@@ -161,7 +161,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
       case 'scholarship':
         return (
           <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
-            PhD Scholarship
+            Funded by PhD Scholarship
           </span>
         );
       default:
