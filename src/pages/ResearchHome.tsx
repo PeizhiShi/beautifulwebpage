@@ -152,9 +152,9 @@ const ResearchHome = () => {
         </main>
         
         <footer className="text-center text-gray-600 relative pt-6 mt-10 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-gray-300 before:to-transparent">
-          <p>© 2025 Dr. Peizhi Shi. Last updated: July 2025</p>
+          <p>© 2025 Dr. Peizhi Shi. Last updated: July 2025 <a href="https://clustrmaps.com/site/1bohv"  title="ClustrMaps"><img width="5px" src="//www.clustrmaps.com/map_v2.png?d=GNKaZ2hx2hnIWDV343dbm1lxrydeLScrzGYnPqib9SA&cl=ffffff" /></a>  
+</p>
 
-<a href="https://clustrmaps.com/site/1bohv"  title="ClustrMaps"><img src="//www.clustrmaps.com/map_v2.png?d=GNKaZ2hx2hnIWDV343dbm1lxrydeLScrzGYnPqib9SA&cl=ffffff" /></a>  
         </footer>
 
 
