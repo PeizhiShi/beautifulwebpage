@@ -13,58 +13,52 @@ const AcademicEngagement = () => {
       label: "Invited Talks",
       icon: <Mic size={16} />,
       content: (
-        <div className="space-y-4">
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                <h4 className="font-medium text-gray-900">LLM-Enhanced Decision Support System for the Sustainable Packaging Sector</h4>
-                <span className="text-gray-600 text-sm">2025</span>
+        <Card>
+          <CardContent className="p-6">
+            <div className="space-y-4">
+              <div className="flex justify-between items-start">
+                <div>
+                  <h4 className="font-medium text-gray-900">LLM-Enhanced Decision Support System for the Sustainable Packaging Sector</h4>
+                  <div className="text-sm text-gray-600 italic">ATOD event, University of Leeds</div>
+                  <div className="text-sm text-gray-700">Co-presented with Kun Feng (Director of SR Mailing)</div>
+                </div>
+                <span className="text-sm text-gray-600">2025</span>
               </div>
-              <p className="text-gray-600 text-sm italic mb-1">ATOD event, University of Leeds</p>
-              <p className="text-gray-700 text-sm">Co-presented with Kun Feng (Director of SR Mailing)</p>
-            </CardContent>
-          </Card>
-          
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                <h4 className="font-medium text-gray-900">Applying AI for Enterprise Intelligence and Manufacturing Innovation</h4>
-                <span className="text-gray-600 text-sm">2025</span>
+              
+              <div className="flex justify-between items-start">
+                <div>
+                  <h4 className="font-medium text-gray-900">Applying AI for Enterprise Intelligence and Manufacturing Innovation</h4>
+                  <div className="text-sm text-gray-600 italic">The Future Advanced Metrology Hub for Sustainable Manufacturing</div>
+                </div>
+                <span className="text-sm text-gray-600">2025</span>
               </div>
-              <p className="text-gray-600 text-sm italic">The Future Advanced Metrology Hub for Sustainable Manufacturing</p>
-            </CardContent>
-          </Card>
-          
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                <h4 className="font-medium text-gray-900">Machine Learning for Decision-making in Intelligent Manufacturing</h4>
-                <span className="text-gray-600 text-sm">2023</span>
+              
+              <div className="flex justify-between items-start">
+                <div>
+                  <h4 className="font-medium text-gray-900">Machine Learning for Decision-making in Intelligent Manufacturing</h4>
+                  <div className="text-sm text-gray-600 italic">Centre for Decision Research, University of Leeds</div>
+                </div>
+                <span className="text-sm text-gray-600">2023</span>
               </div>
-              <p className="text-gray-600 text-sm italic">Centre for Decision Research, University of Leeds</p>
-            </CardContent>
-          </Card>
-          
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                <h4 className="font-medium text-gray-900">Machine Learning Research in Intelligent Manufacturing</h4>
-                <span className="text-gray-600 text-sm">2023</span>
+              
+              <div className="flex justify-between items-start">
+                <div>
+                  <h4 className="font-medium text-gray-900">Machine Learning Research in Intelligent Manufacturing</h4>
+                  <div className="text-sm text-gray-600 italic">Research Festival, University of Huddersfield</div>
+                </div>
+                <span className="text-sm text-gray-600">2023</span>
               </div>
-              <p className="text-gray-600 text-sm italic">Research Festival, University of Huddersfield</p>
-            </CardContent>
-          </Card>
-          
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                <h4 className="font-medium text-gray-900">Machine Learning and its Applications</h4>
-                <span className="text-gray-600 text-sm">2019</span>
+              
+              <div className="flex justify-between items-start">
+                <div>
+                  <h4 className="font-medium text-gray-900">Machine Learning and its Applications</h4>
+                  <div className="text-sm text-gray-600 italic">EPSRC Future Advanced Metrology Hub</div>
+                </div>
+                <span className="text-sm text-gray-600">2019</span>
               </div>
-              <p className="text-gray-600 text-sm italic">EPSRC Future Advanced Metrology Hub</p>
-            </CardContent>
-          </Card>
-        </div>
+            </div>
+          </CardContent>
+        </Card>
       )
     },
     {
@@ -72,48 +66,20 @@ const AcademicEngagement = () => {
       label: "Journal Reviewer",
       icon: <FileCheck size={16} />,
       content: (
-        <div className="space-y-4">
-          <Card>
-            <CardContent className="p-6">
+        <Card>
+          <CardContent className="p-6">
+            <div className="space-y-3">
               <p className="text-gray-700">IEEE Transactions on Industrial Informatics</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-6">
               <p className="text-gray-700">Robotics and Computer-integrated Manufacturing</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-6">
               <p className="text-gray-700">Artificial Intelligence Review</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-6">
               <p className="text-gray-700">Journal of Intelligent Manufacturing</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-6">
               <p className="text-gray-700">CIRP Annals - Manufacturing Technology</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-6">
               <p className="text-gray-700">IEEE Transactions on Games</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-6">
               <p className="text-gray-700">Journal of Business Analytics</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-6">
               <p className="text-gray-700">Journal of the Operational Research Society</p>
-            </CardContent>
-          </Card>
-        </div>
+            </div>
+          </CardContent>
+        </Card>
       )
     },
     {
@@ -121,13 +87,11 @@ const AcademicEngagement = () => {
       label: "Guest Editor",
       icon: <Edit size={16} />,
       content: (
-        <div className="space-y-4">
-          <Card>
-            <CardContent className="p-6">
-              <p className="text-gray-700">Special Issue "Application of Artificial Intelligence Techniques in Additive Manufacturing" of Processes.</p>
-            </CardContent>
-          </Card>
-        </div>
+        <Card>
+          <CardContent className="p-6">
+            <p className="text-gray-700">Special Issue "Application of Artificial Intelligence Techniques in Additive Manufacturing" of Processes.</p>
+          </CardContent>
+        </Card>
       )
     }
   ];
