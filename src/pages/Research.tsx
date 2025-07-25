@@ -1,6 +1,6 @@
 
 import { Link, useSearchParams } from "react-router-dom";
-import { ArrowLeft, FileText, ExternalLink, ChevronDown, ChevronUp, MessageSquare, Rotate3D, Search, Gamepad2, Package, Printer, Settings, Gamepad } from "lucide-react";
+import { ArrowLeft, FileText, ExternalLink, ChevronDown, ChevronUp, MessageSquare, Rotate3D, Search, Gamepad2, Package, Printer, Settings, Gamepad, PoundSterling } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState, useEffect } from "react";
@@ -195,6 +195,32 @@ const Research = () => {
             </TabsContent>
           ))}
         </Tabs>
+        
+        {/* Current Funding Section */}
+        <section className="mt-12 mb-10">
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Current Funding</h2>
+          <Card>
+            <CardContent className="p-6">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center">
+                  <PoundSterling size={24} className="text-green-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2">Knowledge Transfer Partnership</h3>
+                  <div className="space-y-1 text-sm text-gray-600">
+                    <p><span className="font-medium">Duration:</span> 2025 - 2027</p>
+                    <p><span className="font-medium">Principal Investigator:</span> Dr. Peizhi Shi (Academic Supervisor)</p>
+                    <p><span className="font-medium">Co-Investigators:</span> Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)</p>
+                    <p><span className="font-medium">Industry Partner:</span> SR Mailing Ltd</p>
+                    <p><span className="font-medium">Funding Amount:</span> £338,916</p>
+                    <p><span className="font-medium">Funding Scheme:</span> Knowledge Transfer Partnerships with SR Mailing, Innovate UK</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+        
       </div>
     </div>
   );
