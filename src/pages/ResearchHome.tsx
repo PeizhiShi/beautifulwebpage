@@ -20,9 +20,9 @@ const ResearchHome = () => {
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
         <header className="flex flex-col md:flex-row gap-8 items-start pb-8 mb-8">
-          <div className="w-40 h-40 min-w-40 bg-gray-200 overflow-hidden rounded-full">
+          <div className="w-40 h-48 min-w-40 bg-gray-200 overflow-hidden rounded-lg">
             <img 
-              src="/lovable-uploads/1ffac403-948a-44ba-84cd-4d6903233aee.png" 
+              src="/lovable-uploads/a345f82a-2491-481b-9bd0-6bbb6b3eb76f.png" 
               alt="Profile" 
               className="w-full h-full object-cover"
               loading="eager"
@@ -34,13 +34,16 @@ const ResearchHome = () => {
             <h1 className="text-3xl font-bold mb-2">Dr. Peizhi Shi</h1>
             <h2 className="text-xl text-gray-600 mb-4">Lecturer in Applied Artificial Intelligence</h2>
             
-            <div className="flex flex-wrap gap-1 mb-4">
+            <div className="flex flex-wrap gap-1 mb-6">
               <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">Machine Learning</span>
               <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">Computer Vision</span>
               <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Large Language Model</span>
               <span className="bg-orange-50 text-orange-700 px-2 py-1 rounded text-sm">Production Research</span>
             </div>
             
+            <p className="text-gray-700 mb-6">
+              I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. My research interests lie in machine learning, artificial intelligence, and their real-world applications, with a particular focus on sustainable manufacturing, design for additive manufacturing, and production research.
+            </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center gap-2 text-gray-700">
@@ -78,12 +81,6 @@ const ResearchHome = () => {
         </nav>
         
         <main>
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">About Me</h2>
-            <p className="text-gray-700">
-              I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. My research interests lie in machine learning, artificial intelligence, and their real-world applications, with a particular focus on sustainable manufacturing, design for additive manufacturing, and production research.
-            </p>
-          </section>
             
             
           
@@ -109,16 +106,17 @@ const ResearchHome = () => {
 
           <section className="mb-10">
               <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">PhD Opportunities</h2>
-              <p className="text-gray-700">
-
-                I welcome enquiries from prospective PhD students with interests aligned to mine, specifically in machine learning and its applications. Applicants are expected to have a strong academic background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related disciplines. If you are considering doctoral research and are passionate about applying advanced machine learning to real-world problems, please feel free to get in touch with your academic CV and a research proposal.
-              
-              </p>
-<p className="text-gray-700 mt-4">
-Scholarship opportunities: University Scholarship, CSC Scholarship (open to Chinese citizens only), and White Rose Scholarship.              
-              </p>
-           
-            
+              <Card className="bg-purple-50 border-purple-100">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-3">Message to Potential PhD Students</h3>
+                  <p className="text-gray-700 mb-4">
+                    I welcome enquiries from prospective PhD students with interests aligned to mine, specifically in machine learning and its applications. Applicants are expected to have a strong academic background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related disciplines. If you are considering doctoral research and are passionate about applying advanced machine learning to real-world problems, please feel free to get in touch with your academic CV and a research proposal.
+                  </p>
+                  <p className="text-gray-700">
+                    <strong>Scholarship opportunities:</strong> University Scholarship, CSC Scholarship (open to Chinese citizens only), and White Rose Scholarship.
+                  </p>
+                </CardContent>
+              </Card>
           </section>
           
           <section className="mb-10">
