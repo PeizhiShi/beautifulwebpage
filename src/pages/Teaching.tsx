@@ -281,7 +281,7 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
                   {level}
                 </span>
               )}
-              <span>{term}</span>
+              <span>{term} • {university}</span>
             </p>
           </div>
           <span className={`px-2 py-1 rounded text-xs font-medium ${
