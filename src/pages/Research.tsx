@@ -1,6 +1,6 @@
 
 import { Link, useSearchParams } from "react-router-dom";
-import { ArrowLeft, FileText, ExternalLink, ChevronDown, ChevronUp, MessageSquare, Rotate3D, Wrench, Gamepad2, Package, Printer, Settings, Gamepad, PoundSterling, Mic, FileCheck, Edit } from "lucide-react";
+import { ArrowLeft, FileText, ExternalLink, ChevronDown, ChevronUp, MessageSquare, Rotate3D, Settings, Gamepad2, Package, Printer, Gamepad, PoundSterling } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState, useEffect } from "react";
@@ -8,7 +8,6 @@ import { useState, useEffect } from "react";
 const Research = () => {
   const [searchParams] = useSearchParams();
   const [activeTab, setActiveTab] = useState("sustainable-packaging");
-  const [engagementTab, setEngagementTab] = useState("invited-talks");
 
   useEffect(() => {
     const tabParam = searchParams.get("tab");
@@ -140,7 +139,7 @@ const Research = () => {
     {
       category: "subtractive-manufacturing",
       label: "AI in Subtractive Manufacturing", 
-      icon: <Wrench size={16} />,
+      icon: <Settings size={16} />,
       projects: researchProjects.filter(p => p.category === "subtractive-manufacturing")
     },
     {
@@ -148,94 +147,6 @@ const Research = () => {
       label: "AI in Entertainment",
       icon: <Gamepad size={16} />,
       projects: researchProjects.filter(p => p.category === "entertainment")
-    }
-  ];
-
-  // Academic engagement sections
-  const engagementSections = [
-    {
-      id: "invited-talks",
-      label: "Invited Talks",
-      icon: <Mic size={16} />,
-      content: (
-        <Card>
-          <CardContent className="p-6">
-            <div className="space-y-4">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h4 className="font-medium text-gray-900">LLM-Enhanced Decision Support System for the Sustainable Packaging Sector</h4>
-                  <div className="text-sm text-gray-600 italic">ATOD event, University of Leeds</div>
-                  <div className="text-sm text-gray-700">Co-presented with Kun Feng (Director of SR Mailing)</div>
-                </div>
-                <span className="text-sm text-gray-600">2025</span>
-              </div>
-              
-              <div className="flex justify-between items-start">
-                <div>
-                  <h4 className="font-medium text-gray-900">Applying AI for Enterprise Intelligence and Manufacturing Innovation</h4>
-                  <div className="text-sm text-gray-600 italic">The Future Advanced Metrology Hub for Sustainable Manufacturing</div>
-                </div>
-                <span className="text-sm text-gray-600">2025</span>
-              </div>
-              
-              <div className="flex justify-between items-start">
-                <div>
-                  <h4 className="font-medium text-gray-900">Machine Learning for Decision-making in Intelligent Manufacturing</h4>
-                  <div className="text-sm text-gray-600 italic">Centre for Decision Research, University of Leeds</div>
-                </div>
-                <span className="text-sm text-gray-600">2023</span>
-              </div>
-              
-              <div className="flex justify-between items-start">
-                <div>
-                  <h4 className="font-medium text-gray-900">Machine Learning Research in Intelligent Manufacturing</h4>
-                  <div className="text-sm text-gray-600 italic">Research Festival, University of Huddersfield</div>
-                </div>
-                <span className="text-sm text-gray-600">2023</span>
-              </div>
-              
-              <div className="flex justify-between items-start">
-                <div>
-                  <h4 className="font-medium text-gray-900">Machine Learning and its Applications</h4>
-                  <div className="text-sm text-gray-600 italic">EPSRC Future Advanced Metrology Hub</div>
-                </div>
-                <span className="text-sm text-gray-600">2019</span>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      )
-    },
-    {
-      id: "editorial-activities",
-      label: "Editorial Activities", 
-      icon: <FileCheck size={16} />,
-      content: (
-        <div className="space-y-4">
-          <div className="border border-gray-200 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">
-              Journal Reviewer
-            </h3>
-            <div className="space-y-2">
-              <p className="text-gray-700">IEEE Transactions on Industrial Informatics</p>
-              <p className="text-gray-700">Robotics and Computer-integrated Manufacturing</p>
-              <p className="text-gray-700">Artificial Intelligence Review</p>
-              <p className="text-gray-700">Journal of Intelligent Manufacturing</p>
-              <p className="text-gray-700">CIRP Annals - Manufacturing Technology</p>
-              <p className="text-gray-700">IEEE Transactions on Games</p>
-              <p className="text-gray-700">Journal of Business Analytics</p>
-              <p className="text-gray-700">Journal of the Operational Research Society</p>
-            </div>
-          </div>
-          
-          <div className="border border-gray-200 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">
-              Guest Editor
-            </h3>
-            <p className="text-gray-700">Special Issue "Application of Artificial Intelligence Techniques in Additive Manufacturing" of Processes.</p>
-          </div>
-        </div>
-      )
     }
   ];
 
@@ -284,34 +195,6 @@ const Research = () => {
             </TabsContent>
           ))}
         </Tabs>
-        
-        {/* Academic Engagement Section */}
-        <section className="mt-12 mb-10">
-          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Academic Engagement</h2>
-          <p className="text-gray-700 mb-8 text-lg">
-            I actively engage with the academic community through invited talks, peer review activities, 
-            and editorial contributions. This engagement helps advance the field and foster collaboration 
-            across research communities.
-          </p>
-
-          <Tabs value={engagementTab} onValueChange={setEngagementTab} className="w-full">
-            <TabsList className="grid w-full grid-cols-2">
-              {engagementSections.map(({ id, label, icon }) => (
-                <TabsTrigger key={id} value={id} className="flex items-center gap-2">
-                  {icon}
-                  <span className="hidden sm:inline">{label}</span>
-                  <span className="sm:hidden">{label.split(' ')[0]}</span>
-                </TabsTrigger>
-              ))}
-            </TabsList>
-
-            {engagementSections.map(({ id, content }) => (
-              <TabsContent key={id} value={id} className="mt-6">
-                {content}
-              </TabsContent>
-            ))}
-          </Tabs>
-        </section>
         
       </div>
     </div>
