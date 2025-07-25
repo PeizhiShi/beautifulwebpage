@@ -39,6 +39,7 @@ const ResearchHome = () => {
               <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">Computer Vision</span>
               <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Large Language Model</span>
               <span className="bg-orange-50 text-orange-700 px-2 py-1 rounded text-sm">Production Research</span>
+              <span className="bg-red-50 text-red-700 px-2 py-1 rounded text-sm">AI for Good</span>
             </div>
             
             <p className="text-gray-700 mb-6">
