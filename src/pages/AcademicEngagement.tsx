@@ -108,11 +108,7 @@ const AcademicEngagement = () => {
         
         <h1 className="text-3xl font-bold mb-6">Academic Engagement</h1>
         
-        <p className="text-gray-700 mb-8 text-lg">
-          I actively engage with the academic community through invited talks, peer review activities, 
-          and editorial contributions. This engagement helps advance the field and foster collaboration 
-          across research communities.
-        </p>
+        
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full grid-cols-3">
