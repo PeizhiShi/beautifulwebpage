@@ -28,7 +28,7 @@ const AcademicEngagement = () => {
           <ul className="space-y-3">
             <li className="pb-4">
               <div className="flex flex-col md:flex-row md:justify-between">
-                <h3 className="font-medium">LLM-Enhanced Decision Support System for the Sustainable Packaging Sector</h3>
+                <p className="font-medium">LLM-Enhanced Decision Support System for the Sustainable Packaging Sector</p>
                 <span className="text-gray-600">2025</span>
               </div>
               <p className="text-gray-600 text-sm italic">ATOD event, University of Leeds</p>
@@ -37,7 +37,7 @@ const AcademicEngagement = () => {
             
             <li className="pb-4">
               <div className="flex flex-col md:flex-row md:justify-between">
-                <h3 className="font-medium">Applying AI for Enterprise Intelligence and Manufacturing Innovation</h3>
+                <p className="font-medium">Applying AI for Enterprise Intelligence and Manufacturing Innovation</p>
                 <span className="text-gray-600">2025</span>
               </div>
               <p className="text-gray-600 text-sm italic">The Future Advanced Metrology Hub for Sustainable Manufacturing</p>
@@ -45,7 +45,7 @@ const AcademicEngagement = () => {
             
             <li className="pb-4">
               <div className="flex flex-col md:flex-row md:justify-between">
-                <h3 className="font-medium">Machine Learning for Decision-making in Intelligent Manufacturing</h3>
+                <p className="font-medium">Machine Learning for Decision-making in Intelligent Manufacturing</p>
                 <span className="text-gray-600">2023</span>
               </div>
               <p className="text-gray-600 text-sm italic">Centre for Decision Research, University of Leeds</p>
@@ -53,7 +53,7 @@ const AcademicEngagement = () => {
             
             <li className="pb-4">
               <div className="flex flex-col md:flex-row md:justify-between">
-                <h3 className="font-medium">Machine Learning Research in Intelligent Manufacturing</h3>
+                <p className="font-medium">Machine Learning Research in Intelligent Manufacturing</p>
                 <span className="text-gray-600">2023</span>
               </div>
               <p className="text-gray-600 text-sm italic">Research Festival, University of Huddersfield</p>
@@ -61,7 +61,7 @@ const AcademicEngagement = () => {
             
             <li className="pb-4">
               <div className="flex flex-col md:flex-row md:justify-between">
-                <h3 className="font-medium">Machine Learning and its Applications</h3>
+                <p className="font-medium">Machine Learning and its Applications</p>
                 <span className="text-gray-600">2019</span>
               </div>
               <p className="text-gray-600 text-sm italic">EPSRC Future Advanced Metrology Hub</p>
