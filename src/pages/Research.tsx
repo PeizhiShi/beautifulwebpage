@@ -251,7 +251,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
           <>
            
             <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-              Funded by Innovate UK & SR Mailing Ltd
+              Funded by Innovate UK & SR Mailing
             </span>
           </>
         );
