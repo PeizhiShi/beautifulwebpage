@@ -211,30 +211,30 @@ const Research = () => {
       label: "Editorial Activities", 
       icon: <FileCheck size={16} />,
       content: (
-        <Card>
-          <CardContent className="p-6">
-            <div className="space-y-6">
-              <div>
-                <h4 className="font-medium text-gray-900 mb-3">Journal Reviewer</h4>
-                <div className="space-y-2">
-                  <p className="text-gray-700">IEEE Transactions on Industrial Informatics</p>
-                  <p className="text-gray-700">Robotics and Computer-integrated Manufacturing</p>
-                  <p className="text-gray-700">Artificial Intelligence Review</p>
-                  <p className="text-gray-700">Journal of Intelligent Manufacturing</p>
-                  <p className="text-gray-700">CIRP Annals - Manufacturing Technology</p>
-                  <p className="text-gray-700">IEEE Transactions on Games</p>
-                  <p className="text-gray-700">Journal of Business Analytics</p>
-                  <p className="text-gray-700">Journal of the Operational Research Society</p>
-                </div>
-              </div>
-              
-              <div className="border-t pt-4">
-                <h4 className="font-medium text-gray-900 mb-3">Guest Editor</h4>
-                <p className="text-gray-700">Special Issue "Application of Artificial Intelligence Techniques in Additive Manufacturing" of Processes.</p>
-              </div>
+        <div className="space-y-4">
+          <div className="border border-gray-200 rounded-lg p-6">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">
+              Journal Reviewer
+            </h3>
+            <div className="space-y-2">
+              <p className="text-gray-700">IEEE Transactions on Industrial Informatics</p>
+              <p className="text-gray-700">Robotics and Computer-integrated Manufacturing</p>
+              <p className="text-gray-700">Artificial Intelligence Review</p>
+              <p className="text-gray-700">Journal of Intelligent Manufacturing</p>
+              <p className="text-gray-700">CIRP Annals - Manufacturing Technology</p>
+              <p className="text-gray-700">IEEE Transactions on Games</p>
+              <p className="text-gray-700">Journal of Business Analytics</p>
+              <p className="text-gray-700">Journal of the Operational Research Society</p>
             </div>
-          </CardContent>
-        </Card>
+          </div>
+          
+          <div className="border border-gray-200 rounded-lg p-6">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">
+              Guest Editor
+            </h3>
+            <p className="text-gray-700">Special Issue "Application of Artificial Intelligence Techniques in Additive Manufacturing" of Processes.</p>
+          </div>
+        </div>
       )
     }
   ];
@@ -362,9 +362,14 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
     switch (fundingType) {
       case 'principal':
         return (
-          <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-            Principal Investigator
-          </span>
+          <>
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+              Funded by Innovate UK & SR Mailing
+            </span>
+            <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+              Principal Investigator
+            </span>
+          </>
         );
       case 'ongoing':
         return (
