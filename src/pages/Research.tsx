@@ -207,34 +207,32 @@ const Research = () => {
       )
     },
     {
-      id: "journal-reviewer",
-      label: "Journal Reviewer",
+      id: "editorial-activities",
+      label: "Editorial Activities", 
       icon: <FileCheck size={16} />,
       content: (
         <Card>
           <CardContent className="p-6">
-            <div className="space-y-3">
-              <p className="text-gray-700">IEEE Transactions on Industrial Informatics</p>
-              <p className="text-gray-700">Robotics and Computer-integrated Manufacturing</p>
-              <p className="text-gray-700">Artificial Intelligence Review</p>
-              <p className="text-gray-700">Journal of Intelligent Manufacturing</p>
-              <p className="text-gray-700">CIRP Annals - Manufacturing Technology</p>
-              <p className="text-gray-700">IEEE Transactions on Games</p>
-              <p className="text-gray-700">Journal of Business Analytics</p>
-              <p className="text-gray-700">Journal of the Operational Research Society</p>
+            <div className="space-y-6">
+              <div>
+                <h4 className="font-medium text-gray-900 mb-3">Journal Reviewer</h4>
+                <div className="space-y-2">
+                  <p className="text-gray-700">IEEE Transactions on Industrial Informatics</p>
+                  <p className="text-gray-700">Robotics and Computer-integrated Manufacturing</p>
+                  <p className="text-gray-700">Artificial Intelligence Review</p>
+                  <p className="text-gray-700">Journal of Intelligent Manufacturing</p>
+                  <p className="text-gray-700">CIRP Annals - Manufacturing Technology</p>
+                  <p className="text-gray-700">IEEE Transactions on Games</p>
+                  <p className="text-gray-700">Journal of Business Analytics</p>
+                  <p className="text-gray-700">Journal of the Operational Research Society</p>
+                </div>
+              </div>
+              
+              <div className="border-t pt-4">
+                <h4 className="font-medium text-gray-900 mb-3">Guest Editor</h4>
+                <p className="text-gray-700">Special Issue "Application of Artificial Intelligence Techniques in Additive Manufacturing" of Processes.</p>
+              </div>
             </div>
-          </CardContent>
-        </Card>
-      )
-    },
-    {
-      id: "guest-editor",
-      label: "Guest Editor",
-      icon: <Edit size={16} />,
-      content: (
-        <Card>
-          <CardContent className="p-6">
-            <p className="text-gray-700">Special Issue "Application of Artificial Intelligence Techniques in Additive Manufacturing" of Processes.</p>
           </CardContent>
         </Card>
       )
@@ -297,7 +295,7 @@ const Research = () => {
           </p>
 
           <Tabs value={engagementTab} onValueChange={setEngagementTab} className="w-full">
-            <TabsList className="grid w-full grid-cols-3">
+            <TabsList className="grid w-full grid-cols-2">
               {engagementSections.map(({ id, label, icon }) => (
                 <TabsTrigger key={id} value={id} className="flex items-center gap-2">
                   {icon}
