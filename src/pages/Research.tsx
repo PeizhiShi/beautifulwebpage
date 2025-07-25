@@ -139,7 +139,7 @@ const Research = () => {
     {
       category: "subtractive-manufacturing",
       label: "AI in Subtractive Manufacturing", 
-      icon: <Gamepad size={16} />,
+      icon: <Printer size={16} />,
       projects: researchProjects.filter(p => p.category === "subtractive-manufacturing")
     },
     {
