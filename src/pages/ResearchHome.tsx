@@ -114,7 +114,6 @@ const ResearchHome = () => {
                   </p>
                   <p className="text-gray-700">
                     <strong>Scholarship opportunities:</strong> <a href="https://phd.leeds.ac.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">University Scholarship</a>, <a href="https://wrdtp.ac.uk/studentships/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">White Rose Scholarship</a>, and <a href="https://www.csc.edu.cn" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">CSC Scholarship</a> (open to Chinese citizens only).
-                    
                   </p>
                 </CardContent>
               </Card>
