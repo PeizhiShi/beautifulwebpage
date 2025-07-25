@@ -7,15 +7,8 @@ import { useState, useEffect } from "react";
 
 const Research = () => {
   const [searchParams] = useSearchParams();
-  const [activeTab, setActiveTab] = useState("sustainable-packaging");
-
-  useEffect(() => {
-    const tabParam = searchParams.get("tab");
-    if (tabParam) {
-      setActiveTab(tabParam);
-    }
-  }, [searchParams]);
-
+  const tabParam = searchParams.get("tab") || "sustainable-packaging";
+  
   // Define research projects with categories
   const researchProjects = [
     {
@@ -164,7 +157,7 @@ const Research = () => {
         
        
         
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+        <Tabs value={tabParam} className="w-full">
           <TabsList className="grid w-full grid-cols-4">
             {projectsByCategory.map(({ category, label, icon }) => (
               <TabsTrigger key={category} value={category} className="flex items-center gap-2 text-xs">
