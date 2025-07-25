@@ -29,16 +29,6 @@ const Research = () => {
         </>
       ),
       keyPublications: [],
-      keyFunding: [
-        {
-          duration: "2025 - 2027",
-          pi: "Dr. Peizhi Shi (Academic Supervisor)",
-          coIs: "Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)",
-          partner: "SR Mailing Ltd",
-          amount: "£338,916",
-          scheme: "Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
-        }
-      ],
       fundingType: "principal" as const
     },
     {
@@ -186,7 +176,6 @@ const Research = () => {
                     image={project.image}
                     description={project.description}
                     keyPublications={project.keyPublications}
-                    keyFunding={project.keyFunding}
                     supervisor={project.supervisor}
                     fundingType={project.fundingType}
                   />
@@ -200,22 +189,15 @@ const Research = () => {
         <section className="mt-12 mb-10">
           <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Current Funding</h2>
           <Card>
-            <CardContent className="p-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center">
-                  <PoundSterling size={24} className="text-green-600" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2">Knowledge Transfer Partnership</h3>
-                  <div className="space-y-1 text-sm text-gray-600">
-                    <p><span className="font-medium">Duration:</span> 2025 - 2027</p>
-                    <p><span className="font-medium">Principal Investigator:</span> Dr. Peizhi Shi (Academic Supervisor)</p>
-                    <p><span className="font-medium">Co-Investigators:</span> Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)</p>
-                    <p><span className="font-medium">Industry Partner:</span> SR Mailing Ltd</p>
-                    <p><span className="font-medium">Funding Amount:</span> £338,916</p>
-                    <p><span className="font-medium">Funding Scheme:</span> Knowledge Transfer Partnerships with SR Mailing, Innovate UK</p>
-                  </div>
-                </div>
+            <CardContent className="p-4">
+              <h3 className="font-semibold text-gray-800 mb-3">Knowledge Transfer Partnership</h3>
+              <div className="space-y-1 text-sm text-gray-600">
+                <p><span className="font-medium">Duration:</span> 2025 - 2027</p>
+                <p><span className="font-medium">Principal Investigator:</span> Dr. Peizhi Shi (Academic Supervisor)</p>
+                <p><span className="font-medium">Co-Investigators:</span> Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)</p>
+                <p><span className="font-medium">Industry Partner:</span> SR Mailing Ltd</p>
+                <p><span className="font-medium">Funding Amount:</span> £338,916</p>
+                <p><span className="font-medium">Funding Scheme:</span> Knowledge Transfer Partnerships with SR Mailing, Innovate UK</p>
               </div>
             </CardContent>
           </Card>
@@ -322,85 +304,87 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
       </div>
       <p className="text-gray-700 mb-4">{description}</p>
       
-      <div>
-        <button 
-          onClick={() => setExpanded(!expanded)}
-          className="flex items-center text-blue-600 hover:text-blue-800 mb-2"
-        >
-          {expanded ? (
-            <>
-              <ChevronUp size={16} className="mr-1" />
-              {keyFunding ? "Hide Funding Information" : fundingInfo ? "Hide Funding Information" : "Hide Key Publications"}
-            </>
-          ) : (
-            <>
-              <ChevronDown size={16} className="mr-1" />
-              {keyFunding ? "Show Funding Information" : fundingInfo ? "Show Funding Information" : "Show Key Publications"}
-            </>
-          )}
-        </button>
-        
-        {expanded && (
-          <div className="pl-4 border-l-2 border-blue-200 mb-4">
-            {keyFunding ? (
+      {(keyFunding || fundingInfo || keyPublications.length > 0) && (
+        <div>
+          <button 
+            onClick={() => setExpanded(!expanded)}
+            className="flex items-center text-blue-600 hover:text-blue-800 mb-2"
+          >
+            {expanded ? (
               <>
-                <h3 className="font-medium mb-2">Funding Information</h3>
-                <ul className="space-y-3">
-                  {keyFunding.map((funding, index) => (
-                    <li key={index}>
-                      <div className="text-gray-700 text-sm space-y-1">
-                        <p><span className="font-medium">Duration:</span> {funding.duration}</p>
-                        <p><span className="font-medium">Principal Investigator:</span> {funding.pi}</p>
-                        <p><span className="font-medium">Co-Investigators:</span> {funding.coIs}</p>
-                        <p><span className="font-medium">Industry Partner:</span> {funding.partner}</p>
-                        <p><span className="font-medium">Funding Amount:</span> {funding.amount}</p>
-                        <p><span className="font-medium">Funding Scheme:</span> {funding.scheme}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            ) : fundingInfo ? (
-              <>
-                <h3 className="font-medium mb-2">Funding Information</h3>
-                <ul className="space-y-2">
-                  {fundingInfo.split('\n').filter(line => line.trim()).map((line, index) => (
-                    <li key={index} className="text-gray-700">
-                      {line.replace('• **', '').replace(':**', ':')}
-                    </li>
-                  ))}
-                </ul>
+                <ChevronUp size={16} className="mr-1" />
+                {keyFunding ? "Hide Funding Information" : fundingInfo ? "Hide Funding Information" : "Hide Key Publications"}
               </>
             ) : (
               <>
-                <h3 className="font-medium mb-2">Key Publications</h3>
-                <ul className="space-y-3">
-                  {keyPublications.map((pub, index) => {
-                    const venueMatch = pub.venue.match(/(.*?)(,\s*IF:\s*[\d.]+)?$/);
-                    const venueText = venueMatch ? venueMatch[1] : pub.venue;
-                    const impactFactor = pub.venue.match(/IF:\s*([\d.]+)/)?.[1];
-                    
-                    return (
-                      <li key={index}>
-                        <p className="font-medium">{pub.title}</p>
-                        <p className="text-gray-700 text-sm">{pub.authors}</p>
-                        <p className="text-gray-600 text-sm italic">
-                          {venueText}
-                          {impactFactor && parseFloat(impactFactor) > 7 && (
-                            <span className="ml-2 bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full text-xs font-medium">
-                              IF: {impactFactor}
-                            </span>
-                          )}
-                        </p>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ChevronDown size={16} className="mr-1" />
+                {keyFunding ? "Show Funding Information" : fundingInfo ? "Show Funding Information" : "Show Key Publications"}
               </>
             )}
-          </div>
-        )}
-      </div>
+          </button>
+        
+          {expanded && (
+            <div className="pl-4 border-l-2 border-blue-200 mb-4">
+              {keyFunding ? (
+                <>
+                  <h3 className="font-medium mb-2">Funding Information</h3>
+                  <ul className="space-y-3">
+                    {keyFunding.map((funding, index) => (
+                      <li key={index}>
+                        <div className="text-gray-700 text-sm space-y-1">
+                          <p><span className="font-medium">Duration:</span> {funding.duration}</p>
+                          <p><span className="font-medium">Principal Investigator:</span> {funding.pi}</p>
+                          <p><span className="font-medium">Co-Investigators:</span> {funding.coIs}</p>
+                          <p><span className="font-medium">Industry Partner:</span> {funding.partner}</p>
+                          <p><span className="font-medium">Funding Amount:</span> {funding.amount}</p>
+                          <p><span className="font-medium">Funding Scheme:</span> {funding.scheme}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : fundingInfo ? (
+                <>
+                  <h3 className="font-medium mb-2">Funding Information</h3>
+                  <ul className="space-y-2">
+                    {fundingInfo.split('\n').filter(line => line.trim()).map((line, index) => (
+                      <li key={index} className="text-gray-700">
+                        {line.replace('• **', '').replace(':**', ':')}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : (
+                <>
+                  <h3 className="font-medium mb-2">Key Publications</h3>
+                  <ul className="space-y-3">
+                    {keyPublications.map((pub, index) => {
+                      const venueMatch = pub.venue.match(/(.*?)(,\s*IF:\s*[\d.]+)?$/);
+                      const venueText = venueMatch ? venueMatch[1] : pub.venue;
+                      const impactFactor = pub.venue.match(/IF:\s*([\d.]+)/)?.[1];
+                      
+                      return (
+                        <li key={index}>
+                          <p className="font-medium">{pub.title}</p>
+                          <p className="text-gray-700 text-sm">{pub.authors}</p>
+                          <p className="text-gray-600 text-sm italic">
+                            {venueText}
+                            {impactFactor && parseFloat(impactFactor) > 7 && (
+                              <span className="ml-2 bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full text-xs font-medium">
+                                IF: {impactFactor}
+                              </span>
+                            )}
+                          </p>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </>
+              )}
+            </div>
+          )}
+        </div>
+      )}
     </section>
   );
 };
