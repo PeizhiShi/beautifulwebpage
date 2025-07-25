@@ -203,7 +203,7 @@ const Teaching = () => {
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <Users size={24} className="text-gray-600 mt-1 flex-shrink-0" />
+                  <BookOpen size={24} className="text-gray-600 mt-1 flex-shrink-0" />
                   <div className="space-y-6">
 
                     <div className="border-l-4 border-gray-300 pl-4">
