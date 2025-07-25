@@ -5,7 +5,7 @@ import {
   User, 
   Mail, 
   Github, 
-  BookOpen, ƒ
+  BookOpen,
   FileText, 
   Presentation,
   ExternalLink,
