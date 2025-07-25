@@ -46,8 +46,7 @@ const ResearchHome = () => {
             </div>
             
             <p className="text-gray-700 mb-6">
-I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. My research interests lie in machine learning, artificial intelligence, and their real-world applications, with a current focus on sustainable manufacturing, design for additive manufacturing, and production research.            
-            </p>
+I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. I was awarded my PhD in Computer Science in March 2019, under the supervision of Dr Ke Chen, within the Machine Learning and Optimization Group at the School of Computer Science, University of Manchester. My research interests lie in machine learning and its real-world applications, with a current focus on production research.            </p>
               <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center gap-2 text-gray-700">
                 <MapPin size={16} />
