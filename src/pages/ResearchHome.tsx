@@ -158,7 +158,6 @@ const ResearchHome = () => {
   
         </footer>
 
-        <a href="https://clustrmaps.com/site/1c55p" title="Visit tracker"><img width="5px" src="//www.clustrmaps.com/map_v2.png?d=y-ufs--8VEQ1-ysKc-vqGC8tFrjwu8Ti5pL0Jl7vHAY&cl=ffffff"></a>
 
       </div>
     </div>
