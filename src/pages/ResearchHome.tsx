@@ -25,8 +25,14 @@ const ResearchHome = () => {
               src="/lovable-uploads/a345f82a-2491-481b-9bd0-6bbb6b3eb76f.png" 
               alt="Profile" 
               className="w-full h-auto object-cover"
-              loading="lazy"
+              loading="eager"
               decoding="async"
+              width="192"
+              height="256"
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+              }}
             />
           </div>
           
