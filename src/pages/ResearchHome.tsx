@@ -22,7 +22,7 @@ const ResearchHome = () => {
         <header className="flex flex-col md:flex-row gap-8 items-start pb-8 mt-6 mb-6">
           <div className="w-48 min-w-48 bg-gray-200 overflow-hidden rounded-lg">
             <img 
-              src="/lovable-uploads/502a9e5e-f3dd-4d21-b7f2-87d04d1eb47a.png" 
+              src="/lovable-uploads/a345f82a-2491-481b-9bd0-6bbb6b3eb76f.png" 
               alt="Profile" 
               className="w-full h-auto object-cover"
               loading="lazy"
