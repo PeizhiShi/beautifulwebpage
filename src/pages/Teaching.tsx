@@ -272,7 +272,6 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
               {code ? `${code}: ${title}` : title}
             </h3>
             <p className="text-gray-600 flex items-center gap-2 flex-wrap">
-              <span>{term}</span>
               {level && (
                 <span className={`px-2 py-1 rounded text-xs font-medium ${
                   level === "Postgraduate" ? "bg-blue-100 text-blue-800" :
@@ -282,13 +281,7 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
                   {level}
                 </span>
               )}
-              <span className={`px-2 py-1 rounded text-xs font-medium ${
-                university === "University of Leeds" ? "bg-indigo-100 text-indigo-800" :
-                university === "University of Manchester" ? "bg-amber-100 text-amber-800" :
-                "bg-rose-100 text-rose-800"
-              }`}>
-                {university}
-              </span>
+              <span>{term} • {university}</span>
             </p>
           </div>
           <span className={`px-2 py-1 rounded text-xs font-medium ${

@@ -25,23 +25,33 @@ const AcademicEngagement = () => {
             <Mic size={20} className="mr-2" />
             Invited talk
           </h2>
-          <ul className="space-y-4">
-            <li>
-              <p className="text-gray-700"><strong>2025</strong>, "LLM-Enhanced Decision Support System for the Sustainable Packaging Sector", co-presented with Kun Feng (Director of SR Mailing) at the ATOD event, University of Leeds</p>
-            </li>
-            <li>
-              <p className="text-gray-700"><strong>2025</strong>, "Applying AI for Enterprise Intelligence and Manufacturing Innovation", The Future Advanced Metrology Hub for Sustainable Manufacturing</p>
-            </li>
-            <li>
-              <p className="text-gray-700"><strong>2023</strong>, "Machine Learning for Decision-making in Intelligent Manufacturing", centre for decision research, University of Leeds</p>
-            </li>
-            <li>
-              <p className="text-gray-700"><strong>2023</strong>, "Machine Learning Research in Intelligent Manufacturing", research festival, University of Huddersfield</p>
-            </li>
-            <li>
-              <p className="text-gray-700"><strong>2019</strong>, "Machine Learning and its Applications", EPSRC Future Advanced Metrology Hub</p>
-            </li>
-          </ul>
+          <div className="space-y-4">
+            <div className="border-l-4 border-gray-300 pl-4">
+              <h3 className="font-semibold text-lg text-gray-800">"LLM-Enhanced Decision Support System for the Sustainable Packaging Sector"</h3>
+              <p className="text-gray-600">2025 • ATOD event, University of Leeds</p>
+              <p className="text-gray-700 mt-2">Co-presented with Kun Feng (Director of SR Mailing)</p>
+            </div>
+            
+            <div className="border-l-4 border-gray-300 pl-4">
+              <h3 className="font-semibold text-lg text-gray-800">"Applying AI for Enterprise Intelligence and Manufacturing Innovation"</h3>
+              <p className="text-gray-600">2025 • The Future Advanced Metrology Hub for Sustainable Manufacturing</p>
+            </div>
+            
+            <div className="border-l-4 border-gray-300 pl-4">
+              <h3 className="font-semibold text-lg text-gray-800">"Machine Learning for Decision-making in Intelligent Manufacturing"</h3>
+              <p className="text-gray-600">2023 • Centre for Decision Research, University of Leeds</p>
+            </div>
+            
+            <div className="border-l-4 border-gray-300 pl-4">
+              <h3 className="font-semibold text-lg text-gray-800">"Machine Learning Research in Intelligent Manufacturing"</h3>
+              <p className="text-gray-600">2023 • Research Festival, University of Huddersfield</p>
+            </div>
+            
+            <div className="border-l-4 border-gray-300 pl-4">
+              <h3 className="font-semibold text-lg text-gray-800">"Machine Learning and its Applications"</h3>
+              <p className="text-gray-600">2019 • EPSRC Future Advanced Metrology Hub</p>
+            </div>
+          </div>
         </section>
 
         <section className="mb-10">
