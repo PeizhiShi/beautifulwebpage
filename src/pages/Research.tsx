@@ -1,6 +1,6 @@
 
 import { Link, useSearchParams } from "react-router-dom";
-import { ArrowLeft, FileText, ExternalLink, ChevronDown, ChevronUp, MessageSquare, Rotate3D, Settings, Gamepad2, Package, Printer, Gamepad, PoundSterling, Wrench } from "lucide-react";
+import { ArrowLeft, FileText, ExternalLink, ChevronDown, ChevronUp, MessageSquare, Rotate3D, Settings, Gamepad2, Package, Printer, Gamepad, PoundSterling, Wrench, Search } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState, useEffect } from "react";
@@ -139,7 +139,7 @@ const Research = () => {
     {
       category: "subtractive-manufacturing",
       label: "AI in Subtractive Manufacturing", 
-      icon: <Wrench size={16} />,
+      icon: <Search size={16} />,
       projects: researchProjects.filter(p => p.category === "subtractive-manufacturing")
     },
     {
