@@ -14,25 +14,22 @@ import {
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import OrcidIcon from "../components/OrcidIcon";
+import OptimizedImage from "../components/OptimizedImage";
 
 const ResearchHome = () => {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
         <header className="flex flex-col md:flex-row gap-8 items-start pb-8 mt-6 mb-6">
-          <div className="w-48 min-w-48 bg-gray-200 overflow-hidden rounded-lg">
-            <img 
+          <div className="w-48 min-w-48 overflow-hidden rounded-lg">
+            <OptimizedImage 
               src="/lovable-uploads/a345f82a-2491-481b-9bd0-6bbb6b3eb76f.png" 
               alt="Profile" 
               className="w-full h-auto object-cover"
               loading="eager"
-              decoding="async"
-              width="192"
-              height="256"
-              style={{
-                maxWidth: '100%',
-                height: 'auto',
-              }}
+              priority={true}
+              width={192}
+              height={256}
             />
           </div>
           
