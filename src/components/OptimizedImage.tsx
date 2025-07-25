@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { Skeleton } from './ui/skeleton';
+import React from 'react';
 
 interface OptimizedImageProps {
   src: string;
@@ -20,26 +19,6 @@ const OptimizedImage = ({
   loading = 'lazy',
   priority = false 
 }: OptimizedImageProps) => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [hasError, setHasError] = useState(false);
-
-  const handleLoad = () => {
-    setIsLoading(false);
-  };
-
-  const handleError = () => {
-    setIsLoading(false);
-    setHasError(true);
-  };
-
-  if (hasError) {
-    return (
-      <div className={`bg-gray-200 flex items-center justify-center ${className}`}>
-        <span className="text-gray-500 text-sm">Image unavailable</span>
-      </div>
-    );
-  }
-
   return (
     <img
       src={src}
@@ -50,8 +29,6 @@ const OptimizedImage = ({
       width={width}
       height={height}
       {...(priority && { fetchpriority: 'high' })}
-      onLoad={handleLoad}
-      onError={handleError}
       style={{
         maxWidth: '100%',
         height: 'auto',
