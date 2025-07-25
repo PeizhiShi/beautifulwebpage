@@ -167,7 +167,7 @@ const Research = () => {
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full grid-cols-4">
             {projectsByCategory.map(({ category, label, icon }) => (
-              <TabsTrigger key={category} value={category} className="flex items-center gap-2 text-xs">
+              <TabsTrigger key={category} value={category} className="flex items-center gap-2">
                 {icon}
                 <span className="hidden sm:inline">{label}</span>
                 <span className="sm:hidden">{label.split(' ').slice(-1)[0]}</span>
