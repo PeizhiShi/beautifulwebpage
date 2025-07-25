@@ -37,7 +37,7 @@ const ResearchHome = () => {
             <h1 className="text-3xl font-bold mb-2">Dr. Peizhi Shi</h1>
             <h2 className="text-xl text-gray-600 mb-4">Lecturer in Applied Artificial Intelligence</h2>
             
-            <div className="flex flex-wrap gap-1 mb-5">
+            <div className="flex flex-wrap gap-2 mb-5">
               <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">Machine Learning</span>
               <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">Computer Vision</span>
               <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Large Language Model</span>
