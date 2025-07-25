@@ -91,14 +91,14 @@ const ResearchHome = () => {
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">LLM-Enhanced Decision Support System</h3>
                   <p className="text-gray-700 mb-3">Integration of AI and LLM techniques for sustainable packaging industry decision support.</p>
-                  <Link to="/research#llm-decision-support" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                  <Link to="/research?tab=sustainable-packaging" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                 </CardContent>
               </Card>
               <Card className="bg-green-50 border-green-100">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">Learning-based Build Orientation</h3>
                   <p className="text-gray-700 mb-3">Development of intelligent algorithms that optimize 3D-printed part orientations.</p>
-                  <Link to="/research#build-orientation" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                  <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                 </CardContent>
               </Card>
             </div>

@@ -1,11 +1,21 @@
 
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { ArrowLeft, FileText, ExternalLink, ChevronDown, ChevronUp, MessageSquare, Rotate3D, Search, Gamepad2, Package, Printer, Settings, Gamepad } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Research = () => {
+  const [searchParams] = useSearchParams();
+  const [activeTab, setActiveTab] = useState("sustainable-packaging");
+
+  useEffect(() => {
+    const tabParam = searchParams.get("tab");
+    if (tabParam) {
+      setActiveTab(tabParam);
+    }
+  }, [searchParams]);
+
   // Define research projects with categories
   const researchProjects = [
     {
@@ -154,7 +164,7 @@ const Research = () => {
         
        
         
-        <Tabs defaultValue="sustainable-packaging" className="w-full">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full grid-cols-4">
             {projectsByCategory.map(({ category, label, icon }) => (
               <TabsTrigger key={category} value={category} className="flex items-center gap-2 text-xs">
