@@ -133,13 +133,13 @@ const Research = () => {
     {
       category: "additive-manufacturing", 
       label: "AI in Additive Manufacturing",
-      icon: <Printer size={16} />,
+      icon: <Rotate3D size={16} />,
       projects: researchProjects.filter(p => p.category === "additive-manufacturing")
     },
     {
       category: "subtractive-manufacturing",
       label: "AI in Subtractive Manufacturing", 
-      icon: <Settings size={16} />,
+      icon: <Search size={16} />,
       projects: researchProjects.filter(p => p.category === "subtractive-manufacturing")
     },
     {
@@ -380,10 +380,6 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
 };
 
 const getProjectIcon = (title: string) => {
-  if (title.includes("LLM-Enhanced")) return <MessageSquare size={20} className="mr-2" />;
-  if (title.includes("Build Orientation")) return <Rotate3D size={20} className="mr-2" />;
-  if (title.includes("Feature Recognition")) return <Search size={20} className="mr-2" />;
-  if (title.includes("Game Generation")) return <Gamepad2 size={20} className="mr-2" />;
   return null;
 };
 
