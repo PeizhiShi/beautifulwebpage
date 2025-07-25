@@ -32,6 +32,12 @@ const OptimizedImage = ({
       style={{
         maxWidth: '100%',
         height: 'auto',
+        imageRendering: 'auto',
+        transform: 'translateZ(0)', // Force hardware acceleration for Safari
+      }}
+      onLoad={(e) => {
+        // Safari-specific optimization: remove transform after load
+        (e.target as HTMLImageElement).style.transform = '';
       }}
     />
   );
