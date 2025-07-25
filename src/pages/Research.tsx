@@ -93,7 +93,7 @@ const Research = () => {
             {
               title: "A novel learning-based feature recognition method using multiple sectional view representation",
               authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
-              venue: "Journal of Intelligent Manufacturing, 2020, IF: 8.3",
+              venue: "Journal of Intelligent Manufacturing, 2020, IF: 7.7",
               link: "/publications"
             }
           ]}
