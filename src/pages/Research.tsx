@@ -152,9 +152,7 @@ const Research = () => {
         
         <h1 className="text-3xl font-bold mb-6">Research & Grant</h1>
         
-        <p className="text-gray-700 mb-8 text-lg">
-          My research is dedicated to advancing the real-world application of artificial intelligence, with a focus on developing scalable, robust, and high-impact intelligent systems. By integrating machine learning, and data-driven modeling, I aim to address complex, uncertain challenges and drive the adoption of AI across different sectors.
-        </p>
+       
         
         <Tabs defaultValue="sustainable-packaging" className="w-full">
           <TabsList className="grid w-full grid-cols-4">
