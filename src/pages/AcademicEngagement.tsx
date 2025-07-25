@@ -25,33 +25,48 @@ const AcademicEngagement = () => {
             <Mic size={20} className="mr-2" />
             Invited talk
           </h2>
-          <div className="space-y-4">
-            <div className="border-l-4 border-gray-300 pl-4">
-              <h3 className="font-semibold text-lg text-gray-800">"LLM-Enhanced Decision Support System for the Sustainable Packaging Sector"</h3>
-              <p className="text-gray-600">2025 • ATOD event, University of Leeds</p>
-              <p className="text-gray-700 mt-2">Co-presented with Kun Feng (Director of SR Mailing)</p>
-            </div>
+          <ul className="space-y-3">
+            <li className="pb-4">
+              <div className="flex flex-col md:flex-row md:justify-between">
+                <h3 className="font-medium">LLM-Enhanced Decision Support System for the Sustainable Packaging Sector</h3>
+                <span className="text-gray-600">2025</span>
+              </div>
+              <p className="text-gray-600 text-sm italic">ATOD event, University of Leeds</p>
+              <p className="text-gray-700 text-sm">Co-presented with Kun Feng (Director of SR Mailing)</p>
+            </li>
             
-            <div className="border-l-4 border-gray-300 pl-4">
-              <h3 className="font-semibold text-lg text-gray-800">"Applying AI for Enterprise Intelligence and Manufacturing Innovation"</h3>
-              <p className="text-gray-600">2025 • The Future Advanced Metrology Hub for Sustainable Manufacturing</p>
-            </div>
+            <li className="pb-4">
+              <div className="flex flex-col md:flex-row md:justify-between">
+                <h3 className="font-medium">Applying AI for Enterprise Intelligence and Manufacturing Innovation</h3>
+                <span className="text-gray-600">2025</span>
+              </div>
+              <p className="text-gray-600 text-sm italic">The Future Advanced Metrology Hub for Sustainable Manufacturing</p>
+            </li>
             
-            <div className="border-l-4 border-gray-300 pl-4">
-              <h3 className="font-semibold text-lg text-gray-800">"Machine Learning for Decision-making in Intelligent Manufacturing"</h3>
-              <p className="text-gray-600">2023 • Centre for Decision Research, University of Leeds</p>
-            </div>
+            <li className="pb-4">
+              <div className="flex flex-col md:flex-row md:justify-between">
+                <h3 className="font-medium">Machine Learning for Decision-making in Intelligent Manufacturing</h3>
+                <span className="text-gray-600">2023</span>
+              </div>
+              <p className="text-gray-600 text-sm italic">Centre for Decision Research, University of Leeds</p>
+            </li>
             
-            <div className="border-l-4 border-gray-300 pl-4">
-              <h3 className="font-semibold text-lg text-gray-800">"Machine Learning Research in Intelligent Manufacturing"</h3>
-              <p className="text-gray-600">2023 • Research Festival, University of Huddersfield</p>
-            </div>
+            <li className="pb-4">
+              <div className="flex flex-col md:flex-row md:justify-between">
+                <h3 className="font-medium">Machine Learning Research in Intelligent Manufacturing</h3>
+                <span className="text-gray-600">2023</span>
+              </div>
+              <p className="text-gray-600 text-sm italic">Research Festival, University of Huddersfield</p>
+            </li>
             
-            <div className="border-l-4 border-gray-300 pl-4">
-              <h3 className="font-semibold text-lg text-gray-800">"Machine Learning and its Applications"</h3>
-              <p className="text-gray-600">2019 • EPSRC Future Advanced Metrology Hub</p>
-            </div>
-          </div>
+            <li className="pb-4">
+              <div className="flex flex-col md:flex-row md:justify-between">
+                <h3 className="font-medium">Machine Learning and its Applications</h3>
+                <span className="text-gray-600">2019</span>
+              </div>
+              <p className="text-gray-600 text-sm italic">EPSRC Future Advanced Metrology Hub</p>
+            </li>
+          </ul>
         </section>
 
         <section className="mb-10">
