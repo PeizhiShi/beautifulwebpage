@@ -41,27 +41,22 @@ const OptimizedImage = ({
   }
 
   return (
-    <div className="relative">
-      {isLoading && (
-        <Skeleton className={`absolute inset-0 ${className}`} />
-      )}
-      <img
-        src={src}
-        alt={alt}
-        className={`${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
-        loading={loading}
-        decoding="async"
-        width={width}
-        height={height}
-        {...(priority && { fetchpriority: 'high' })}
-        onLoad={handleLoad}
-        onError={handleError}
-        style={{
-          maxWidth: '100%',
-          height: 'auto',
-        }}
-      />
-    </div>
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      loading={loading}
+      decoding="async"
+      width={width}
+      height={height}
+      {...(priority && { fetchpriority: 'high' })}
+      onLoad={handleLoad}
+      onError={handleError}
+      style={{
+        maxWidth: '100%',
+        height: 'auto',
+      }}
+    />
   );
 };
 
