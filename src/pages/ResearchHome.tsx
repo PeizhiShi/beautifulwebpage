@@ -106,7 +106,7 @@ const ResearchHome = () => {
 
           <section className="mb-10">
               <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">PhD Opportunities</h2>
-              <Card className="bg-purple-50 border-purple-100">
+              <Card>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-3">Message to Potential PhD Students</h3>
                   <p className="text-gray-700 mb-4">
