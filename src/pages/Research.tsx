@@ -4,6 +4,7 @@ import { ArrowLeft, FileText, ExternalLink, ChevronDown, ChevronUp, MessageSquar
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState, useEffect } from "react";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const Research = () => {
   const [searchParams] = useSearchParams();
@@ -295,10 +296,11 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
         </div>
       </h2>
       <div className="mb-4 overflow-hidden rounded-lg">
-        <img 
+        <OptimizedImage 
           src={image} 
           alt={title}
           className="w-full h-auto"
+          loading="lazy"
         />
       </div>
       <p className="text-gray-700 mb-4">{description}</p>

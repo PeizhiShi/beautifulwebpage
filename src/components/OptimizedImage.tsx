@@ -53,7 +53,7 @@ const OptimizedImage = ({
         decoding="async"
         width={width}
         height={height}
-        fetchPriority={priority ? 'high' : 'auto'}
+        {...(priority && { fetchpriority: 'high' })}
         onLoad={handleLoad}
         onError={handleError}
         style={{
