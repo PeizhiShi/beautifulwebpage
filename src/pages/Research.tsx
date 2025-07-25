@@ -30,6 +30,16 @@ const Research = () => {
         </>
       ),
       keyPublications: [],
+      keyFunding: [
+        {
+          duration: "2025 - 2027",
+          pi: "Dr. Peizhi Shi (Academic Supervisor)",
+          coIs: "Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)",
+          partner: "SR Mailing Ltd",
+          amount: "£338,916",
+          scheme: "Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
+        }
+      ],
       fundingType: "principal" as const
     },
     {
@@ -267,6 +277,7 @@ const Research = () => {
                     image={project.image}
                     description={project.description}
                     keyPublications={project.keyPublications}
+                    keyFunding={project.keyFunding}
                     supervisor={project.supervisor}
                     fundingType={project.fundingType}
                   />
@@ -275,24 +286,6 @@ const Research = () => {
             </TabsContent>
           ))}
         </Tabs>
-        
-        {/* Current Funding Section */}
-        <section className="mt-12 mb-10">
-          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Current Funding</h2>
-          <Card>
-            <CardContent className="p-4">
-              <h3 className="font-semibold text-gray-800 mb-3">Knowledge Transfer Partnership</h3>
-              <div className="space-y-1 text-sm text-gray-600">
-                <p><span className="font-medium">Duration:</span> 2025 - 2027</p>
-                <p><span className="font-medium">Principal Investigator:</span> Dr. Peizhi Shi (Academic Supervisor)</p>
-                <p><span className="font-medium">Co-Investigators:</span> Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)</p>
-                <p><span className="font-medium">Industry Partner:</span> SR Mailing Ltd</p>
-                <p><span className="font-medium">Funding Amount:</span> £338,916</p>
-                <p><span className="font-medium">Funding Scheme:</span> Knowledge Transfer Partnerships with SR Mailing, Innovate UK</p>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
         
         {/* Academic Engagement Section */}
         <section className="mt-12 mb-10">
