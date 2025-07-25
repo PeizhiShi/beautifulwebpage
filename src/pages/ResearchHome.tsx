@@ -19,7 +19,7 @@ const ResearchHome = () => {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
-        <header className="flex flex-col md:flex-row gap-8 items-start pb-8 mb-6">
+        <header className="flex flex-col md:flex-row gap-8 items-start pb-8 mt-6 mb-6">
           <div className="w-48 min-w-48 bg-gray-200 overflow-hidden rounded-lg">
             <img 
               src="/lovable-uploads/a345f82a-2491-481b-9bd0-6bbb6b3eb76f.png" 
