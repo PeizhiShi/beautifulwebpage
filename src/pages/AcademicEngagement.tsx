@@ -28,7 +28,7 @@ const AcademicEngagement = () => {
           <ul className="space-y-6">
             <li>
               <div className="flex flex-col md:flex-row md:justify-between mb-1">
-                <p className="font-bold">LLM-Enhanced Decision Support System for the Sustainable Packaging Sector</p>
+                <p>LLM-Enhanced Decision Support System for the Sustainable Packaging Sector</p>
                 <span className="text-gray-600">2025</span>
               </div>
               <div className="text-gray-700 mb-1">ATOD event, University of Leeds</div>
@@ -37,7 +37,7 @@ const AcademicEngagement = () => {
             
             <li>
               <div className="flex flex-col md:flex-row md:justify-between mb-1">
-                <h3 className="font-bold">"Applying AI for Enterprise Intelligence and Manufacturing Innovation"</h3>
+                <p>Applying AI for Enterprise Intelligence and Manufacturing Innovation</p>
                 <span className="text-gray-600">2025</span>
               </div>
               <div className="text-gray-700 mb-1">The Future Advanced Metrology Hub for Sustainable Manufacturing</div>
