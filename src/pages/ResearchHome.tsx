@@ -113,7 +113,7 @@ const ResearchHome = () => {
                     I welcome enquiries from prospective PhD students with interests aligned to mine, specifically in machine learning and its applications. Applicants are expected to have a strong academic background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related disciplines. If you are considering doctoral research and are passionate about applying advanced machine learning to real-world problems, please feel free to get in touch with your academic CV and a research proposal.
                   </p>
                   <p className="text-gray-700">
-                    <strong>Scholarship opportunities:</strong> University Scholarship, CSC Scholarship (open to Chinese citizens only), and White Rose Scholarship.
+                    <strong>Scholarship opportunities:</strong> <a href="https://phd.leeds.ac.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">University Scholarship</a>, <a href="https://www.csc.edu.cn" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">CSC Scholarship</a> (open to Chinese citizens only), and <a href="https://wrdtp.ac.uk/studentships/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">White Rose Scholarship</a>.
                   </p>
                 </CardContent>
               </Card>
@@ -144,7 +144,7 @@ const ResearchHome = () => {
               </li>
               <li className="border-l-4 border-gray-300 pl-4">
                 <p className="text-gray-700">
-                  <strong>Publication:</strong> Our work "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning" has been accepted for publication in IEEE Transactions on Industrial Informatics (Impact Factor: 12.3)!
+                  <strong>Publication:</strong> Our work "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning" has been accepted for publication in IEEE Transactions on Industrial Informatics (Impact Factor: 12.1)!
                 </p>
               </li>
             </ul>
