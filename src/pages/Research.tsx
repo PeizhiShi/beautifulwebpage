@@ -139,7 +139,7 @@ const Research = () => {
     {
       category: "subtractive-manufacturing",
       label: "AI in Subtractive Manufacturing", 
-      icon: <Settings size={20} />,
+      icon: <Settings size={16} />,
       projects: researchProjects.filter(p => p.category === "subtractive-manufacturing")
     },
     {
@@ -246,9 +246,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
       case 'principal':
         return (
           <>
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-              Funded by Innovate UK & SR Mailing
-            </span>
+           
             <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
               Principal Investigator
             </span>
