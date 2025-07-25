@@ -126,8 +126,8 @@ export default {
 				'pulse-light': 'pulse-light 3s ease-in-out infinite'
 			},
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
-				mono: ['Roboto Mono', 'monospace']
+				sans: ['Source Sans Pro', 'system-ui', 'sans-serif'],
+				mono: ['Source Code Pro', 'monospace']
 			}
 		}
 	},
