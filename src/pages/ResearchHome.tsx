@@ -43,7 +43,8 @@ const ResearchHome = () => {
             
             <p className="text-gray-700 mb-6">
 I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Research, within the Analytics, Technology and Operations Department at the University of Leeds. My research interests lie in machine learning, artificial intelligence, and their real-world applications, with a current focus on sustainable manufacturing, design for additive manufacturing, and production research.            
-            <div className="flex flex-col sm:flex-row gap-4">
+            </p>
+              <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center gap-2 text-gray-700">
                 <MapPin size={16} />
                 <span>University of Leeds</span>
