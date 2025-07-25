@@ -169,7 +169,7 @@ const Research = () => {
             {projectsByCategory.map(({ category, label, icon }) => (
               <TabsTrigger key={category} value={category} className="flex items-center gap-2 text-xs">
                 {icon}
-                <span className="hidden sm:inline">{label.replace('AI in ', '')}</span>
+                <span className="hidden sm:inline">{label}</span>
                 <span className="sm:hidden">{label.split(' ').slice(-1)[0]}</span>
               </TabsTrigger>
             ))}
