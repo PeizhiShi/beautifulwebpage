@@ -161,8 +161,6 @@ I am a Lecturer in Applied Artificial Intelligence at the Centre for Decision Re
           <p>© 2025 Dr. Peizhi Shi. Last updated: July 2025 <a href="https://clustrmaps.com/site/1bohv"  title="ClustrMaps"><img width="5px" src="//www.clustrmaps.com/map_v2.png?d=GNKaZ2hx2hnIWDV343dbm1lxrydeLScrzGYnPqib9SA&cl=ffffff" /></a>  
 </p>
 
-          <!-- TWIPLA Tracking Code for https://peizhishi.github.io --><script>(function(v,i,s,a,t){v[t]=v[t]||function(){(v[t].v=v[t].v||[]).push(arguments)};if(!v._visaSettings){v._visaSettings={}}v._visaSettings[a]={v:'1.0',s:a,a:'1',t:t};var b=i.getElementsByTagName('body')[0];var p=i.createElement('script');p.defer=1;p.async=1;p.src=s+'?s='+a;b.appendChild(p)})(window,document,'//app-worker.visitor-analytics.io/main.js','3783fc0f-6a21-11f0-9db8-960004340fd3','va')</script><!-- TWIPLA Tracking Code for https://peizhishi.github.io -->
-
         </footer>
 
 
