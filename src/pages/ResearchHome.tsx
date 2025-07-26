@@ -41,8 +41,8 @@ const ResearchHome = () => {
             <div className="flex flex-wrap gap-2 mb-5">
               <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">Machine Learning</span>
               <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">Computer Vision</span>
-              <span className="bg-red-50 text-purple-700 px-2 py-1 rounded text-sm">Large Language Model</span>
-              <span className="bg-purple-50 text-red-700 px-2 py-1 rounded text-sm">AI for Good</span>
+              <span className="bg-red-50 text-red-700 px-2 py-1 rounded text-sm">Large Language Model</span>
+              <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">AI for Good</span>
             </div>
             
             <p className="text-gray-700 mb-6">
