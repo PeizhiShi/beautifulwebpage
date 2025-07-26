@@ -57,14 +57,7 @@ I am a Lecturer (equivalent to Assistant Professor in the U.S. system) in Applie
                 <Mail size={16} />
                 <span>p.shi@leeds.ac.uk</span>
               </a>
-              <a href="https://github.com/PeizhiShi/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
-                <Github size={16} />
-                <span>GitHub</span>
-              </a>
-              <a href="https://orcid.org/0000-0001-6724-282X" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
-                <Award size={16} />
-                <span>ORCID</span>
-              </a>
+              
               <a href="https://scholar.google.com/citations?user=qQuCvmQAAAAJ" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
                 <GraduationCap size={16} />
                 <span>Google Scholar</span>
