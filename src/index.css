@@ -53,6 +53,8 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 
@@ -63,6 +65,11 @@
   
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .text-justify {
+    text-align: justify;
+    text-justify: inter-word;
   }
   
   .no-scrollbar::-webkit-scrollbar {
