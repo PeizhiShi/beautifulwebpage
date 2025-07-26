@@ -112,7 +112,7 @@ I am a Lecturer (equivalent to Assistant Professor in the U.S. system) in Applie
                     <strong>Application Information:</strong> Visit the <a href="https://business.leeds.ac.uk/research-degrees" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">LUBS research degrees page</a> for PhD programs, requirements and applications.
                   </p>
                   <p className="text-gray-700">
-                    <strong>Scholarship opportunities:</strong> <a href="https://phd.leeds.ac.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">University Scholarship</a>, <a href="https://wrdtp.ac.uk/studentships/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">White Rose Scholarship</a>, and <a href="https://www.csc.edu.cn" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">CSC Scholarship</a> (Chinese applicants only).
+                    <strong>Scholarship opportunities:</strong> <a href="https://phd.leeds.ac.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">University Scholarship</a>, and <a href="https://wrdtp.ac.uk/studentships/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">White Rose Scholarship</a>.
                   </p>
                 </CardContent>
               </Card>
