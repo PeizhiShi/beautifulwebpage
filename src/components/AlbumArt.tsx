@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
+import OptimizedImage from './OptimizedImage';
 
 interface AlbumArtProps {
   src: string;
@@ -33,7 +34,7 @@ const AlbumArt: React.FC<AlbumArtProps> = ({
         className
       )}
     >
-      <img
+      <OptimizedImage
         src={src}
         alt={alt}
         className="w-full h-full object-cover"

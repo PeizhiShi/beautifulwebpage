@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Playlist, formatTime } from '@/lib/data';
 import { Heart, Play, MoreHorizontal, Clock } from 'lucide-react';
 import AlbumArt from './AlbumArt';
+import OptimizedImage from './OptimizedImage';
 
 interface PlaylistViewProps {
   playlist: Playlist;
@@ -23,10 +24,13 @@ const PlaylistView: React.FC<PlaylistViewProps> = ({
       {/* Playlist Header */}
       <div className="flex flex-col sm:flex-row items-center gap-6 mb-8 p-6">
         <div className="w-48 h-48 rounded-md overflow-hidden shadow-lg">
-          <img 
+          <OptimizedImage 
             src={playlist.cover} 
             alt={playlist.name} 
             className="w-full h-full object-cover"
+            width={192}
+            height={192}
+            priority={true}
           />
         </div>
         
