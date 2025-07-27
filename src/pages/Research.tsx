@@ -300,7 +300,8 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
           src={image} 
           alt={title}
           className="w-full h-auto"
-          loading="lazy"
+          loading="eager"
+          priority={true}
         />
       </div>
       <p className="text-gray-700 mb-4">{description}</p>
