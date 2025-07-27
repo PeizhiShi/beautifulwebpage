@@ -164,11 +164,11 @@ const Research = () => {
         <h1 className="text-3xl font-bold mb-6">Research & Grant</h1>
         
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-10">
-          <TabsList className="mb-6 grid w-full grid-cols-4">
+          <TabsList className="w-full mb-6">
             {projectsByCategory.map(({ category, label, icon }) => {
               console.log('Rendering tab:', category, 'with icon:', icon); // Debug log
               return (
-                <TabsTrigger key={category} value={category} className="flex items-center gap-2">
+                <TabsTrigger key={category} value={category} className="flex-1 flex items-center gap-2">
                   <span className="flex-shrink-0">{icon}</span>
                   <span className="hidden sm:inline">{label}</span>
                   <span className="sm:hidden">{label.split(' ').slice(-1)[0]}</span>
