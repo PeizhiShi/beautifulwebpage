@@ -201,11 +201,8 @@ const Research = () => {
         </Tabs>
         
         {/* Academic Engagement Section */}
-        <section className="mt-2 space-y-8">
-          <div className="flex items-center gap-2 mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">
-            <Mic size={20} />
-            <h2 className="text-2xl font-bold text-gray-900">Invited Talks</h2>
-          </div>
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Invited Talks</h2>
           <Card>
             <CardContent className="p-6">
               <div className="space-y-4">
@@ -252,11 +249,10 @@ const Research = () => {
               </div>
             </CardContent>
           </Card>
+        </section>
 
-          <div className="flex items-center gap-2 mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">
-            <FileCheck size={20} />
-            <h2 className="text-2xl font-bold text-gray-900">Journal Reviewer</h2>
-          </div>
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Journal Reviewer</h2>
           <Card>
             <CardContent className="p-6">
               <div className="space-y-3">
@@ -271,11 +267,10 @@ const Research = () => {
               </div>
             </CardContent>
           </Card>
+        </section>
 
-          <div className="flex items-center gap-2 mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">
-            <Edit size={20} />
-            <h2 className="text-2xl font-bold text-gray-900">Guest Editor</h2>
-          </div>
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Guest Editor</h2>
           <Card>
             <CardContent className="p-6">
               <p className="text-gray-700">Special Issue "Application of Artificial Intelligence Techniques in Additive Manufacturing" of Processes.</p>
