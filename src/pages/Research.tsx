@@ -163,9 +163,7 @@ const Research = () => {
         
         <h1 className="text-3xl font-bold mb-6">Research & Grant</h1>
         
-       
-        
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-10">
           <TabsList className="grid w-full grid-cols-4">
             {projectsByCategory.map(({ category, label, icon }) => {
               console.log('Rendering tab:', category, 'with icon:', icon); // Debug log
