@@ -127,23 +127,23 @@ const Publications = () => {
         
         <h1 className="text-3xl font-bold mb-6">Publications</h1>
         
-        <Tabs defaultValue="type" className="w-full">
+        <Tabs defaultValue="topic" className="w-full">
           <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="type" className="flex items-center gap-2">
-              <FolderOpen size={16} />
-              By Type
-            </TabsTrigger>
             <TabsTrigger value="topic" className="flex items-center gap-2">
               <Tags size={16} />
               By Topic
             </TabsTrigger>
-            <TabsTrigger value="chronological" className="flex items-center gap-2">
+            <TabsTrigger value="type" className="flex items-center gap-2">
+              <FolderOpen size={16} />
+              By Type
+            </TabsTrigger>
+            <TabsTrigger value="year" className="flex items-center gap-2">
               <Calendar size={16} />
-              Chronological
+              By Year
             </TabsTrigger>
           </TabsList>
           
-          <TabsContent value="chronological" className="mt-6">
+          <TabsContent value="year" className="mt-6">
             <div className="space-y-10">
               {publicationsByYear.map(({ year, publications }) => (
                 <div key={year}>
