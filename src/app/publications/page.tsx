@@ -1,35 +1,121 @@
 'use client'
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import Link from "next/link";
-import { publications } from "@/lib/publications";
+import { 
+  ArrowLeft, 
+  FileText, 
+  Book, 
+  Presentation, 
+  ExternalLink,
+  Calendar,
+  Tags,
+  FolderOpen
+} from "lucide-react";
+import { publications, Publication } from "@/lib/publications";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-interface Publication {
-  id: string;
-  title: string;
-  authors: string;
-  venue: string;
-  year: number;
-  link?: string;
-  pdfLink?: string;
-}
-
-const PublicationsPage = () => {
-  const [selectedYear, setSelectedYear] = useState("all");
-
-  const years = useMemo(() => {
-    const allYears = [...new Set(publications.map((pub) => pub.year))];
-    return ["all", ...allYears.sort((a, b) => b - a)];
+const Publications = () => {
+  // Group publications by year for the chronological view
+  const publicationsByYear = useMemo(() => {
+    const grouped: Record<number, Publication[]> = {};
+    
+    publications.forEach(pub => {
+      const year = pub.year;
+      if (!grouped[year]) {
+        grouped[year] = [];
+      }
+      grouped[year].push(pub);
+    });
+    
+    // Sort years in descending order
+    return Object.entries(grouped)
+      .sort(([yearA], [yearB]) => parseInt(yearB) - parseInt(yearA))
+      .map(([year, pubs]) => ({
+        year,
+        publications: pubs
+      }));
   }, []);
 
-  const filteredPublications = useMemo(() => {
-    if (selectedYear === "all") {
-      return publications;
-    }
-    return publications.filter((pub) => pub.year.toString() === selectedYear);
-  }, [selectedYear]);
+  // Group publications by type
+  const publicationsByType = useMemo(() => {
+    const grouped: Record<string, Publication[]> = {};
+    
+    publications.forEach(pub => {
+      if (!grouped[pub.type]) {
+        grouped[pub.type] = [];
+      }
+      grouped[pub.type].push(pub);
+    });
+    
+    // Sort by publication count and then alphabetically
+    const typeOrder = ['journal', 'conference', 'book', 'thesis', 'workshop', 'preprint'];
+    return typeOrder
+      .filter(type => grouped[type] && grouped[type].length > 0)
+      .map(type => ({
+        type: type.charAt(0).toUpperCase() + type.slice(1) + 's',
+        publications: grouped[type].sort((a, b) => b.year - a.year)
+      }));
+  }, []);
 
+  // Group publications by topic
+  const publicationsByTopic = useMemo(() => {
+    const mlKeywords = ['machine learning', 'reinforcement learning', 'feature recognition', 'small sample learning', 'computer vision', 'object detection', 'representation learning', 'game AI', 'procedural generation', 'computational intelligence', 'neural', 'deep learning'];
+    
+    // Specific papers that should be in machine learning research
+    const mlTitles = [
+      "Automatic generation of alternative build orientations for laser powder bed fusion based on facet clustering",
+      "Automatic determination of part build orientation for laser powder bed fusion"
+    ];
+    
+    // Specific papers that should be in other AI research
+    const otherAITitles = [
+      "Status, issues, and future of computer-aided part orientation for additive manufacturing",
+      "Archimedean Muirhead aggregation operators of q-rung orthopair fuzzy numbers for multicriteria group decision making"
+    ];
+    
+    const machineLearning: Publication[] = [];
+    const otherAI: Publication[] = [];
+    
+    publications.forEach(pub => {
+      // Check if it's specifically designated for ML research
+      if (mlTitles.includes(pub.title)) {
+        machineLearning.push(pub);
+        return;
+      }
+      
+      // Check if it's specifically designated for other AI research
+      if (otherAITitles.includes(pub.title)) {
+        otherAI.push(pub);
+        return;
+      }
+      
+      // Otherwise, categorize based on keywords
+      const hasMLKeyword = pub.tags.some(tag => 
+        mlKeywords.some(keyword => tag.toLowerCase().includes(keyword.toLowerCase()))
+      ) || pub.title.toLowerCase().includes('learning') || 
+          pub.title.toLowerCase().includes('neural') ||
+          pub.title.toLowerCase().includes('ai');
+      
+      if (hasMLKeyword) {
+        machineLearning.push(pub);
+      } else {
+        otherAI.push(pub);
+      }
+    });
+    
+    return [
+      {
+        topic: 'Machine learning research',
+        publications: machineLearning.sort((a, b) => b.year - a.year)
+      },
+      {
+        topic: 'Other AI research',
+        publications: otherAI.sort((a, b) => b.year - a.year)
+      }
+    ].filter(group => group.publications.length > 0);
+  }, []);
+  
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
@@ -39,51 +125,163 @@ const PublicationsPage = () => {
             Back to Home
           </Link>
         </div>
-
+        
         <h1 className="text-3xl font-bold mb-6">Publications</h1>
-
-        <Tabs value={selectedYear} onValueChange={setSelectedYear} className="mb-8">
-          <TabsList className="w-full">
-            {years.map((year) => (
-              <TabsTrigger key={year} value={year} className="flex-1">
-                {year === "all" ? "All Years" : year}
-              </TabsTrigger>
-            ))}
+        
+        <Tabs defaultValue="type" className="w-full">
+          <TabsList className="grid w-full grid-cols-3">
+            <TabsTrigger value="type" className="flex items-center gap-2">
+              <FolderOpen size={16} />
+              By Type
+            </TabsTrigger>
+            <TabsTrigger value="topic" className="flex items-center gap-2">
+              <Tags size={16} />
+              By Topic
+            </TabsTrigger>
+            <TabsTrigger value="chronological" className="flex items-center gap-2">
+              <Calendar size={16} />
+              Chronological
+            </TabsTrigger>
           </TabsList>
-        </Tabs>
-
-        <section>
-          <ul className="divide-y divide-gray-200">
-            {filteredPublications.map((publication) => (
-              <li key={publication.id} className="py-4">
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                  <div className="md:col-span-4">
-                    <p className="text-lg font-semibold text-gray-900">{publication.title}</p>
-                    <p className="text-gray-700">{publication.authors}</p>
-                    <p className="text-gray-600">{publication.venue}, {publication.year}</p>
-                  </div>
-                  <div className="md:col-span-1 flex justify-end items-center">
-                    {publication.link && (
-                      <a href={publication.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-blue-600 hover:text-blue-800 mr-3">
-                        View
-                      </a>
-                    )}
-                    {publication.pdfLink && (
-                      <a href={publication.pdfLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-blue-600 hover:text-blue-800">
-                        PDF
-                      </a>
-                    )}
-                  </div>
+          
+          <TabsContent value="chronological" className="mt-6">
+            <div className="space-y-10">
+              {publicationsByYear.map(({ year, publications }) => (
+                <div key={year}>
+                  <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">{year}</h2>
+                  <ul className="space-y-3">
+                    {publications.map((pub, index) => (
+                      <PublicationItem key={`${year}-${index}`} publication={pub} />
+                    ))}
+                  </ul>
                 </div>
-              </li>
-            ))}
-          </ul>
-        </section>
+              ))}
+            </div>
+          </TabsContent>
+          
+          <TabsContent value="type" className="mt-6">
+            <div className="space-y-10">
+              {publicationsByType.map(({ type, publications }) => (
+                <div key={type}>
+                  <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">{type}</h2>
+                  <ul className="space-y-3">
+                    {publications.map((pub, index) => (
+                      <PublicationItem key={`${type}-${index}`} publication={pub} />
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </TabsContent>
+          
+          <TabsContent value="topic" className="mt-6">
+            <div className="space-y-10">
+              {publicationsByTopic.map(({ topic, publications }) => (
+                <div key={topic}>
+                  <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">{topic}</h2>
+                  <ul className="space-y-3">
+                    {publications.map((pub, index) => (
+                      <PublicationItem key={`${topic}-${index}`} publication={pub} />
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   );
 };
 
-import { ArrowLeft } from "lucide-react";
+interface PublicationItemProps {
+  publication: Publication;
+}
 
-export default PublicationsPage;
+const PublicationItem: React.FC<PublicationItemProps> = ({ publication }) => {
+  // Function to highlight P. Shi in author names
+  const highlightAuthor = (authors: string) => {
+    const parts = authors.split(/(P\. Shi)/g);
+    return parts.map((part, index) => 
+      part === 'P. Shi' ? (
+        <span key={index} className="font-bold">{part}</span>
+      ) : (
+        <span key={index}>{part}</span>
+      )
+    );
+  };
+
+  return (
+    <li className="pb-4">
+      <h3 className="font-medium">{publication.title}</h3>
+      <p className="text-gray-700 text-sm">{highlightAuthor(publication.authors)}</p>
+      <p className="text-gray-600 text-sm italic">
+        {publication.venue}, {publication.year}
+        {publication.impactFactor && publication.impactFactor > 6 && (
+          <span className="ml-2 bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full text-xs font-medium">
+            IF: {publication.impactFactor}
+          </span>
+        )}
+      </p>
+      
+      {publication.tags.length > 0 && (
+        <div className="mt-2 flex flex-wrap gap-1">
+          {publication.tags.map((tag, index) => (
+            <span key={index} className="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full text-xs">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+      
+      <div className="mt-2 flex flex-wrap gap-3">
+        {publication.doi && (
+          <a 
+            href={`https://doi.org/${publication.doi}`} 
+            className="text-blue-600 hover:text-blue-800 text-sm flex items-center gap-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Book size={14} />
+            <span>DOI</span>
+          </a>
+        )}
+        {publication.slides && (
+          <a 
+            href={publication.slides} 
+            className="text-blue-600 hover:text-blue-800 text-sm flex items-center gap-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Presentation size={14} />
+            <span>Slides</span>
+          </a>
+        )}
+        {publication.link && (
+          <a 
+            href={publication.link} 
+            className="text-blue-600 hover:text-blue-800 text-sm flex items-center gap-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ExternalLink size={14} />
+            <span>Link</span>
+          </a>
+        )}
+        {publication.pdf && (
+          <a 
+            href={publication.pdf} 
+            className="text-blue-600 hover:text-blue-800 text-sm flex items-center gap-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FileText size={14} />
+            <span>PDF</span>
+          </a>
+        )}
+      </div>
+    </li>
+  );
+};
+
+export default Publications;
