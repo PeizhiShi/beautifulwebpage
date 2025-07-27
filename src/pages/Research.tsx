@@ -154,7 +154,7 @@ const Research = () => {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
-        <div className="mb-6">
+        <div className="mb-4">
           <Link to="/" className="inline-flex items-center text-blue-600 hover:text-blue-800">
             <ArrowLeft size={16} className="mr-2" />
             Back to Home
