@@ -296,7 +296,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
         </div>
       </h2>
       <div className="mb-4 overflow-hidden rounded-lg">
-        <OptimizedImage 
+        <img 
           src={image} 
           alt={title}
           className="w-full h-auto"
