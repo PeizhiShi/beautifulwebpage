@@ -18,6 +18,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import OptimizedImage from "../components/OptimizedImage";
 
 const ResearchHome = () => {
+  console.log("ResearchHome component rendering");
+  
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">

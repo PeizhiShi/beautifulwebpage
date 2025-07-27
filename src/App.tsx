@@ -14,26 +14,30 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <HashRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<ResearchHome />} />
-          <Route path="/research-home" element={<ResearchHome />} />
-          <Route path="/publications" element={<Publications />} />
-          <Route path="/research" element={<Research />} />
-          <Route path="/teaching" element={<Teaching />} />
-          <Route path="/cv" element={<CV />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </HashRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  console.log("App component rendering");
+  
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <HashRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<ResearchHome />} />
+            <Route path="/research-home" element={<ResearchHome />} />
+            <Route path="/publications" element={<Publications />} />
+            <Route path="/research" element={<Research />} />
+            <Route path="/teaching" element={<Teaching />} />
+            <Route path="/cv" element={<CV />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </HashRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
