@@ -303,7 +303,6 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
           loading="eager"
           priority={true}
           width={800}
-          height={400}
         />
       </div>
       <p className="text-gray-700 mb-4">{description}</p>
