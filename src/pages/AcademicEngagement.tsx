@@ -1,12 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, Mic, FileCheck, Edit } from "lucide-react";
-import { useState } from "react";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 
 const AcademicEngagement = () => {
-  const [activeTab, setActiveTab] = useState("invited-talks");
-
   const engagementSections = [
     {
       id: "invited-talks",
@@ -108,25 +104,17 @@ const AcademicEngagement = () => {
         
         <h1 className="text-3xl font-bold mb-6">Academic Engagement</h1>
         
-        
-
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-3">
-            {engagementSections.map(({ id, label, icon }) => (
-              <TabsTrigger key={id} value={id} className="flex items-center gap-2">
+        <div className="space-y-8">
+          {engagementSections.map(({ id, label, icon, content }) => (
+            <div key={id}>
+              <div className="flex items-center gap-2 mb-4">
                 {icon}
-                <span className="hidden sm:inline">{label}</span>
-                <span className="sm:hidden">{label.split(' ')[0]}</span>
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
-          {engagementSections.map(({ id, content }) => (
-            <TabsContent key={id} value={id} className="mt-6">
+                <h2 className="text-2xl font-semibold text-gray-900">{label}</h2>
+              </div>
               {content}
-            </TabsContent>
+            </div>
           ))}
-        </Tabs>
+        </div>
         
       </div>
     </div>
