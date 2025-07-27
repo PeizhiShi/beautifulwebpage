@@ -107,7 +107,7 @@ const AcademicEngagement = () => {
         <div className="space-y-8">
           {engagementSections.map(({ id, label, icon, content }) => (
             <div key={id}>
-              <div className="flex items-center gap-2 mb-4">
+              <div className="flex items-center gap-2 mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">
                 {icon}
                 <h2 className="text-2xl font-semibold text-gray-900">{label}</h2>
               </div>
