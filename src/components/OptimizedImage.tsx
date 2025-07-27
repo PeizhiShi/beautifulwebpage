@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 interface OptimizedImageProps {
   src: string;
@@ -19,9 +19,6 @@ const OptimizedImage = ({
   loading = 'lazy',
   priority = false 
 }: OptimizedImageProps) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [hasError, setHasError] = useState(false);
-
   return (
     <img
       src={src}
@@ -35,22 +32,7 @@ const OptimizedImage = ({
       style={{
         maxWidth: '100%',
         height: 'auto',
-        imageRendering: 'auto',
-        transform: isLoaded ? 'none' : 'translateZ(0)',
-        willChange: isLoaded ? 'auto' : 'transform',
-        backfaceVisibility: 'hidden',
-        perspective: 1000,
-      }}
-      onLoad={(e) => {
-        setIsLoaded(true);
-        // Safari-specific optimizations
-        const img = e.target as HTMLImageElement;
-        img.style.transform = 'none';
-        img.style.willChange = 'auto';
-      }}
-      onError={() => {
-        setHasError(true);
-        setIsLoaded(true);
+        display: 'block'
       }}
     />
   );
