@@ -68,9 +68,8 @@ I am a Lecturer (equivalent to Assistant Professor in the U.S. system) in Applie
         
         <nav className="mb-10">
           <ul className="flex flex-wrap gap-4 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-gradient-to-r after:from-blue-200 after:via-blue-400 after:to-blue-200">
-            <li><Link to="/research" className="text-blue-600 hover:text-blue-800 font-medium">Research & Grant</Link></li>
+            <li><Link to="/research" className="text-blue-600 hover:text-blue-800 font-medium">Research</Link></li>
             <li><Link to="/publications" className="text-blue-600 hover:text-blue-800 font-medium">Publications</Link></li>
-            <li><Link to="/academic-engagement" className="text-blue-600 hover:text-blue-800 font-medium">Academic Engagement</Link></li>
             <li><Link to="/teaching" className="text-blue-600 hover:text-blue-800 font-medium">Teaching</Link></li>
             <li><Link to="/cv" className="text-blue-600 hover:text-blue-800 font-medium">Curriculum Vitae</Link></li>
           </ul>
