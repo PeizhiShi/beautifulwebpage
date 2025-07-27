@@ -204,7 +204,7 @@ const Research = () => {
         <section className="mt-10 space-y-8">
           <div className="flex items-center gap-2 mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">
             <Mic size={20} />
-            <h2 className="text-2xl font-semibold text-gray-900">Invited Talks</h2>
+            <h2 className="text-2xl font-bold text-gray-900">Invited Talks</h2>
           </div>
           <Card>
             <CardContent className="p-6">
@@ -255,7 +255,7 @@ const Research = () => {
 
           <div className="flex items-center gap-2 mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">
             <FileCheck size={20} />
-            <h2 className="text-2xl font-semibold text-gray-900">Journal Reviewer</h2>
+            <h2 className="text-2xl font-bold text-gray-900">Journal Reviewer</h2>
           </div>
           <Card>
             <CardContent className="p-6">
@@ -274,7 +274,7 @@ const Research = () => {
 
           <div className="flex items-center gap-2 mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">
             <Edit size={20} />
-            <h2 className="text-2xl font-semibold text-gray-900">Guest Editor</h2>
+            <h2 className="text-2xl font-bold text-gray-900">Guest Editor</h2>
           </div>
           <Card>
             <CardContent className="p-6">
