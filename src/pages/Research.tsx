@@ -206,28 +206,28 @@ const Research = () => {
               <div className="space-y-4">
                 <div>
                   <h4 className="font-medium text-gray-900">LLM-Enhanced Decision Support System for the Sustainable Packaging Sector</h4>
-                  <div className="text-sm text-gray-600 italic">2025 - ATOD event, University of Leeds</div>
+                  <div className="text-sm text-gray-600 italic">2025 • ATOD event, University of Leeds</div>
                   <div className="text-sm text-gray-700">Co-presented with Kun Feng (Director of SR Mailing)</div>
                 </div>
                 
                 <div>
                   <h4 className="font-medium text-gray-900">Applying AI for Enterprise Intelligence and Manufacturing Innovation</h4>
-                  <div className="text-sm text-gray-600 italic">2025 - The Future Advanced Metrology Hub for Sustainable Manufacturing</div>
+                  <div className="text-sm text-gray-600 italic">2025 • The Future Advanced Metrology Hub for Sustainable Manufacturing</div>
                 </div>
                 
                 <div>
                   <h4 className="font-medium text-gray-900">Machine Learning for Decision-making in Intelligent Manufacturing</h4>
-                  <div className="text-sm text-gray-600 italic">2023 - Centre for Decision Research, University of Leeds</div>
+                  <div className="text-sm text-gray-600 italic">2023 • Centre for Decision Research, University of Leeds</div>
                 </div>
                 
                 <div>
                   <h4 className="font-medium text-gray-900">Machine Learning Research in Intelligent Manufacturing</h4>
-                  <div className="text-sm text-gray-600 italic">2023 - Research Festival, University of Huddersfield</div>
+                  <div className="text-sm text-gray-600 italic">2023 • Research Festival, University of Huddersfield</div>
                 </div>
                 
                 <div>
                   <h4 className="font-medium text-gray-900">Machine Learning and its Applications</h4>
-                  <div className="text-sm text-gray-600 italic">2019 - EPSRC Future Advanced Metrology Hub</div>
+                  <div className="text-sm text-gray-600 italic">2019 • EPSRC Future Advanced Metrology Hub</div>
                 </div>
               </div>
             </CardContent>
