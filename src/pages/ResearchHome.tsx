@@ -100,24 +100,6 @@ I am a Lecturer (equivalent to Assistant Professor in the U.S. system) in Applie
           </section>
 
           <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">PhD Opportunities</h2>
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-3">Message to Potential PhD Students</h3>
-                  <p className="text-gray-700 mb-4">
-                    I welcome enquiries from prospective PhD students with interests aligned to mine, specifically in machine learning and its applications. Applicants are expected to have a strong academic background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related disciplines. If you are considering doctoral research and are passionate about applying advanced machine learning to real-world problems, please feel free to get in touch with your academic CV and a research proposal.
-                  </p>
-                  <p className="text-gray-700 mb-4">
-                    <strong>Application information:</strong> Please visit the <a href="https://business.leeds.ac.uk/research-degrees" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">LUBS PhD page</a> for programs, requirements and applications.
-                  </p>
-                  <p className="text-gray-700">
-                    <strong>Scholarship opportunities:</strong> <a href="https://phd.leeds.ac.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">University Scholarship</a>, and <a href="https://wrdtp.ac.uk/studentships/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">White Rose Scholarship</a>.
-                  </p>
-                </CardContent>
-              </Card>
-          </section>
-          
-          <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Recent News</h2>
             <ul className="space-y-4">
               <li className="border-l-4 border-gray-300 pl-4">
@@ -146,6 +128,24 @@ I am a Lecturer (equivalent to Assistant Professor in the U.S. system) in Applie
                 </p>
               </li>
             </ul>
+          </section>
+
+          <section className="mb-10">
+              <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">PhD Opportunities</h2>
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-3">Message to Potential PhD Students</h3>
+                  <p className="text-gray-700 mb-4">
+                    I welcome enquiries from prospective PhD students with interests aligned to mine, specifically in machine learning and its applications. Applicants are expected to have a strong academic background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related disciplines. If you are considering doctoral research and are passionate about applying advanced machine learning to real-world problems, please feel free to get in touch with your academic CV and a research proposal.
+                  </p>
+                  <p className="text-gray-700 mb-4">
+                    <strong>Application information:</strong> Please visit the <a href="https://business.leeds.ac.uk/research-degrees" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">LUBS PhD page</a> for programs, requirements and applications.
+                  </p>
+                  <p className="text-gray-700">
+                    <strong>Scholarship opportunities:</strong> <a href="https://phd.leeds.ac.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">University Scholarship</a>, and <a href="https://wrdtp.ac.uk/studentships/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">White Rose Scholarship</a>.
+                  </p>
+                </CardContent>
+              </Card>
           </section>
         </main>
         
