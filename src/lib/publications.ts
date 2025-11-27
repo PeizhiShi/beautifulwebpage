@@ -17,6 +17,15 @@ export interface Publication {
 // Publications for Dr. Peizhi Shi
 export const publications: Publication[] = [
   {
+    title: "Machine learning in peak demand forecasting: foundations, trends, and insights",
+    authors: "S. Dai, F. Meng, H. Dai, Q. Wang, X. Chen, W. Bai, P. Shi, R. Allmendinger, Y. Zhang, J. Liu",
+    venue: "Renewable and Sustainable Energy Reviews",
+    year: 2026,
+    type: "journal",
+    tags: ["machine learning", "energy forecasting", "peak demand", "renewable energy"],
+    impactFactor: 16.3
+  },
+  {
     title: "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning",
     authors: "P. Shi, Q. Qi, Y. Qin, F. Meng, S. Lou, P. J. Scott, and X. Jiang",
     venue: "IEEE Transactions on Industrial Informatics",
