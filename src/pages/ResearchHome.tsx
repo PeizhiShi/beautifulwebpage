@@ -141,7 +141,7 @@ I am a Lecturer (equivalent to Assistant Professor in the U.S. system) in Applie
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-3">Message to Potential PhD Students</h3>
                   <p className="text-gray-700 mb-4">
-                    I welcome enquiries from prospective PhD students with interests aligned to mine, specifically in machine learning and its applications. Applicants are expected to have a strong academic background in computer science, machine learning, mathematics, operational research, optimisation, data science, or related disciplines. If you are considering doctoral research and are passionate about applying advanced machine learning to real-world problems, please feel free to get in touch with your academic CV and a research proposal.
+                    I welcome enquiries from prospective PhD students with interests aligned to mine, specifically in artificial intelligence, machine learning and their applications. If you are considering doctoral research and are passionate about applying advanced artificial intelligence and machine learning to real-world problems, please feel free to get in touch with your academic CV.
                   </p>
                   <p className="text-gray-700 mb-4">
                     <strong>Application information:</strong> Please visit the <a href="https://business.leeds.ac.uk/research-degrees" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">LUBS PhD page</a> for programs, requirements and applications.
