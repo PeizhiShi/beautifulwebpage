@@ -102,11 +102,7 @@ I am a Lecturer (equivalent to Assistant Professor in the U.S. system) in Applie
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Recent News</h2>
             <ul className="space-y-4">
-              <li className="border-l-4 border-gray-300 pl-4">
-                <p className="text-gray-700">
-                  <strong>Publication:</strong> Our review paper on machine learning for peak demand forecasting has been accepted for publication in Renewable and Sustainable Energy Reviews (Impact Factor: 16.3)!
-                </p>
-              </li>
+              
               <li className="border-l-4 border-gray-300 pl-4">
                 <p className="text-gray-700">
                   <strong>Invited talk:</strong> Kun Feng, Director of <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a>, and I were invited to co-present at the Analytics, Technology and Operations Department event. Our talk explored the use of large language models to support sustainable innovation in the packaging industry.
