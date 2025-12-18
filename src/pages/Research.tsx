@@ -27,7 +27,7 @@ const Research = () => {
       imageLayout: "side" as const,
       description: (
         <>
-          <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a> is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd.
+          <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a> is a leading company in the sustainable packaging sector. This project develops and deploys applied AI and large language model (LLM)–based decision-support systems in a real industrial setting. The project integrates LLM-driven analytics, customer intelligence, and optimisation-based operational modelling to address large-scale, data-intensive business decisions. The project provides a testbed for building scalable, end-to-end AI systems with relevance beyond a single organisation. It is jointly funded by Innovate UK and SR Mailing Ltd.
         </>
       ),
       keyPublications: [],
@@ -77,6 +77,7 @@ const Research = () => {
       title: "Learning-based Feature Recognition",
       category: "subtractive-manufacturing",
       image: "/lovable-uploads/2c78a9ea-5f63-46c9-bd3e-942ad352f67a.png",
+      imageLayout: "side" as const,
       description: "This project aims to design algorithms that automatically recognize 2.5D manufacturing features from 3D components. A novel object detection network architecture is proposed as part of this work. At the time of its release, the approach achieves state-of-the-art performance in intersecting feature recognition and localization on benchmark datasets.",
       keyPublications: [
         {
