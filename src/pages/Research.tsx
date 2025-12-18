@@ -47,7 +47,8 @@ const Research = () => {
       id: "build-orientation",
       title: "Learning-based Build Orientation",
       category: "additive-manufacturing",
-      image: "/lovable-uploads/ea1d636f-219d-408c-95c6-dd5199f2aee2.png",
+      image: "/lovable-uploads/additive-manufacturing-build.png",
+      imageLayout: "side" as const,
       description: "This project aims to develop intelligent algorithms that optimize the build orientation of 3D-printed parts using machine learning techniques. By leveraging data-driven insights from simulations, the approach seeks to outperform traditional optimization-based methods in terms of efficiency and effectiveness, offering scalable and automated solutions for a wide range of additive manufacturing applications.",
       keyPublications: [
         {
