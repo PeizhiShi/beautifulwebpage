@@ -46,7 +46,7 @@ const ResearchHome = () => {
             </div>
             
             <p className="text-gray-700 mb-6">
-I am an Assistant Professor in Applied Artificial Intelligence within the Analytics, Technology and Operations Department at the University of Leeds. My research centres on machine learning methodology and scalable AI systems, with particular emphasis on computer vision and large language models for complex real-world applications. Applications include intelligent business analytics, sustainable manufacturing, and production systems.
+I am an Assistant Professor in Applied Artificial Intelligence within the Analytics, Technology and Operations Department at the University of Leeds. My research centres on machine learning methodology and scalable AI systems, with particular emphasis on computer vision and large language models for complex real-world problems. Applications include intelligent business analytics, sustainable manufacturing, and production systems.
             </p>
               <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center gap-2 text-gray-700">
