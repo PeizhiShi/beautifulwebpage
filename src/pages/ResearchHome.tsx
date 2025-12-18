@@ -126,6 +126,24 @@ I am a Lecturer (equivalent to Assistant Professor in the U.S. system) in Applie
           </section>
 
           <section className="mb-10">
+              <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">PhD Opportunities</h2>
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-3">Message to Potential PhD Students</h3>
+                  <p className="text-gray-700 mb-4">
+                    I welcome enquiries from prospective PhD students with interests aligned to mine, specifically in artificial intelligence, machine learning and their applications. If you are considering doctoral research and are passionate about applying advanced artificial intelligence and machine learning to real-world problems, please feel free to get in touch with your academic CV.
+                  </p>
+                  <p className="text-gray-700 mb-4">
+                    <strong>Application information:</strong> Please visit the <a href="https://business.leeds.ac.uk/research-degrees" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">LUBS PhD page</a> for programs, requirements and applications.
+                  </p>
+                  <p className="text-gray-700">
+                    <strong>Scholarship opportunities:</strong> <a href="https://phd.leeds.ac.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">University Scholarship</a>, and <a href="https://wrdtp.ac.uk/studentships/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">White Rose Scholarship</a>.
+                  </p>
+                </CardContent>
+              </Card>
+          </section>
+
+          <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Recent News</h2>
             <ul className="space-y-4">
               
@@ -157,23 +175,7 @@ I am a Lecturer (equivalent to Assistant Professor in the U.S. system) in Applie
             </ul>
           </section>
 
-          <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">PhD Opportunities</h2>
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-3">Message to Potential PhD Students</h3>
-                  <p className="text-gray-700 mb-4">
-                    I welcome enquiries from prospective PhD students with interests aligned to mine, specifically in artificial intelligence, machine learning and their applications. If you are considering doctoral research and are passionate about applying advanced artificial intelligence and machine learning to real-world problems, please feel free to get in touch with your academic CV.
-                  </p>
-                  <p className="text-gray-700 mb-4">
-                    <strong>Application information:</strong> Please visit the <a href="https://business.leeds.ac.uk/research-degrees" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">LUBS PhD page</a> for programs, requirements and applications.
-                  </p>
-                  <p className="text-gray-700">
-                    <strong>Scholarship opportunities:</strong> <a href="https://phd.leeds.ac.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">University Scholarship</a>, and <a href="https://wrdtp.ac.uk/studentships/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">White Rose Scholarship</a>.
-                  </p>
-                </CardContent>
-              </Card>
-          </section>
+          
         </main>
         
         <footer className="text-center text-gray-600 relative pt-6 mt-10 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-gray-300 before:to-transparent">
