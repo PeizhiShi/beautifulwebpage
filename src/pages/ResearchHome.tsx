@@ -81,12 +81,25 @@ I am a Lecturer (equivalent to Assistant Professor in the U.S. system) in Applie
           
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Research Highlights</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6">
               <Card className="bg-blue-50 border-blue-100">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">LLM-Enhanced Decision Support System</h3>
-                  <p className="text-gray-700 mb-3">Integration of AI and LLM techniques for sustainable packaging industry decision support.</p>
-                  <Link to="/research?tab=sustainable-packaging" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                  <div className="flex flex-col md:flex-row gap-6 items-center">
+                    <div className="w-full md:w-64 flex-shrink-0">
+                      <OptimizedImage 
+                        src="/lovable-uploads/sustainable-packaging-llm.png" 
+                        alt="LLM-Enhanced Decision Support System for Sustainable Packaging" 
+                        className="w-full h-auto rounded-lg"
+                        width={256}
+                        height={256}
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-semibold mb-2">LLM-Enhanced Decision Support System</h3>
+                      <p className="text-gray-700 mb-3">Integration of AI and LLM techniques for sustainable packaging industry decision support.</p>
+                      <Link to="/research?tab=sustainable-packaging" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
               <Card className="bg-green-50 border-green-100">
