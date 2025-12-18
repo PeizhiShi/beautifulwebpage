@@ -104,9 +104,22 @@ I am a Lecturer (equivalent to Assistant Professor in the U.S. system) in Applie
               </Card>
               <Card className="bg-green-50 border-green-100">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">Learning-based Build Orientation</h3>
-                  <p className="text-gray-700 mb-3">Development of intelligent algorithms that optimize 3D-printed part orientations.</p>
-                  <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                  <div className="flex flex-col md:flex-row gap-6 items-center">
+                    <div className="w-full md:w-64 flex-shrink-0">
+                      <OptimizedImage 
+                        src="/lovable-uploads/additive-manufacturing-build.png" 
+                        alt="Learning-based Build Orientation for Additive Manufacturing" 
+                        className="w-full h-auto rounded-lg"
+                        width={256}
+                        height={256}
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-semibold mb-2">Learning-based Build Orientation</h3>
+                      <p className="text-gray-700 mb-3">Development of intelligent algorithms that optimize 3D-printed part orientations.</p>
+                      <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </div>
