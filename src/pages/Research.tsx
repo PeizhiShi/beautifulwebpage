@@ -23,7 +23,8 @@ const Research = () => {
       id: "llm-decision-support",
       title: "LLM-Enhanced Decision Support System",
       category: "sustainable-packaging",
-      image: "/lovable-uploads/16c97d0e-ae76-4f4d-a7bb-402f6ac84038.png",
+      image: "/lovable-uploads/sustainable-packaging-llm.png",
+      imageLayout: "side" as const,
       description: (
         <>
           <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a> is a pioneering company in the sustainable packaging industry. In this project, we will lead the integration of cutting-edge Artificial Intelligence (AI) and Large Language Model (LLM) techniques into SR Mailing's systems. The collaboration aims to develop LLM-enhanced data analytics, customer relationship management, and operational optimisation to support sustainable practices. This integration is expected to enhance decision-making across management, marketing, and sales, drive market expansion, and position SR Mailing as a sector leader in AI-enhanced decision support. The project is funded by Innovate UK and SR Mailing Ltd.
@@ -186,6 +187,7 @@ const Research = () => {
                     id={project.id}
                     title={project.title}
                     image={project.image}
+                    imageLayout={project.imageLayout}
                     description={project.description}
                     keyPublications={project.keyPublications}
                     keyFunding={project.keyFunding}
@@ -258,6 +260,7 @@ interface ResearchAreaProps {
   id: string;
   title: string;
   image: string;
+  imageLayout?: 'full' | 'side';
   description: string | React.ReactNode;
   keyPublications: {
     title: string;
@@ -283,6 +286,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
   id,
   title,
   image,
+  imageLayout = 'full',
   description,
   keyPublications,
   keyFunding,
@@ -344,15 +348,33 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
           {getSupervisorBadge()}
         </div>
       </h2>
-      <div className="mb-4 overflow-hidden rounded-lg">
-        <img 
-          src={image} 
-          alt={title}
-          className="w-full h-auto"
-          width={800}
-        />
-      </div>
-      <p className="text-gray-700 mb-4">{description}</p>
+      {imageLayout === 'side' ? (
+        <div className="flex flex-col md:flex-row gap-6 mb-4">
+          <div className="w-full md:w-72 flex-shrink-0 overflow-hidden rounded-lg">
+            <img 
+              src={image} 
+              alt={title}
+              className="w-full h-auto"
+              width={288}
+            />
+          </div>
+          <div className="flex-1">
+            <p className="text-gray-700">{description}</p>
+          </div>
+        </div>
+      ) : (
+        <>
+          <div className="mb-4 overflow-hidden rounded-lg">
+            <img 
+              src={image} 
+              alt={title}
+              className="w-full h-auto"
+              width={800}
+            />
+          </div>
+          <p className="text-gray-700 mb-4">{description}</p>
+        </>
+      )}
       
       {(keyFunding || fundingInfo || keyPublications.length > 0) && (
         <div>
