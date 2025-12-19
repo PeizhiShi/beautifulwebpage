@@ -49,7 +49,7 @@ const Research = () => {
       category: "additive-manufacturing",
       image: "/lovable-uploads/additive-manufacturing-build.png",
       imageLayout: "side" as const,
-      description: "This project aims to develop intelligent algorithms that optimize the build orientation of 3D-printed parts using machine learning techniques. By leveraging data-driven insights from simulations, the approach seeks to outperform traditional optimization-based methods in terms of efficiency and effectiveness, offering scalable and automated solutions for a wide range of additive manufacturing applications.",
+      description: "This project aims to develop intelligent algorithms that optimize the build orientation of 3D-printed parts using machine learning techniques. By leveraging data-driven insights from simulations, the approach seeks to outperform traditional optimization-based methods in terms of efficiency and effectiveness, offering scalable and automated solutions for a wide range of additive manufacturing applications. The resulting research has been published in leading international journals, including IEEE Transactions on Industrial Informatics (IF: 12.1) and Virtual and Physical Prototyping (IF: 10.6).",
       keyPublications: [
         {
           title: "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning",
