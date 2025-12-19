@@ -27,7 +27,7 @@ const Research = () => {
       imageLayout: "side" as const,
       description: (
         <>
-          <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a> is a leading company in the sustainable packaging sector. This project develops and deploys applied AI and large language model (LLM)–based decision-support systems in a real industrial setting. The project integrates LLM-driven analytics, customer intelligence, and optimisation-based operational modelling to address large-scale, data-intensive business decisions. The project provides a testbed for building scalable, end-to-end AI systems with relevance beyond a single organisation. It is jointly funded by Innovate UK and SR Mailing Ltd.
+          <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a> is a leading company in the sustainable packaging sector. This project develops and deploys applied AI and large language model (LLM)–based decision-support systems in a real industrial setting. The project integrates LLM-driven analytics, customer intelligence, and optimisation-based operational modelling to address large-scale, data-intensive business decisions. The project provides a testbed for building scalable, end-to-end AI systems with relevance beyond a single organisation. The project is jointly funded by Innovate UK and SR Mailing Ltd, with a total funded value of £338,916.
         </>
       ),
       keyPublications: [],
