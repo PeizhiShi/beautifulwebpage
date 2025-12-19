@@ -52,7 +52,7 @@ const CV = () => {
           <ul className="space-y-6">
             <li>
               <div className="flex flex-col md:flex-row md:justify-between mb-1">
-                <h3 className="font-bold">Lecturer in Applied AI</h3>
+                <h3 className="font-bold">Assistant Professor in Applied AI</h3>
                 <span className="text-gray-600">2023 - Present</span>
               </div>
               <div className="text-gray-700 mb-1">University of Leeds</div>
