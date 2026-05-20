@@ -146,6 +146,18 @@ I am an Assistant Professor in Applied Artificial Intelligence within the Analyt
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Recent News</h2>
             <ul className="space-y-4">
+
+              <li className="border-l-4 border-gray-300 pl-4">
+                <p className="text-gray-700">
+                  <strong>Publication:</strong> Our work "Machine learning in feature recognition for manufacturing: Taxonomy, analytical review, comparisons, trends, challenges, and outlook" has been accepted for publication in International Journal of Production Research (Impact Factor: 8.8, ABS3)!
+                </p>
+              </li>
+
+              <li className="border-l-4 border-gray-300 pl-4">
+                <p className="text-gray-700">
+                  <strong>Publication:</strong> Our work "Multi-scale and real-time load forecasting: A universal online functional analysis framework " has been accepted for publication in IEEE Transactions on Engineering Management (ABS3)!
+                </p>
+              </li>
               
               <li className="border-l-4 border-gray-300 pl-4">
                 <p className="text-gray-700">
