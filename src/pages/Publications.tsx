@@ -221,6 +221,11 @@ const PublicationItem: React.FC<PublicationItemProps> = ({ publication }) => {
             IF: {publication.impactFactor}
           </span>
         )}
+        {publication.abs && (
+          <span className="ml-2 bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full text-xs font-medium">
+            ABS{publication.abs}
+          </span>
+        )}
       </p>
       
       {publication.tags.length > 0 && (
