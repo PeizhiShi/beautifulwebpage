@@ -78,7 +78,7 @@ const Research = () => {
       category: "subtractive-manufacturing",
       image: "/lovable-uploads/2c78a9ea-5f63-46c9-bd3e-942ad352f67a2.png",
       imageLayout: "side" as const,
-      description: "This project aims to design algorithms that automatically recognize 2.5D manufacturing features from 3D components. A novel object detection network architecture is proposed as part of this work. At the time of its release, the approach achieves state-of-the-art performance in intersecting feature recognition and localization on benchmark datasets. The resulting methods have been published in leading international journals, including IEEE Transactions on Industrial Informatics (IF: 12.1), Robotics and Computer-Integrated Manufacturing (IF: 10.4), and the Journal of Intelligent Manufacturing (IF: 7.7).",
+      description: "This project aims to design algorithms that automatically recognize 2.5D manufacturing features from 3D components. A novel object detection network architecture is proposed as part of this work. At the time of its release, the approach achieves state-of-the-art performance in intersecting feature recognition and localization on benchmark datasets. The resulting methods have been published in leading international journals, including IEEE Transactions on Industrial Informatics (IF: 12.1), Robotics and Computer-Integrated Manufacturing (IF: 10.4), International Journal of Production Research (IF: 8.8, ABS3) and Journal of Intelligent Manufacturing (IF: 7.7).",
       keyPublications: [
         {
           title: "Machine learning in feature recognition for manufacturing: Taxonomy, analytical review, comparisons, trends, challenges, and outlook ",
