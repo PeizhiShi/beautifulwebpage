@@ -12,10 +12,29 @@ export interface Publication {
   link?: string;
   code?: string;
   impactFactor?: number;
+  abs?: number;
 }
 
 // Publications for Dr. Peizhi Shi
 export const publications: Publication[] = [
+  {
+    title: "Machine learning in feature recognition for manufacturing: Taxonomy, analytical review, comparisons, trends, challenges, and outlook",
+    authors: "P. Shi, Y. Qin, F. Meng, P. J. Scott, and X. Jiang",
+    venue: "International Journal of Production Research",
+    year: 2026,
+    type: "journal",
+    tags: ["machine learning", "feature recognition", "manufacturing", "taxonomy", "review"],
+    abs: 3
+  },
+  {
+    title: "Multi-scale and real-time load forecasting: A universal online functional analysis framework",
+    authors: "S. Dai, F. Meng, and P. Shi",
+    venue: "IEEE Transactions on Engineering Management",
+    year: 2026,
+    type: "journal",
+    tags: ["machine learning", "load forecasting", "real-time", "functional analysis", "energy"],
+    abs: 3
+  },
   {
     title: "Machine learning in peak demand forecasting: foundations, trends, and insights",
     authors: "S. Dai, F. Meng, H. Dai, Q. Wang, X. Chen, W. Bai, P. Shi, R. Allmendinger, Y. Zhang, J. Liu",
