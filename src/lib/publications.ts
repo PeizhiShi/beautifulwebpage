@@ -24,6 +24,7 @@ export const publications: Publication[] = [
     year: 2026,
     type: "journal",
     tags: ["machine learning", "feature recognition", "manufacturing", "taxonomy", "review"],
+    impactFactor: 8.8,
     abs: 3
   },
   {
