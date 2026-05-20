@@ -81,6 +81,12 @@ const Research = () => {
       description: "This project aims to design algorithms that automatically recognize 2.5D manufacturing features from 3D components. A novel object detection network architecture is proposed as part of this work. At the time of its release, the approach achieves state-of-the-art performance in intersecting feature recognition and localization on benchmark datasets. The resulting methods have been published in leading international journals, including IEEE Transactions on Industrial Informatics (IF: 12.1), Robotics and Computer-Integrated Manufacturing (IF: 10.4), and the Journal of Intelligent Manufacturing (IF: 7.7).",
       keyPublications: [
         {
+          title: "Machine learning in feature recognition for manufacturing: Taxonomy, analytical review, comparisons, trends, challenges, and outlook ",
+          authors: "P. Shi, Y. Qin, F. Meng, P. J. Scott, and X. Jiang",
+          venue: "International Journal of Production Research, 2026, IF: 8.8",
+          link: "/publications"
+        },
+        {
           title: "Highly interacting machining feature recognition via small sample learning",
           authors: "P. Shi, Q. Qi, Y. Qin, P. J. Scott, and X. Jiang",
           venue: "Robotics and Computer-Integrated Manufacturing, 2022, IF: 10.4",
