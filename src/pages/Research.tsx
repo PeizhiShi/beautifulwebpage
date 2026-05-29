@@ -109,7 +109,7 @@ const Research = () => {
                     description={project.description}
                     keyPublications={project.keyPublications}
                     keyFunding={project.keyFunding}
-                    supervisor={project.supervisor}
+                    supervisor={(project as any).supervisor}
                     fundingType={project.fundingType}
                   />
                 ))}
@@ -294,7 +294,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
         </>
       )}
       
-      {(keyFunding || fundingInfo || keyPublications.length > 0) && (
+      {(keyFunding || fundingInfo || (keyPublications && keyPublications.length > 0)) && (
         <div>
           <button 
             onClick={() => setExpanded(!expanded)}
