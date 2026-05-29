@@ -27,13 +27,13 @@ const Research = () => {
       imageLayout: "side" as const,
       description: (
         <>
-          <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a> is a leading company in the sustainable packaging sector. This project develops and deploys applied AI and large language model (LLM)–based decision-support systems in a real industrial setting. The project integrates LLM-driven analytics, customer intelligence, and optimisation-based operational modelling to address large-scale, data-intensive business decisions. The project provides a testbed for building scalable, end-to-end AI systems with relevance beyond a single organisation. The project is jointly funded by Innovate UK and SR Mailing Ltd, with a total funded value of £338,916.
+          This research stream focuses on the design of AI systems that support complex organisational and operational decisions. Current work explores how large language models, machine learning, and optimisation can help businesses improve decision-making in sustainable operations. This work is supported by a Knowledge Transfer Partnership with <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a>, funded by Innovate UK.
         </>
       ),
       keyPublications: [],
       keyFunding: [
         {
-          duration: "2025 - 2027",
+          duration: "10/2025 - 10/2027",
           pi: "Dr. Peizhi Shi (Academic Supervisor)",
           coIs: "Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)",
           partner: "SR Mailing Ltd",
@@ -45,11 +45,11 @@ const Research = () => {
     },
     {
       id: "build-orientation",
-      title: "Learning-based Build Orientation",
+      title: "Industrial AI for Production Systems",
       category: "additive-manufacturing",
       image: "/lovable-uploads/additive-manufacturing-build.png",
       imageLayout: "side" as const,
-      description: "This project aims to develop intelligent algorithms that optimize the build orientation of 3D-printed parts using machine learning techniques. By leveraging data-driven insights from simulations, the approach seeks to outperform traditional optimization-based methods in terms of efficiency and effectiveness, offering scalable and automated solutions for a wide range of additive manufacturing applications. The resulting research has been published in leading international journals, including IEEE Transactions on Industrial Informatics (IF: 12.1) and Virtual and Physical Prototyping (IF: 10.6).",
+      description: "This research stream investigates how AI can improve production and manufacturing systems. My work includes machine learning and computer vision for manufacturing feature recognition, AI-enabled process planning, build orientation optimisation in additive manufacturing, and data-driven optimisation of production processes.",
       fundingType: "ongoing" as const
     }
   ];
