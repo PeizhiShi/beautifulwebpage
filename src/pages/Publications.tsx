@@ -143,7 +143,7 @@ const Publications = () => {
         <p className="mt-10 text-sm text-gray-600">
           For a detailed list of publications, please refer to my{" "}
           <a
-            href="https://scholar.google.com/citations?user=BkB1qBgAAAAJ"
+            href="https://scholar.google.com/citations?user=qQuCvmQAAAAJ"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 underline"
