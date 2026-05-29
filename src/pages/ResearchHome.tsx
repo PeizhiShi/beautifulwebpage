@@ -131,7 +131,7 @@ const ResearchHome = () => {
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-3">Message to Potential PhD Students</h3>
                   <p className="text-gray-700 mb-4">
-I welcome enquiries from prospective PhD students interested in Industrial AI, AI-enabled decision support, and sustainable operations. I am particularly interested in projects that use machine learning, computer vision, large language models, and optimisation to improve decision-making in production, operations, and sustainability. If you are considering doctoral research in these areas, please feel free to get in touch with your academic CV and a brief statement of research interests.
+I welcome enquiries from prospective PhD students interested in Industrial AI, AI-enabled decision support, and sustainable operations. I am particularly interested in projects that use machine learning, computer vision, large language models, and optimisation to improve decision-making in production, operations, and sustainability. If you are considering doctoral research in these areas, please feel free to get in touch with your academic CV and a brief statement of research interests. </p>
                   <p className="text-gray-700 mb-4">
                     <strong>Application information:</strong> Please visit the <a href="https://business.leeds.ac.uk/research-degrees" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">LUBS PhD page</a> for programs, requirements and applications.
                   </p>
