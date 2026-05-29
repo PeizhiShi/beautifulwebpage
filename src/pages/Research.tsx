@@ -109,7 +109,7 @@ const Research = () => {
                     description={project.description}
                     keyPublications={project.keyPublications}
                     keyFunding={project.keyFunding}
-                    supervisor={project.supervisor}
+                    supervisor={(project as any).supervisor}
                     fundingType={project.fundingType}
                   />
                 ))}
