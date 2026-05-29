@@ -120,6 +120,11 @@ const Research = () => {
         
         {/* Academic Engagement Section */}
         <section className="mb-10">
+          <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Grant</h2>
+          <p className="text-gray-700">10/2025–10/2027, Principal Investigator, "LLM-Enhanced Decision Support System for Sustainable Packaging," Knowledge Transfer Partnership with SR Mailing Ltd, £338,916, Innovate UK.</p>
+        </section>
+
+        <section className="mb-10">
           <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Invited Talks</h2>
           <div className="space-y-4">
             <div>
