@@ -186,7 +186,7 @@ I welcome enquiries from prospective PhD students interested in Industrial AI, A
         </main>
         
         <footer className="text-center text-gray-600 relative pt-6 mt-10 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-gray-300 before:to-transparent">
-          <p>© 2025 Dr. Peizhi Shi. Last updated: December 2025 <a href="https://clustrmaps.com/site/1bohv"  title="ClustrMaps"><img width="5px" src="//www.clustrmaps.com/map_v2.png?d=GNKaZ2hx2hnIWDV343dbm1lxrydeLScrzGYnPqib9SA&cl=ffffff" /></a>  
+          <p>© 2026 Dr. Peizhi Shi. Last updated: June 2026 <a href="https://clustrmaps.com/site/1bohv"  title="ClustrMaps"><img width="5px" src="//www.clustrmaps.com/map_v2.png?d=GNKaZ2hx2hnIWDV343dbm1lxrydeLScrzGYnPqib9SA&cl=ffffff" /></a>  
 </p>
 
         </footer>
