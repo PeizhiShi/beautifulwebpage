@@ -178,11 +178,7 @@ I welcome enquiries from prospective PhD students interested in Industrial AI, A
                   <strong>New position:</strong> I am joining University of Leeds as a Lecturer in Applied Artificial Intelligence!
                 </p>
               </li>
-              <li className="border-l-4 border-gray-300 pl-4">
-                <p className="text-gray-700">
-                  <strong>Publication:</strong> Our work "Learn to rotate: Part orientation for reducing support volume via generalizable reinforcement learning" has been accepted for publication in IEEE Transactions on Industrial Informatics (Impact Factor: 12.1)!
-                </p>
-              </li>
+              
             </ul>
           </section>
 
