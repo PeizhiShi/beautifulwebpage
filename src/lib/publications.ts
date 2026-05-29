@@ -131,15 +131,6 @@ export const publications: Publication[] = [
     type: "journal",
     tags: ["additive manufacturing", "process optimization", "data-driven", "laser powder bed fusion"],
     pdf: "/publications/qin2025_surface_area.pdf"
-  },
-  {
-    title: "Optimisation of process parameters for improving surface quality in laser powder bed fusion",
-    authors: "Y. Qin, S. Lou, P. Shi, W. Zeng, P. J. Scott, and X. Jiang",
-    venue: "The International Journal of Advanced Manufacturing Technology",
-    year: 2024,
-    type: "journal",
-    tags: ["additive manufacturing", "process optimization", "surface quality", "laser powder bed fusion"],
-    pdf: "/publications/qin2024_surface_quality.pdf"
   }
   
 ];
