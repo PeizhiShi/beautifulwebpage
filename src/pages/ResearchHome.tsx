@@ -95,8 +95,8 @@ const ResearchHome = () => {
                       />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg font-semibold mb-2">LLM-Enhanced Decision Support System</h3>
-                      <p className="text-gray-700 mb-3">Integration of AI and LLM techniques for sustainable packaging industry decision support.</p>
+                      <h3 className="text-lg font-semibold mb-2">AI-enabled Decision Support for Sustainable Operations</h3>
+                      <p className="text-gray-700 mb-3">This research stream focuses on the design of AI systems that support complex organisational and operational decisions. Current work explores how large language models, machine learning, and optimisation can help businesses improve decision-making in sustainable operations.</p>
                       <Link to="/research?tab=sustainable-packaging" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                     </div>
                   </div>
