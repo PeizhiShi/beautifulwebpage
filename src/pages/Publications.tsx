@@ -125,69 +125,33 @@ const Publications = () => {
           </Link>
         </div>
         
-        <h1 className="text-3xl font-bold mb-6">Publications</h1>
-        
-        <Tabs defaultValue="topic" className="w-full">
-          <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="topic" className="flex items-center gap-2">
-              <Tags size={16} />
-              By Topic
-            </TabsTrigger>
-            <TabsTrigger value="type" className="flex items-center gap-2">
-              <FolderOpen size={16} />
-              By Type
-            </TabsTrigger>
-            <TabsTrigger value="year" className="flex items-center gap-2">
-              <Calendar size={16} />
-              By Year
-            </TabsTrigger>
-          </TabsList>
-          
-          <TabsContent value="year" className="mt-6">
-            <div className="space-y-10">
-              {publicationsByYear.map(({ year, publications }) => (
-                <div key={year}>
-                  <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">{year}</h2>
-                  <ul className="space-y-3">
-                    {publications.map((pub, index) => (
-                      <PublicationItem key={index} publication={pub} />
-                    ))}
-                  </ul>
-                </div>
-              ))}
+        <h1 className="text-3xl font-bold mb-6">Selected publications</h1>
+
+        <div className="space-y-10">
+          {publicationsByType.map(({ type, publications }) => (
+            <div key={type}>
+              <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">{type}</h2>
+              <ul className="space-y-3">
+                {publications.map((pub, index) => (
+                  <PublicationItem key={index} publication={pub} />
+                ))}
+              </ul>
             </div>
-          </TabsContent>
-          
-          <TabsContent value="type" className="mt-6">
-            <div className="space-y-10">
-              {publicationsByType.map(({ type, publications }) => (
-                <div key={type}>
-                  <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">{type}</h2>
-                  <ul className="space-y-3">
-                    {publications.map((pub, index) => (
-                      <PublicationItem key={index} publication={pub} />
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </TabsContent>
-          
-          <TabsContent value="topic" className="mt-6">
-            <div className="space-y-10">
-              {publicationsByTopic.map(({ topic, publications }) => (
-                <div key={topic}>
-                  <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">{topic}</h2>
-                  <ul className="space-y-3">
-                    {publications.map((pub, index) => (
-                      <PublicationItem key={index} publication={pub} />
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </TabsContent>
-        </Tabs>
+          ))}
+        </div>
+
+        <p className="mt-10 text-sm text-gray-600">
+          For a detailed list of publications, please refer to my{" "}
+          <a
+            href="https://scholar.google.com/citations?user=BkB1qBgAAAAJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline"
+          >
+            Google Scholar
+          </a>{" "}
+          profile.
+        </p>
       </div>
     </div>
   );
