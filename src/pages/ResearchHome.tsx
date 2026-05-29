@@ -46,8 +46,8 @@ const ResearchHome = () => {
             </div>
             
             <p className="text-gray-700 mb-6">
-I am an Assistant Professor in Applied Artificial Intelligence within the Analytics, Technology and Operations Department at the University of Leeds. My research centres on machine learning methodology and scalable AI systems, with particular emphasis on computer vision and large language models for complex real-world problems. Applications include intelligent business analytics, sustainable manufacturing, and production systems.
-            </p>
+              I am an Assistant Professor in Applied Artificial Intelligence at the Centre for Decision Research, University of Leeds. My research develops AI-enabled decision systems for sustainable business and industrial operations, with particular emphasis on machine learning, computer vision, and large language models for complex real-world problems. My work connects Industrial AI with decision support in areas such as sustainable operations, production research, intelligent manufacturing, business analytics, and AI for sustainable business.
+           </p>
               <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center gap-2 text-gray-700">
                 <MapPin size={16} />
@@ -131,8 +131,7 @@ I am an Assistant Professor in Applied Artificial Intelligence within the Analyt
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-3">Message to Potential PhD Students</h3>
                   <p className="text-gray-700 mb-4">
-                    I welcome enquiries from prospective PhD students with interests aligned to mine, specifically in artificial intelligence, machine learning and their applications. If you are considering doctoral research and are passionate about applying advanced artificial intelligence and machine learning to real-world problems, please feel free to get in touch with your academic CV.
-                  </p>
+I welcome enquiries from prospective PhD students interested in Industrial AI, AI-enabled decision support, and sustainable operations. I am particularly interested in projects that use machine learning, computer vision, large language models, and optimisation to improve decision-making in production, operations, and sustainability. If you are considering doctoral research in these areas, please feel free to get in touch with your academic CV and a brief statement of research interests.
                   <p className="text-gray-700 mb-4">
                     <strong>Application information:</strong> Please visit the <a href="https://business.leeds.ac.uk/research-degrees" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">LUBS PhD page</a> for programs, requirements and applications.
                   </p>
