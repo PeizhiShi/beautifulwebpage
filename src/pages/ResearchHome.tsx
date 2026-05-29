@@ -96,7 +96,7 @@ const ResearchHome = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-lg font-semibold mb-2">AI-enabled Decision Support for Sustainable Operations</h3>
-                      <p className="text-gray-700 mb-3">This research stream focuses on the design of AI systems that support complex organisational and operational decisions. Current work explores how large language models, machine learning, and optimisation can help businesses improve decision-making in sustainable operations.</p>
+                      <p className="text-gray-700 mb-3">Developing large language model-based decision support systems to help organisations make more informed, efficient, and sustainable operational decisions.</p>
                       <Link to="/research?tab=sustainable-packaging" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                     </div>
                   </div>
@@ -106,8 +106,8 @@ const ResearchHome = () => {
                 <CardContent className="p-6">
                   <div className="flex flex-col md:flex-row gap-6 items-center">
                     <div className="flex-1">
-                      <h3 className="text-lg font-semibold mb-2">Industrial AI and Production Research</h3>
-                      <p className="text-gray-700 mb-3">This research stream investigates how AI can improve production and manufacturing systems. My work includes machine learning and computer vision for manufacturing feature recognition, AI-enabled process planning, build orientation optimisation in additive manufacturing, and data-driven optimisation of production processes.</p>
+                      <h3 className="text-lg font-semibold mb-2">Industrial AI for Production Research</h3>
+                      <p className="text-gray-700 mb-3">Using machine learning, computer vision, and reinforcement learning to improve production decisions, manufacturing feature recognition, process planning, and additive manufacturing operations.</p>
                       <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                     </div>
                     <div className="w-full md:w-64 flex-shrink-0">
