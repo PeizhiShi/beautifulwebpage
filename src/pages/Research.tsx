@@ -67,18 +67,6 @@ const Research = () => {
       label: "AI in Additive Manufacturing",
       icon: <Rotate3D size={16} />,
       projects: researchProjects.filter(p => p.category === "additive-manufacturing")
-    },
-    {
-      category: "subtractive-manufacturing",
-      label: "AI in Subtractive Manufacturing", 
-      icon: <Search size={16} />,
-      projects: researchProjects.filter(p => p.category === "subtractive-manufacturing")
-    },
-    {
-      category: "entertainment",
-      label: "AI in Entertainment",
-      icon: <Gamepad size={16} />,
-      projects: researchProjects.filter(p => p.category === "entertainment")
     }
   ];
 
