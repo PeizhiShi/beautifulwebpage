@@ -294,7 +294,7 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
         </>
       )}
       
-      {(keyFunding || fundingInfo || keyPublications.length > 0) && (
+      {(keyFunding || fundingInfo || (keyPublications && keyPublications.length > 0)) && (
         <div>
           <button 
             onClick={() => setExpanded(!expanded)}
