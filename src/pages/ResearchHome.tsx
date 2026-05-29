@@ -106,8 +106,8 @@ const ResearchHome = () => {
                 <CardContent className="p-6">
                   <div className="flex flex-col md:flex-row gap-6 items-center">
                     <div className="flex-1">
-                      <h3 className="text-lg font-semibold mb-2">Learning-based Build Orientation</h3>
-                      <p className="text-gray-700 mb-3">Development of intelligent algorithms that optimize 3D-printed part orientations.</p>
+                      <h3 className="text-lg font-semibold mb-2">Industrial AI and Production Research</h3>
+                      <p className="text-gray-700 mb-3">This research stream investigates how AI can improve production and manufacturing systems. My work includes machine learning and computer vision for manufacturing feature recognition, AI-enabled process planning, build orientation optimisation in additive manufacturing, and data-driven optimisation of production processes.</p>
                       <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                     </div>
                     <div className="w-full md:w-64 flex-shrink-0">
