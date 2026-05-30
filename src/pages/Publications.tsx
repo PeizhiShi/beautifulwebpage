@@ -125,7 +125,7 @@ const Publications = () => {
           </Link>
         </div>
         
-        <h1 className="text-3xl font-bold mb-6">Selected publications</h1>
+        <h1 className="text-3xl font-bold mb-10 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-24 after:h-1 after:bg-blue-500">Selected Publications</h1>
 
         <div className="space-y-10">
           {publicationsByType.map(({ type, publications }) => (
