@@ -22,7 +22,7 @@ const ResearchHome = () => {
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
         <header className="flex flex-col md:flex-row gap-8 items-start pb-8 mt-6 mb-6">
-          <div className="w-48 min-w-48 overflow-hidden rounded-lg">
+          <div className="w-32 min-w-32 overflow-hidden rounded-lg">
             <OptimizedImage 
               src="/lovable-uploads/C16CC70A-9C83-4E11-A878-5E995B84EEC5_1_105_c.png" 
               alt="Profile" 
