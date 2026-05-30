@@ -21,8 +21,8 @@ const ResearchHome = () => {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
-        <header className="flex flex-col md:flex-row gap-8 items-start pb-8 mt-6 mb-6">
-          <div className="w-32 min-w-32 overflow-hidden rounded-lg">
+        <header className="flex flex-col md:flex-row gap-8 items-start pb-2 mt-6 mb-2">
+          <div className="w-40 min-w-40 overflow-hidden rounded-lg">
             <OptimizedImage 
               src="/lovable-uploads/C16CC70A-9C83-4E11-A878-5E995B84EEC5_1_105_c.png" 
               alt="Profile" 
@@ -65,7 +65,7 @@ const ResearchHome = () => {
           </div>
         </header>
         
-        <nav className="mb-10">
+        <nav className="mb-10 mt-2">
           <ul className="flex flex-wrap gap-4 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-gradient-to-r after:from-blue-200 after:via-blue-400 after:to-blue-200">
             <li><Link to="/research" className="text-blue-600 hover:text-blue-800 font-medium">Research</Link></li>
             <li><Link to="/publications" className="text-blue-600 hover:text-blue-800 font-medium">Publications</Link></li>
@@ -78,6 +78,13 @@ const ResearchHome = () => {
             
             
           
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Profile</h2>
+            <p className="text-gray-700 leading-relaxed">
+              I am an Assistant Professor in Applied Artificial Intelligence at the Centre for Decision Research, University of Leeds. My research develops AI-enabled decision systems for sustainable business and industrial operations, with particular emphasis on machine learning, computer vision, and large language models for complex real-world problems. My work connects Industrial AI with decision support in areas such as sustainable operations, production research, intelligent manufacturing, business analytics, and AI for sustainable business.
+            </p>
+          </section>
+
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Research Highlights</h2>
             <div className="grid grid-cols-1 gap-6">
