@@ -29,8 +29,8 @@ const ResearchHome = () => {
               className="w-full h-auto object-cover"
               loading="eager"
               priority={true}
-              width={192}
-              height={256}
+              width={127}
+              height={169}
             />
           </div>
           
