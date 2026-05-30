@@ -46,7 +46,6 @@ const ResearchHome = () => {
             </div>
             
             <p className="text-gray-700 mb-6">
-              I am an Assistant Professor in Applied Artificial Intelligence at the Centre for Decision Research, University of Leeds. My research develops AI-enabled decision systems for sustainable business and industrial operations, with particular emphasis on machine learning, computer vision, and large language models for complex real-world problems. My work connects Industrial AI with decision support in areas such as sustainable operations, production research, intelligent manufacturing, business analytics, and AI for sustainable business.
            </p>
               <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center gap-2 text-gray-700">
