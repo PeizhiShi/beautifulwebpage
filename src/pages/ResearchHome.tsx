@@ -79,7 +79,13 @@ const ResearchHome = () => {
             
           
           <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Research Highlights</h2>
+            <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Profile</h2>
+            <p className="text-gray-700 leading-relaxed">
+              I am an Assistant Professor in Applied Artificial Intelligence at the Centre for Decision Research, University of Leeds. My research develops AI-enabled decision systems for sustainable business and industrial operations, with particular emphasis on machine learning, computer vision, and large language models for complex real-world problems. My work connects Industrial AI with decision support in areas such as sustainable operations, production research, intelligent manufacturing, business analytics, and AI for sustainable business.
+            </p>
+          </section>
+
+          <section className="mb-10">
             <div className="grid grid-cols-1 gap-6">
               <Card className="bg-blue-50 border-blue-100">
                 <CardContent className="p-6">
