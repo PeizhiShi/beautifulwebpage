@@ -21,8 +21,8 @@ const ResearchHome = () => {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
-        <header className="flex flex-col md:flex-row gap-8 items-start pb-8 mt-6 mb-6">
-          <div className="w-32 min-w-32 overflow-hidden rounded-lg">
+        <header className="flex flex-col md:flex-row gap-8 items-start pb-2 mt-6 mb-2">
+          <div className="w-40 min-w-40 overflow-hidden rounded-lg">
             <OptimizedImage 
               src="/lovable-uploads/C16CC70A-9C83-4E11-A878-5E995B84EEC5_1_105_c.png" 
               alt="Profile" 
@@ -65,7 +65,7 @@ const ResearchHome = () => {
           </div>
         </header>
         
-        <nav className="mb-10">
+        <nav className="mb-10 mt-2">
           <ul className="flex flex-wrap gap-4 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-gradient-to-r after:from-blue-200 after:via-blue-400 after:to-blue-200">
             <li><Link to="/research" className="text-blue-600 hover:text-blue-800 font-medium">Research</Link></li>
             <li><Link to="/publications" className="text-blue-600 hover:text-blue-800 font-medium">Publications</Link></li>
