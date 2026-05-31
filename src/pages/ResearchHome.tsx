@@ -95,7 +95,7 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                   <OptimizedImage
                     src="/lovable-uploads/additive-manufacturing-build.png"
                     alt="Industrial AI for Production Research"
-                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-24 object-cover rounded-lg mb-4"
                     width={512}
                     height={192}
                   />
