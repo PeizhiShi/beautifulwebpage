@@ -39,10 +39,10 @@ const ResearchHome = () => {
             <h2 className="text-xl text-gray-600 mb-4">Assistant Professor in Applied Artificial Intelligence</h2>
             
             <div className="flex flex-wrap gap-2 mb-5">
-              <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">Machine Learning</span>
               <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-sm">Industrial AI</span>
+              <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">Machine Learning</span>
               <span className="bg-red-50 text-red-700 px-2 py-1 rounded text-sm">AI-enabled Decision Support</span>
-              <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Sustainable Operations</span>
+              <span className="bg-purple-50 text-purple-700 px-2 py-1 rounded text-sm">Production and Sustainable Operations</span>
             </div>
             
             <p className="text-gray-700 mb-6">
@@ -81,7 +81,7 @@ const ResearchHome = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Profile</h2>
             <p className="text-gray-700 leading-relaxed">
-              I am an Assistant Professor in Applied Artificial Intelligence at the Centre for Decision Research, University of Leeds. My research develops AI-enabled decision systems for sustainable business and industrial operations, with particular emphasis on machine learning, computer vision, and large language models for complex real-world problems. My work connects Industrial AI with decision support in areas such as sustainable operations, production research, intelligent manufacturing, business analytics, and AI for sustainable business.
+I am an Assistant Professor in Applied Artificial Intelligence at the Centre for Decision Research, University of Leeds. My research develops Industrial AI and AI-enabled decision systems for complex production and operational environments, with particular emphasis on machine learning, computer vision, large language models, and optimisation. My work focuses on intelligent manufacturing, production research, sustainable operations, and data-driven decision support, connecting technical AI systems with real-world industrial and organisational challenges.
             </p>
           </section>
 
