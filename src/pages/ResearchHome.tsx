@@ -93,7 +93,7 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                   <OptimizedImage
                     src="/lovable-uploads/additive-manufacturing-build.png"
                     alt="Learning-based Build Orientation for Additive Manufacturing"
-                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-32 h-32 object-cover rounded-lg mb-4 mx-auto"
                     width={256}
                     height={192}
                   />
@@ -106,7 +106,7 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                   <OptimizedImage
                     src="/lovable-uploads/sustainable-packaging-llm.png"
                     alt="LLM-Enhanced Decision Support System for Sustainable Packaging"
-                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-32 h-32 object-cover rounded-lg mb-4 mx-auto"
                     width={256}
                     height={192}
                   />
