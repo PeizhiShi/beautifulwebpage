@@ -108,7 +108,7 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                   
                 </CardContent>
               </Card>
-              <Card className="bg-blue-50 border-blue-100">
+              <Card className="bg-white-50 border-blue-100">
                 <CardContent className="p-6">
                   <OptimizedImage
                     src="/lovable-uploads/sustainable-packaging-llm.png"
