@@ -97,10 +97,11 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                     width={512}
                     height={192}
                   />
-                  <p className="text-gray-700">
-                    <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Industrial AI for Production Research →</Link>
-                  </p>
                   
+                  <p className="text-gray-700">
+                  <strong>Industrial AI for Production Research</strong>
+                  </p>
+                  <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                   
                 </CardContent>
               </Card>
@@ -112,8 +113,10 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                     width={512}
                     height={192}
                   />
-                 
-                  <Link to="/research?tab=decision-support" className="text-blue-600 hover:text-blue-800"><strong>AI-enabled Decision Support for Sustainable Operations →</strong></Link>
+                 <p className="text-gray-700">
+                  <strong>AI-enabled Decision Support</strong>
+                  </p>
+                  <Link to="/research?tab=decision-support" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                 </CardContent>
               </Card>
             </div>
