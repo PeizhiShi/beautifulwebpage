@@ -108,11 +108,14 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                   <OptimizedImage
                     src="/lovable-uploads/sustainable-packaging-llm.png"
                     alt="LLM-Enhanced Decision Support System for Sustainable Packaging"
-                    className="w-32 h-32 object-cover rounded-lg mb-4 mx-auto"
+                    className="w-128 h-128 object-cover rounded-lg mb-4 mx-auto"
                     width={256}
                     height={192}
                   />
-                  <h3 className="text-lg font-semibold mb-2">AI-enabled Decision Support for Sustainable Operations</h3>
+                  <p className="text-gray-700">
+                    <strong>AI-enabled Decision Support for Sustainable Operations</strong> 
+                  </p>
+
                   <Link to="/research?tab=decision-support" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                 </CardContent>
               </Card>
