@@ -70,7 +70,7 @@ const Research = () => {
           </Link>
         </div>
         
-        <h1 className="text-3xl font-bold mb-10 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-24 after:h-1 after:bg-blue-500">Research & Grant</h1>
+        <h1 className="text-3xl font-bold mb-10">Research & Grant</h1>
         
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-10">
           <TabsList className="w-full mb-6">

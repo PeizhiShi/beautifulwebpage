@@ -15,7 +15,7 @@ const CV = () => {
           </Link>
         </div>
         
-        <h1 className="text-3xl font-bold mb-10 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-24 after:h-1 after:bg-blue-500">Curriculum Vitae</h1>
+        <h1 className="text-3xl font-bold mb-10">Curriculum Vitae</h1>
         
         <Card className="mb-8">
           <CardContent className="p-6">
