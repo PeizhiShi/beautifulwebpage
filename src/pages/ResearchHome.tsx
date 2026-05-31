@@ -98,7 +98,7 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                     height={192}
                   />
                   <p className="text-gray-700">
-                    <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800"><strong>Industrial AI for Production Research →</strong> </Link>
+                    <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Industrial AI for Production Research →</Link>
                   </p>
                   
                   
@@ -113,7 +113,7 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                     height={192}
                   />
                  
-                  <Link to="/research?tab=decision-support" className="text-blue-600 hover:text-blue-800"><strong>AI-enabled Decision Support for Sustainable Operations →</strong>strong></Link>
+                  <Link to="/research?tab=decision-support" className="text-blue-600 hover:text-blue-800"><strong>AI-enabled Decision Support for Sustainable Operations →</strong></Link>
                 </CardContent>
               </Card>
             </div>
