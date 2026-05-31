@@ -113,8 +113,8 @@ const Research = () => {
           <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Grant</h2>
           <div>
             <h4 className="font-medium text-gray-900">LLM-Enhanced Decision Support System for Sustainable Packaging</h4>
-            <div className="text-sm text-gray-600 italic">10/2025–10/2027 • Knowledge Transfer Partnership with SR Mailing Ltd • Innovate UK</div>
-            <div className="text-sm text-gray-700">Principal Investigator • £338,916</div>
+            <div className="text-sm text-gray-600 italic">10/2025–10/2027 • Principal Investigator • £338,916</div>
+            <div className="text-sm text-gray-700">Knowledge Transfer Partnership with SR Mailing Ltd • Innovate UK</div>
           </div>
         </section>
 
