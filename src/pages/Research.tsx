@@ -8,7 +8,7 @@ import OptimizedImage from "@/components/OptimizedImage";
 
 const Research = () => {
   const [searchParams] = useSearchParams();
-  const [activeTab, setActiveTab] = useState("sustainable-packaging");
+  const [activeTab, setActiveTab] = useState("decision-support");
 
   useEffect(() => {
     const tabParam = searchParams.get("tab");
@@ -22,7 +22,7 @@ const Research = () => {
     {
       id: "llm-decision-support",
       title: "LLM-Enhanced Decision Support System",
-      category: "sustainable-packaging",
+      category: "decision-support",
       image: "/lovable-uploads/sustainable-packaging-llm.png",
       imageLayout: "side" as const,
       description: (
@@ -57,14 +57,14 @@ const Research = () => {
   // Group projects by category
   const projectsByCategory = [
     {
-      category: "sustainable-packaging",
-      label: "AI in Sustainable Packaging",
+      category: "decision-support",
+      label: "AI-enabled Decision Support",
       icon: <Package size={16} />,
-      projects: researchProjects.filter(p => p.category === "sustainable-packaging")
+      projects: researchProjects.filter(p => p.category === "decision-support")
     },
     {
       category: "additive-manufacturing", 
-      label: "AI in Additive Manufacturing",
+      label: "Industrial AI",
       icon: <Rotate3D size={16} />,
       projects: researchProjects.filter(p => p.category === "additive-manufacturing")
     }
