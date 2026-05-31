@@ -97,8 +97,8 @@ const Research = () => {
                     image={project.image}
                     imageLayout={project.imageLayout}
                     description={project.description}
-                    keyPublications={project.keyPublications}
-                    keyFunding={project.keyFunding}
+                    keyPublications={(project as any).keyPublications}
+                    keyFunding={(project as any).keyFunding}
                     supervisor={(project as any).supervisor}
                     fundingType={project.fundingType}
                   />
