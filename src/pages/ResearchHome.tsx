@@ -87,51 +87,36 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
 
           <section className="mb-10">
             <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">Research Highlights</h2>
-            <div className="grid grid-cols-1 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="bg-green-50 border-green-100">
                 <CardContent className="p-6">
-                  <div className="flex flex-col md:flex-row gap-6 items-center">
-                    <div className="w-full md:w-64 flex-shrink-0">
-                      <OptimizedImage 
-                        src="/lovable-uploads/additive-manufacturing-build.png" 
-                        alt="Learning-based Build Orientation for Additive Manufacturing" 
-                        className="w-full h-auto rounded-lg"
-                        width={256}
-                        height={256}
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold mb-2">Industrial AI for Production Research</h3>
-                      <p className="text-gray-700 mb-3">Developing machine learning, computer vision, and reinforcement learning methods for intelligent production systems. My work focuses on manufacturing feature recognition, AI-enabled process planning, build orientation optimisation, and data-driven production improvement in additive and subtractive manufacturing.
-</p>
-                      <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
-                    </div>
-                  </div>
+                  <OptimizedImage
+                    src="/lovable-uploads/additive-manufacturing-build.png"
+                    alt="Learning-based Build Orientation for Additive Manufacturing"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    width={256}
+                    height={192}
+                  />
+                  <h3 className="text-lg font-semibold mb-2">Industrial AI for Production Research</h3>
+                  <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                 </CardContent>
               </Card>
               <Card className="bg-blue-50 border-blue-100">
                 <CardContent className="p-6">
-                  <div className="flex flex-col md:flex-row gap-6 items-center">
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold mb-2">AI-enabled Decision Support for Sustainable Operations</h3>
-                      <p className="text-gray-700 mb-3">Developing large language model-based decision support systems to help organisations make more informed, efficient, and sustainable operational decisions. This work is currently supported by a Knowledge Transfer Partnership with SR Mailing Ltd, funded by Innovate UK.
-</p>
-                      <Link to="/research?tab=decision-support" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
-                    </div>
-                    <div className="w-full md:w-64 flex-shrink-0">
-                      <OptimizedImage 
-                        src="/lovable-uploads/sustainable-packaging-llm.png" 
-                        alt="LLM-Enhanced Decision Support System for Sustainable Packaging" 
-                        className="w-full h-auto rounded-lg"
-                        width={256}
-                        height={256}
-                      />
-                    </div>
-                  </div>
+                  <OptimizedImage
+                    src="/lovable-uploads/sustainable-packaging-llm.png"
+                    alt="LLM-Enhanced Decision Support System for Sustainable Packaging"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    width={256}
+                    height={192}
+                  />
+                  <h3 className="text-lg font-semibold mb-2">AI-enabled Decision Support for Sustainable Operations</h3>
+                  <Link to="/research?tab=decision-support" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                 </CardContent>
               </Card>
             </div>
           </section>
+
 
           <section className="mb-10">
               <h2 className="text-2xl font-bold mb-6 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-blue-500">PhD Opportunities</h2>
