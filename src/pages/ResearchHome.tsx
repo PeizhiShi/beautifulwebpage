@@ -98,26 +98,22 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                     height={192}
                   />
                   <p className="text-gray-700">
-                    <strong>Industrial AI for Production Research</strong> 
+                    <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800"><strong>Industrial AI for Production Research →</strong> </Link>
                   </p>
                   
-                  <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                  
                 </CardContent>
               </Card>
               <Card className="bg-blue-50 border-blue-100">
                 <CardContent className="p-6">
                   <OptimizedImage
                     src="/lovable-uploads/sustainable-packaging-llm.png"
-                    alt="LLM-Enhanced Decision Support System for Sustainable Packaging"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                     width={512}
                     height={192}
                   />
-                  <p className="text-gray-700">
-                    <strong>AI-enabled Decision Support for Sustainable Operations</strong> 
-                  </p>
-
-                  <Link to="/research?tab=decision-support" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
+                 
+                  <Link to="/research?tab=decision-support" className="text-blue-600 hover:text-blue-800"><strong>AI-enabled Decision Support for Sustainable Operations →</strong>strong></Link>
                 </CardContent>
               </Card>
             </div>
