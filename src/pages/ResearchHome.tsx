@@ -92,8 +92,7 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                 <CardContent className="p-6">
                   <OptimizedImage
                     src="/lovable-uploads/additive-manufacturing-build.png"
-                    alt="Learning-based Build Orientation for Additive Manufacturing"
-                    className="w-32 h-32 object-cover rounded-lg mb-4 mx-auto"
+                    className="w-64 h-64 object-cover rounded-lg mb-4 mx-auto"
                     width={256}
                     height={192}
                   />
