@@ -30,7 +30,7 @@ const Research = () => {
     },
     {
       id: "llm-decision-support",
-      title: "LLM-Enhanced Decision Support System",
+      title: "AI-enabled Decision Support for Sustainable Operations",
       category: "decision-support",
       image: "/lovable-uploads/sustainable-packaging-llm.png",
       imageLayout: "side" as const,
