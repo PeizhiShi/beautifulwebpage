@@ -20,6 +20,15 @@ const Research = () => {
   // Define research projects with categories
   const researchProjects = [
     {
+      id: "build-orientation",
+      title: "Industrial AI for Production Systems",
+      category: "additive-manufacturing",
+      image: "/lovable-uploads/additive-manufacturing-build.png",
+      imageLayout: "side" as const,
+      description: "This research stream investigates how AI can improve production and manufacturing systems. My work includes machine learning and computer vision for manufacturing feature recognition, AI-enabled process planning, build orientation optimisation in additive manufacturing, and data-driven optimisation of production processes.",
+      fundingType: "ongoing" as const
+    },
+    {
       id: "llm-decision-support",
       title: "LLM-Enhanced Decision Support System",
       category: "decision-support",
@@ -31,42 +40,23 @@ const Research = () => {
         </>
       ),
       keyPublications: [],
-      keyFunding: [
-        {
-          duration: "10/2025 - 10/2027",
-          pi: "Dr. Peizhi Shi (Academic Supervisor)",
-          coIs: "Prof. Barbara Summers (Academic Lead), Dr. Xingjie Wei (Academic Advisor), Aritad Choicharoon (Academic Advisor)",
-          partner: "SR Mailing Ltd",
-          amount: "£338,916",
-          scheme: "Knowledge Transfer Partnerships with SR Mailing, Innovate UK"
-        }
-      ],
       fundingType: "principal" as const
-    },
-    {
-      id: "build-orientation",
-      title: "Industrial AI for Production Systems",
-      category: "additive-manufacturing",
-      image: "/lovable-uploads/additive-manufacturing-build.png",
-      imageLayout: "side" as const,
-      description: "This research stream investigates how AI can improve production and manufacturing systems. My work includes machine learning and computer vision for manufacturing feature recognition, AI-enabled process planning, build orientation optimisation in additive manufacturing, and data-driven optimisation of production processes.",
-      fundingType: "ongoing" as const
     }
   ];
 
   // Group projects by category
   const projectsByCategory = [
     {
+      category: "additive-manufacturing",
+      label: "Industrial AI",
+      icon: <Rotate3D size={16} />,
+      projects: researchProjects.filter(p => p.category === "additive-manufacturing")
+    },
+    {
       category: "decision-support",
       label: "AI-enabled Decision Support",
       icon: <Package size={16} />,
       projects: researchProjects.filter(p => p.category === "decision-support")
-    },
-    {
-      category: "additive-manufacturing", 
-      label: "Industrial AI",
-      icon: <Rotate3D size={16} />,
-      projects: researchProjects.filter(p => p.category === "additive-manufacturing")
     }
   ];
 
