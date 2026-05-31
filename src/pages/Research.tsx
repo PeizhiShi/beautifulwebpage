@@ -25,7 +25,7 @@ const Research = () => {
       category: "additive-manufacturing",
       image: "/lovable-uploads/additive-manufacturing-build.png",
       imageLayout: "side" as const,
-      description: "This research stream investigates how AI can improve production and manufacturing systems. My work develops machine learning, computer vision, and reinforcement learning methods for manufacturing feature recognition, AI-enabled process planning, build orientation optimisation in additive manufacturing, and data-driven optimisation of production processes. This stream forms the foundation of my research in Industrial AI and production research.",
+      description: "This research stream investigates how AI can improve intelligent production systems. My work develops machine learning, computer vision, and reinforcement learning methods for manufacturing feature recognition, AI-enabled process planning, build orientation optimisation in additive manufacturing, and data-driven optimisation of production processes. This stream forms the foundation of my research in Industrial AI for production research.",
       fundingType: "ongoing" as const
     },
     {
