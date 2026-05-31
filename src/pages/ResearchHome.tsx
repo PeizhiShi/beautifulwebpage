@@ -96,7 +96,10 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                     width={256}
                     height={192}
                   />
-                  <h3 className="text-lg font-semibold mb-2">Industrial AI for Production Research</h3>
+                  <p className="text-gray-700">
+                    <strong>Industrial AI for Production Research</strong> 
+                  </p>
+                  
                   <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                 </CardContent>
               </Card>
