@@ -102,7 +102,8 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                     </div>
                     <div className="flex-1">
                       <h3 className="text-lg font-semibold mb-2">Industrial AI for Production Research</h3>
-                      <p className="text-gray-700 mb-3">Using machine learning, computer vision, and reinforcement learning to improve production decisions, manufacturing feature recognition, process planning, and additive manufacturing operations.</p>
+                      <p className="text-gray-700 mb-3">Developing machine learning, computer vision, and reinforcement learning methods for intelligent production systems. My work focuses on manufacturing feature recognition, AI-enabled process planning, build orientation optimisation, and data-driven production improvement in additive and subtractive manufacturing.
+</p>
                       <Link to="/research?tab=additive-manufacturing" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                     </div>
                   </div>
@@ -113,7 +114,8 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                   <div className="flex flex-col md:flex-row gap-6 items-center">
                     <div className="flex-1">
                       <h3 className="text-lg font-semibold mb-2">AI-enabled Decision Support for Sustainable Operations</h3>
-                      <p className="text-gray-700 mb-3">Developing large language model-based decision support systems to help organisations make more informed, efficient, and sustainable operational decisions.</p>
+                      <p className="text-gray-700 mb-3">Developing large language model-based decision support systems to help organisations make more informed, efficient, and sustainable operational decisions. This work is currently supported by a Knowledge Transfer Partnership with SR Mailing Ltd, funded by Innovate UK.
+</p>
                       <Link to="/research?tab=decision-support" className="text-blue-600 hover:text-blue-800">Learn more →</Link>
                     </div>
                     <div className="w-full md:w-64 flex-shrink-0">
