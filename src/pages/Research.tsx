@@ -25,7 +25,7 @@ const Research = () => {
       category: "additive-manufacturing",
       image: "/lovable-uploads/additive-manufacturing-build.png",
       imageLayout: "side" as const,
-      description: "This research stream investigates how AI can improve production and manufacturing systems. My work includes machine learning and computer vision for manufacturing feature recognition, AI-enabled process planning, build orientation optimisation in additive manufacturing, and data-driven optimisation of production processes.",
+      description: "This research stream investigates how AI can improve production and manufacturing systems. My work develops machine learning, computer vision, and reinforcement learning methods for manufacturing feature recognition, AI-enabled process planning, build orientation optimisation in additive manufacturing, and data-driven optimisation of production processes. This stream forms the foundation of my research in Industrial AI and production research.",
       fundingType: "ongoing" as const
     },
     {
@@ -36,7 +36,7 @@ const Research = () => {
       imageLayout: "side" as const,
       description: (
         <>
-          This research stream focuses on the design of AI systems that support complex organisational and operational decisions. Current work explores how large language models, machine learning, and optimisation can help businesses improve decision-making in sustainable operations. This work is supported by a Knowledge Transfer Partnership with <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a>, funded by Innovate UK.
+          This research stream focuses on the design of AI systems that support complex organisational and operational decisions. Current work explores how large language models, machine learning, and optimisation can help organisations improve decision-making in sustainable operations. This stream extends my work in Industrial AI towards broader applications in business operations, sustainability, and AI-enabled decision support. This work is supported by a Knowledge Transfer Partnership with <a href="https://www.srmailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">SR Mailing Ltd</a>, funded by Innovate UK.
         </>
       ),
       keyPublications: [],
@@ -222,14 +222,14 @@ const ResearchArea: React.FC<ResearchAreaProps> = ({
           <>
            
             <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-              Funded by Innovate UK & SR Mailing
+              Emerging funded research stream
             </span>
           </>
         );
       case 'ongoing':
         return (
           <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-            Ongoing Research
+            Established research stream
           </span>
         );
       case 'scholarship':
