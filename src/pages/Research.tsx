@@ -8,7 +8,7 @@ import OptimizedImage from "@/components/OptimizedImage";
 
 const Research = () => {
   const [searchParams] = useSearchParams();
-  const [activeTab, setActiveTab] = useState("decision-support");
+  const [activeTab, setActiveTab] = useState("additive-manufacturing");
 
   useEffect(() => {
     const tabParam = searchParams.get("tab");
