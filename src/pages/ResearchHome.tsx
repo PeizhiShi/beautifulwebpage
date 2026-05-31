@@ -92,8 +92,9 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                 <CardContent className="p-6">
                   <OptimizedImage
                     src="/lovable-uploads/additive-manufacturing-build.png"
-                    className="w-64 h-64 object-cover rounded-lg mb-4 mx-auto"
-                    width={256}
+                    alt="Industrial AI for Production Research"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    width={512}
                     height={192}
                   />
                   <p className="text-gray-700">
@@ -108,8 +109,8 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                   <OptimizedImage
                     src="/lovable-uploads/sustainable-packaging-llm.png"
                     alt="LLM-Enhanced Decision Support System for Sustainable Packaging"
-                    className="w-128 h-128 object-cover rounded-lg mb-4 mx-auto"
-                    width={256}
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    width={512}
                     height={192}
                   />
                   <p className="text-gray-700">
