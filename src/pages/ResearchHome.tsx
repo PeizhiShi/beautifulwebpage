@@ -11,7 +11,8 @@ import {
   ExternalLink,
   GraduationCap,
   MapPin,
-  Award
+  Award,
+  Eye
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -191,18 +192,13 @@ I welcome enquiries from prospective PhD students interested in Industrial AI, A
           <p className="flex items-center justify-center gap-2">
             <span>© 2026 Dr. Peizhi Shi. Last updated: June 2026</span>
             <a
-              href="https://www.revolvermaps.com/livestats/YOUR_WIDGET_ID/"
+              href="https://whos.amung.us/showcase/YOUR_WIDGET_ID/"
               target="_blank"
               rel="noopener noreferrer"
-              title="View live visitor map"
+              title="View live visitor stats"
               className="inline-flex items-center"
             >
-              <img
-                width="16"
-                height="16"
-                alt="Visitor map"
-                src="https://rf.revolvermaps.com/h/m/a/0/ff0000/128/0/YOUR_WIDGET_ID.png"
-              />
+              <Eye size={16} className="text-gray-500" />
             </a>
           </p>
 
