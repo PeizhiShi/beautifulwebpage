@@ -18,6 +18,21 @@ import { Card, CardContent } from "@/components/ui/card";
 import OptimizedImage from "../components/OptimizedImage";
 
 const ResearchHome = () => {
+  useEffect(() => {
+    if (document.getElementById("_waud2l")) return;
+    const s1 = document.createElement("script");
+    s1.id = "_waud2l";
+    s1.text = 'var _wau = _wau || []; _wau.push(["map", "edtq98edoo", "d2l", "250", "125", "night", "cross-pink"]);';
+    const s2 = document.createElement("script");
+    s2.async = true;
+    s2.src = "//waust.at/m.js";
+    const container = document.getElementById("d2l");
+    if (container) {
+      container.appendChild(s1);
+      container.appendChild(s2);
+    }
+  }, []);
+
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
