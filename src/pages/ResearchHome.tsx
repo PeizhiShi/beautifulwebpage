@@ -188,19 +188,10 @@ I welcome enquiries from prospective PhD students interested in Industrial AI, A
         </main>
         
         <footer className="text-center text-gray-600 relative pt-6 mt-10 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-gray-300 before:to-transparent">
-          <p className="flex items-center justify-center gap-2">
+          <p className="flex items-center justify-center gap-4">
             <span>© 2026 Dr. Peizhi Shi. Last updated: June 2026</span>
-            <a
-              href="https://whos.amung.us/showcase/YOUR_WIDGET_ID/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="View live visitor stats"
-              className="inline-flex items-center"
-            >
-              <Eye size={16} className="text-gray-500" />
-            </a>
+            <div id="d2l" />
           </p>
-
         </footer>
 
 
