@@ -11,8 +11,7 @@ import {
   ExternalLink,
   GraduationCap,
   MapPin,
-  Award,
-  Eye
+  Award
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
