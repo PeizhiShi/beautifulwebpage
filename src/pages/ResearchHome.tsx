@@ -1,5 +1,5 @@
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { 
   User, 
@@ -18,21 +18,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import OptimizedImage from "../components/OptimizedImage";
 
 const ResearchHome = () => {
-  useEffect(() => {
-    if (document.getElementById("_waud2l")) return;
-    const s1 = document.createElement("script");
-    s1.id = "_waud2l";
-    s1.text = 'var _wau = _wau || []; _wau.push(["map", "edtq98edoo", "d2l", "250", "125", "night", "cross-pink"]);';
-    const s2 = document.createElement("script");
-    s2.async = true;
-    s2.src = "//waust.at/m.js";
-    const container = document.getElementById("d2l");
-    if (container) {
-      container.appendChild(s1);
-      container.appendChild(s2);
-    }
-  }, []);
-
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
@@ -127,7 +112,6 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                 <CardContent className="p-6">
                   <OptimizedImage
                     src="/lovable-uploads/sustainable-packaging-llm.png"
-                    alt="AI-enabled Decision Support"
                     className="w-100 h-100 object-cover rounded-lg mb-4"
                     width={512}
                     height={192}
@@ -203,10 +187,9 @@ I welcome enquiries from prospective PhD students interested in Industrial AI, A
         </main>
         
         <footer className="text-center text-gray-600 relative pt-6 mt-10 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-gray-300 before:to-transparent">
-          <p className="flex items-center justify-center gap-4">
-            <span>© 2026 Dr. Peizhi Shi. Last updated: June 2026</span>
-            <div id="d2l" />
-          </p>
+          <p>© 2026 Dr. Peizhi Shi. Last updated: June 2026 <a href="https://clustrmaps.com/site/1bohv"  title="ClustrMaps"><img width="5px" src="//www.clustrmaps.com/map_v2.png?d=GNKaZ2hx2hnIWDV343dbm1lxrydeLScrzGYnPqib9SA&cl=ffffff" /></a>  
+</p>
+
         </footer>
 
 
