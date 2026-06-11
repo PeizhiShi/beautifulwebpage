@@ -24,7 +24,7 @@ const ResearchHome = () => {
         <header className="flex flex-col md:flex-row gap-8 items-start pb-2 mt-6 mb-2">
           <div className="w-40 min-w-40 overflow-hidden rounded-lg">
             <OptimizedImage 
-              src="/lovable-uploads/profile-superman.png" 
+              src="/lovable-uploads/profile-cropped.png" 
               alt="Profile" 
               className="w-full h-auto object-cover"
               loading="eager"
@@ -112,8 +112,7 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                 <CardContent className="p-6">
                   <OptimizedImage
                     src="/lovable-uploads/sustainable-packaging-llm.png"
-                    alt="AI-enabled Decision Support"
-                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-100 h-100 object-cover rounded-lg mb-4"
                     width={512}
                     height={192}
                   />
