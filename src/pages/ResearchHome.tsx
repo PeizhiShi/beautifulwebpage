@@ -112,6 +112,7 @@ I am an Assistant Professor in Applied Artificial Intelligence at the Centre for
                 <CardContent className="p-6">
                   <OptimizedImage
                     src="/lovable-uploads/sustainable-packaging-llm.png"
+                    alt="AI-enabled Decision Support"
                     className="w-100 h-100 object-cover rounded-lg mb-4"
                     width={512}
                     height={192}
